@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --nodes=2              # request 2 nodes
+#SBATCH --mincpus=1            # allocate one task per node...
+#SBATCH --ntasks=2             # ...which means 2 tasks in total (see note below)
+#SBATCH --cpus-per-task=6      # use 6 threads per task
+#SBATCH --gres=gpu:1           # use 1 GPU per node (i.e. use one GPU per task)
+#SBATCH --time=01:00:00        # run for 1 hour
+#SBATCH --account=p_number_crunch      # account CPU time to project p_number_crunch
+
+source ~/venv/ckanenv/bin/activate
+ 
+srun python 'src/test.py'

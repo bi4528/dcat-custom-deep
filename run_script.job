@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -p gpu
+#SBATCH --job-name=gpu_job
+#SBATCH --output=output/output-%J.log
+#SBATCH --error=error/error-%J.log
+#SBATCH --gres=gpu:2
+#SBATCH --time=01:00:00
+
+source ~/venv/ckanenv/bin/activate
+
+srun python -u 'src/rag_enhanced.py'

@@ -11,8 +11,8 @@ API_SHOW = "https://podatki.gov.si/api/3/action/package_show?id="
 OUTPUT_DIR = "./data/datasets"
 ERROR_LOG = "./data/error_log.txt"
 
-os.makedirs(f"{OUTPUT_DIR}/opisi-train", exist_ok=True)
-os.makedirs(f"{OUTPUT_DIR}/opisi-test", exist_ok=True)
+os.makedirs(f"{OUTPUT_DIR}/opsi-train", exist_ok=True)
+os.makedirs(f"{OUTPUT_DIR}/opsi-test", exist_ok=True)
 
 print("Pridobivam seznam ID-jeva za datasete...")
 response = requests.get(API_LIST)
@@ -60,7 +60,7 @@ def save_dataset(entry, target_dir):
     json_path = f"{target_dir}/{entry['id']}.json"
 
     if os.path.exists(csv_path) and os.path.exists(json_path):
-        print(f"Dataset z id={entry['id']}, že obstaja.")
+        print(f"Dataset z id={entry['id']} že obstaja.")
         return
 
     safe_csv_url = urllib.parse.quote(entry["csv_url"], safe=':/')
@@ -74,9 +74,22 @@ def save_dataset(entry, target_dir):
             f.write(f"{entry['id']}: {safe_csv_url} - {e}\n")
         return
 
-    with open(csv_path, "wb") as f:
-        f.write(csv_resp.content)
-    print(f"CSV shranjen: {csv_path}")
+    try:
+        import chardet
+        detected = chardet.detect(csv_resp.content)
+        encoding = detected['encoding']
+
+        if encoding.lower() in ["ascii", "windows-1252", "iso-8859-1"]:
+            encoding = "windows-1250"
+
+        text = csv_resp.content.decode(encoding)
+        with open(csv_path, "w", encoding="utf-8") as f:
+            f.write(text)
+        print(f"CSV shranjen (UTF-8 re-encoding): {csv_path}")
+    except Exception as e:
+        print(f"Napaka pri dekodiranju CSV: {e}, shranjujem surove bajte...")
+        with open(csv_path, "wb") as f:
+            f.write(csv_resp.content)
 
     meta = entry["meta"]
     meta_data = {
@@ -92,8 +105,8 @@ def save_dataset(entry, target_dir):
 
 print("\nShrani train dataset:")
 for entry in train:
-    save_dataset(entry, f"{OUTPUT_DIR}/opisi-train")
+    save_dataset(entry, f"{OUTPUT_DIR}/opsi-train")
 
 print("\nShrani test dataset:")
 for entry in test:
-    save_dataset(entry, f"{OUTPUT_DIR}/opisi-test")
+    save_dataset(entry, f"{OUTPUT_DIR}/opsi-test")

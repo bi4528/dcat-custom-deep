@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --job-name=data_loading
+#SBATCH --output=output/output-%J.log
+#SBATCH --error=error/error-%J.log
+
+source ~/venv/ckanenv/bin/activate
+
+srun python -u src/data_loading.py

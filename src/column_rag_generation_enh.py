@@ -10,27 +10,43 @@ import gc
 from sentence_transformers import SentenceTransformer
 from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 import re
+import yaml
 
-# -------------------- Logging Setup --------------------
-logging.basicConfig(
-    level=logging.INFO,
-    format='[%(asctime)s] %(levelname)s: %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    stream=sys.stdout,
-    force=True
-)
+# -------------------- Load Config --------------------
+CONFIG_PATH = "./config.yaml"
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    config = yaml.safe_load(f)
 
-# -------------------- Config --------------------
-DATASET_FOR_TEST = "./data/datasets/opsi-test"
-FAISS_INDEX_PATH = "./data/models/faiss-index-columns.index"
-ID_TRACKER_JSON = "./data/models/id_tracker_columns.json"
-OUTPUT_DIR = "./data/models/column_metadata"
-EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-large"
-GENERATION_MODEL_NAME = "google/gemma-2b-it"
-K_NEIGHBORS = 3
-BATCH_SIZE = 16
+DATASET_FOR_TEST = config["paths"]["dataset_for_test"]
+FAISS_INDEX_PATH = config["paths"]["faiss_index_column_path"]
+ID_TRACKER_JSON = config["paths"]["id_column_tracker_json"]
+OUTPUT_DIR = config["paths"]["columns_dir"]
+EMBEDDING_MODEL_NAME = config["models"]["embedding_model"]
+GENERATION_MODEL_NAME = config["models"]["generation_model"]
+K_NEIGHBORS = config["k_neighbours"]
+BATCH_SIZE = config["batch_size"]
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# -------------------- Logging Setup --------------------
+log_level = getattr(logging, config.get("logging", {}).get("level", "INFO").upper(), logging.INFO)
+log_file = config.get("logging", {}).get("log_file", None)
+
+if log_file:
+    logging.basicConfig(
+        level=log_level,
+        format='[%(asctime)s] %(levelname)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        filename=log_file,
+        filemode='a'
+    )
+else:
+    logging.basicConfig(
+        level=log_level,
+        format='[%(asctime)s] %(levelname)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        stream=sys.stdout,
+    )
 
 # -------------------- Utils --------------------
 def read_csv_with_encoding_detection(csv_path):

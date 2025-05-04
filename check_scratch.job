@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --job-name=scratch_test
+#SBATCH --output=output/output-%J.log
+#SBATCH --error=error/error-%J.log
+echo "TMPDIR: $TMPDIR"
+df -h
+echo "Writing test file..."
+
+if [ -d "$TMPDIR" ]; then
+    echo "Scratch is available at $TMPDIR"
+    echo "Hello from Slurm scratch" > "$TMPDIR/testfile.txt"
+    ls -lh "$TMPDIR/testfile.txt"
+else
+    echo "No TMPDIR defined, checking /scratch"
+    mkdir -p /scratch/$USER/test_scratch
+    echo "Hello from shared scratch" > /scratch/$USER/test_scratch/testfile.txt
+    ls -lh /scratch/$USER/test_scratch/testfile.txt
+fi

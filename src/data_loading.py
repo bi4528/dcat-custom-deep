@@ -3,26 +3,55 @@ import os
 import random
 import json
 import urllib.parse
+import yaml
+import logging
+import sys
 
-# Pridobivam 3 CSV podatkovnih množic
-TARGET_COUNT = 3
-API_LIST = "https://podatki.gov.si/api/3/action/package_list"
-API_SHOW = "https://podatki.gov.si/api/3/action/package_show?id="
-OUTPUT_DIR = "./data/datasets"
-ERROR_LOG = "./data/error_log.txt"
+# -------------------- Load Config --------------------
+CONFIG_PATH = "./config.yaml"
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    config = yaml.safe_load(f)
 
-os.makedirs(f"{OUTPUT_DIR}/opsi-train", exist_ok=True)
-os.makedirs(f"{OUTPUT_DIR}/opsi-test", exist_ok=True)
+OUTPUT_DIR_TRAIN = config["paths"]["dataset_for_train"]
+OUTPUT_DIR_TEST = config["paths"]["dataset_for_test"]
+ERROR_LOG = config["data_load"]["error_log"]
 
-print("Pridobivam seznam ID-jeva za datasete...")
+TARGET_COUNT = config["data_load"]["target_count"]
+API_LIST = config["data_load"]["opsi_api_list"]
+API_SHOW = config["data_load"]["opsi_api_show"]
+
+# -------------------- Logging Setup --------------------
+log_level = getattr(logging, config.get("logging", {}).get("level", "INFO").upper(), logging.INFO)
+log_file = config.get("logging", {}).get("log_file", None)
+
+if log_file:
+    logging.basicConfig(
+        level=log_level,
+        format='[%(asctime)s] %(levelname)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        filename=log_file,
+        filemode='a'
+    )
+else:
+    logging.basicConfig(
+        level=log_level,
+        format='[%(asctime)s] %(levelname)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        stream=sys.stdout,
+    )
+
+# Ensure directories exist
+os.makedirs(OUTPUT_DIR_TRAIN, exist_ok=True)
+os.makedirs(OUTPUT_DIR_TEST, exist_ok=True)
+
+# -------------------- Data Download --------------------
+logging.info("Fetching dataset IDs from OPSI...")
 response = requests.get(API_LIST)
-all_ids = response.json()["result"]
+all_ids = response.json().get("result", [])
 random.shuffle(all_ids)
 
-# Seznam validnih datasetova
 valid_datasets = []
 
-# Funkcija za preverjanje, ali dataset ima CSV
 def has_csv(dataset_id):
     r = requests.get(API_SHOW + dataset_id)
     if r.status_code != 200:
@@ -38,29 +67,28 @@ def has_csv(dataset_id):
             }
     return None
 
-print("Iščem datasete s CSV datotekami...")
+logging.info("Searching for datasets with CSV resources...")
 for dataset_id in all_ids:
     dataset = has_csv(dataset_id)
     if dataset:
         valid_datasets.append(dataset)
-        print(f"Našel sem CSV za dataset: {dataset_id}")
+        logging.info(f"Found CSV for dataset: {dataset_id}")
     if len(valid_datasets) >= TARGET_COUNT:
         break
 
-print(f"\n Pridobil sem {len(valid_datasets)} CSV datasetov!")
+logging.info(f"Retrieved {len(valid_datasets)} CSV datasets.")
 
-# Razdelim množico za treniranje in testiranje
 random.shuffle(valid_datasets)
 split_index = int(len(valid_datasets) * 0.8)
 train = valid_datasets[:split_index]
 test = valid_datasets[split_index:]
 
 def save_dataset(entry, target_dir):
-    csv_path = f"{target_dir}/{entry['id']}.csv"
-    json_path = f"{target_dir}/{entry['id']}.json"
+    csv_path = os.path.join(target_dir, f"{entry['id']}.csv")
+    json_path = os.path.join(target_dir, f"{entry['id']}.json")
 
     if os.path.exists(csv_path) and os.path.exists(json_path):
-        print(f"Dataset z id={entry['id']} že obstaja.")
+        logging.info(f"Dataset with id={entry['id']} already exists.")
         return
 
     safe_csv_url = urllib.parse.quote(entry["csv_url"], safe=':/')
@@ -69,7 +97,7 @@ def save_dataset(entry, target_dir):
         csv_resp = requests.get(safe_csv_url)
         csv_resp.raise_for_status()
     except Exception as e:
-        print(f"Napaka pri prevzemu CSV: {safe_csv_url}\nPodrobnosti: {e}")
+        logging.error(f"Failed to download CSV: {safe_csv_url} | Error: {e}")
         with open(ERROR_LOG, "a") as f:
             f.write(f"{entry['id']}: {safe_csv_url} - {e}\n")
         return
@@ -79,15 +107,15 @@ def save_dataset(entry, target_dir):
         detected = chardet.detect(csv_resp.content)
         encoding = detected['encoding']
 
-        if encoding.lower() in ["ascii", "windows-1252", "iso-8859-1"]:
+        if encoding and encoding.lower() in ["ascii", "windows-1252", "iso-8859-1"]:
             encoding = "windows-1250"
 
-        text = csv_resp.content.decode(encoding)
+        text = csv_resp.content.decode(encoding or 'utf-8')
         with open(csv_path, "w", encoding="utf-8") as f:
             f.write(text)
-        print(f"CSV shranjen (UTF-8 re-encoding): {csv_path}")
+        logging.info(f"CSV saved (UTF-8 re-encoded): {csv_path}")
     except Exception as e:
-        print(f"Napaka pri dekodiranju CSV: {e}, shranjujem surove bajte...")
+        logging.warning(f"Decoding failed ({e}), saving raw bytes...")
         with open(csv_path, "wb") as f:
             f.write(csv_resp.content)
 
@@ -101,12 +129,14 @@ def save_dataset(entry, target_dir):
     }
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(meta_data, f, indent=4, ensure_ascii=False)
-    print(f"Metapodatki shranjeni za dataset id: {entry['id']}")
+    logging.info(f"Metadata saved for dataset id: {entry['id']}")
 
-print("\nShrani train dataset:")
+logging.info("Saving train datasets...")
 for entry in train:
-    save_dataset(entry, f"{OUTPUT_DIR}/opsi-train")
+    save_dataset(entry, OUTPUT_DIR_TRAIN)
 
-print("\nShrani test dataset:")
+logging.info("Saving test datasets...")
 for entry in test:
-    save_dataset(entry, f"{OUTPUT_DIR}/opsi-test")
+    save_dataset(entry, OUTPUT_DIR_TEST)
+
+logging.info("Data loading completed.")

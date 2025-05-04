@@ -7,22 +7,38 @@ import numpy as np
 import faiss
 import chardet
 from sentence_transformers import SentenceTransformer
+import yaml
 
-# Setup logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='[%(asctime)s] %(levelname)s: %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    stream=sys.stdout,
-    force=True
-)
+# -------------------- Load Config --------------------
+CONFIG_PATH = "./config.yaml"
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    config = yaml.safe_load(f)
 
-# Config
-DATASET_DIR = "./data/datasets/opsi-train"
-FAISS_INDEX_PATH = "./data/models/faiss-index-columns.index"
-ID_TRACKER_JSON = "./data/models/id_tracker_columns.json"
-BATCH_SIZE = 16
-EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-large"
+DATASET_DIR = config["paths"]["dataset_for_train"]
+FAISS_INDEX_PATH = config["paths"]["faiss_index_column_path"]
+ID_TRACKER_JSON = config["paths"]["id_column_tracker_json"]
+EMBEDDING_MODEL_NAME = config["models"]["embedding_model"]
+BATCH_SIZE = config["batch_size"]
+
+# -------------------- Logging Setup --------------------
+log_level = getattr(logging, config.get("logging", {}).get("level", "INFO").upper(), logging.INFO)
+log_file = config.get("logging", {}).get("log_file", None)
+
+if log_file:
+    logging.basicConfig(
+        level=log_level,
+        format='[%(asctime)s] %(levelname)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        filename=log_file,
+        filemode='a'
+    )
+else:
+    logging.basicConfig(
+        level=log_level,
+        format='[%(asctime)s] %(levelname)s: %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        stream=sys.stdout,
+    )
 
 def read_csv_with_encoding_detection(csv_path):
     try:

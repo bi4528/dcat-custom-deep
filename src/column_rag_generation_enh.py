@@ -53,7 +53,7 @@ def read_csv_with_encoding_detection(csv_path):
     with open(csv_path, 'rb') as f:
         result = chardet.detect(f.read(10000))
         encoding = result['encoding']
-        if encoding.lower() in ["ascii", "windows-1252", "iso-8859-1"]:
+        if encoding and encoding.lower() in ["ascii", "windows-1252", "iso-8859-1"]:
             encoding = "windows-1250"
     try:
         df = pd.read_csv(csv_path, delimiter=";", encoding=encoding)
@@ -109,26 +109,13 @@ def create_prompt(examples, current_col, sample_values):
     return prompt
 
 def clean_llm_output(full_text):
-    """
-    Extracts the last meaningful sentence from the LLM output,
-    ensuring we get the final description even if the model includes extra text.
-    """
-    # Remove everything up to <start_of_turn>model if present
     cleaned = re.split(r"<start_of_turn>model", full_text, maxsplit=1)
     text = cleaned[1] if len(cleaned) > 1 else full_text
-
-    # Remove boilerplate like 'Sure, here is the answer:' or similar
     text = re.sub(r"^[^\wčšžČŠŽ]*Sure.*?:", "", text, flags=re.IGNORECASE).strip()
-
-    # Split into sentences (rudimentary: split on . ! ?)
     sentences = re.split(r"(?<=[.!?])\s+", text.strip())
-
-    # Pick the last non-empty sentence
     for sentence in reversed(sentences):
         if sentence.strip():
             return sentence.strip()
-
-    # Fallback: return the whole cleaned text if no sentence found
     return text.strip()
 
 # -------------------- Main --------------------
@@ -165,6 +152,8 @@ def main():
             continue
 
         columns_metadata = []
+        prompts = []
+        col_info_list = []
 
         for col in df.columns:
             sample_values = df[col].dropna().astype(str).head(5).tolist()
@@ -182,30 +171,40 @@ def main():
                 if idx == -1:
                     continue
                 try:
-                    dataset_col = id_tracker[indices[0].tolist().index(idx)]
-                except IndexError:
-                    continue
-                dataset_name, column_name = dataset_col.split("::")
-                examples.append({
-                    "column": column_name,
-                    "samples": "",
-                    "description": ""
-                })
+                    dataset_col = id_tracker[idx]  # Direct map using FAISS idx
+                    dataset_name, column_name = dataset_col.split("::")
+                    examples.append({
+                        "column": column_name,
+                        "samples": "",
+                        "description": ""
+                    })
+                except Exception as e:
+                    logging.warning(f"Index mapping failed for idx {idx}: {e}")
 
             prompt = create_prompt(examples, col, sample_values)
-            raw_result = llm(prompt, max_new_tokens=128)[0]["generated_text"]
-            cleaned_result = clean_llm_output(raw_result)
+            prompts.append(prompt)
+            col_info_list.append({
+                "name": col,
+                "sample_values": sample_values
+            })
 
-            datatype = infer_datatype(sample_values)
+        if not prompts:
+            continue
+
+        logging.info(f"Running LLM in batch for {len(prompts)} columns...")
+        results = llm(prompts, max_new_tokens=30)
+
+        for i, output in enumerate(results):
+            gen_text = output[0]["generated_text"]
+            cleaned_result = clean_llm_output(gen_text)
+            datatype = infer_datatype(col_info_list[i]["sample_values"])
 
             columns_metadata.append({
-                "name": col,
-                "titles": col,
+                "name": col_info_list[i]["name"],
+                "titles": col_info_list[i]["name"],
                 "description": cleaned_result.strip(),
                 "datatype": datatype
             })
-
-            gc.collect()
 
         if columns_metadata:
             output = {
@@ -215,6 +214,8 @@ def main():
             with open(os.path.join(OUTPUT_DIR, f"{dataset_id}.columns.json"), "w", encoding="utf-8") as f:
                 json.dump(output, f, indent=4, ensure_ascii=False)
             logging.info(f"Saved CSVW metadata for {dataset_id}.")
+
+        gc.collect()
 
 if __name__ == "__main__":
     main()

@@ -3,15 +3,11 @@
 #SBATCH --job-name=gpu_job
 #SBATCH --output=output/output-%J.log
 #SBATCH --error=error/error-%J.log
-#SBATCH --gres=gpu:1
-#SBATCH --ntasks=5
-#SBATCH --time=01:00:00
+#SBATCH --gres=gpu:2
+#SBATCH --ntasks=3
+#SBATCH --time=02:00:00
 
 source ~/venv/ckanenv/bin/activate
-
-srun python -u 'src/faiss_metadata_indexing.py'
-
-srun python -u 'src/faiss_column_indexing.py'
 
 srun python -u 'src/column_rag_generation_enh.py'
 

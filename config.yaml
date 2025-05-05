@@ -31,7 +31,7 @@ batch_size: 16
 
 # download
 data_load:
-  target_count: 3
+  target_count: 100
   opsi_api_list: "https://podatki.gov.si/api/3/action/package_list"
   opsi_api_show: "https://podatki.gov.si/api/3/action/package_show?id="
   error_log: "./data/error_log.txt"

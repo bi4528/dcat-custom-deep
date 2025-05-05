@@ -8,4 +8,4 @@
 
 source ~/venv/ckanenv/bin/activate
 
-srun python -u 'src/evaluate_rag_outputs.py'
+srun python -u 'src/metadata_rag_generation.py'

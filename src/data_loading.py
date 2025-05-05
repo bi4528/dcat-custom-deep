@@ -45,12 +45,13 @@ os.makedirs(OUTPUT_DIR_TRAIN, exist_ok=True)
 os.makedirs(OUTPUT_DIR_TEST, exist_ok=True)
 
 # -------------------- Data Download --------------------
+
 logging.info("Fetching dataset IDs from OPSI...")
 response = requests.get(API_LIST)
 all_ids = response.json().get("result", [])
 random.shuffle(all_ids)
 
-valid_datasets = []
+successful_datasets = []
 
 def has_csv(dataset_id):
     r = requests.get(API_SHOW + dataset_id)
@@ -67,29 +68,13 @@ def has_csv(dataset_id):
             }
     return None
 
-logging.info("Searching for datasets with CSV resources...")
-for dataset_id in all_ids:
-    dataset = has_csv(dataset_id)
-    if dataset:
-        valid_datasets.append(dataset)
-        logging.info(f"Found CSV for dataset: {dataset_id}")
-    if len(valid_datasets) >= TARGET_COUNT:
-        break
-
-logging.info(f"Retrieved {len(valid_datasets)} CSV datasets.")
-
-random.shuffle(valid_datasets)
-split_index = int(len(valid_datasets) * 0.8)
-train = valid_datasets[:split_index]
-test = valid_datasets[split_index:]
-
 def save_dataset(entry, target_dir):
     csv_path = os.path.join(target_dir, f"{entry['id']}.csv")
     json_path = os.path.join(target_dir, f"{entry['id']}.json")
 
     if os.path.exists(csv_path) and os.path.exists(json_path):
         logging.info(f"Dataset with id={entry['id']} already exists.")
-        return
+        return True  # Already saved previously
 
     safe_csv_url = urllib.parse.quote(entry["csv_url"], safe=':/')
 
@@ -100,7 +85,7 @@ def save_dataset(entry, target_dir):
         logging.error(f"Failed to download CSV: {safe_csv_url} | Error: {e}")
         with open(ERROR_LOG, "a") as f:
             f.write(f"{entry['id']}: {safe_csv_url} - {e}\n")
-        return
+        return False
 
     try:
         import chardet
@@ -130,13 +115,50 @@ def save_dataset(entry, target_dir):
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(meta_data, f, indent=4, ensure_ascii=False)
     logging.info(f"Metadata saved for dataset id: {entry['id']}")
+    return True
 
-logging.info("Saving train datasets...")
-for entry in train:
-    save_dataset(entry, OUTPUT_DIR_TRAIN)
+# -------------------- Main Loop --------------------
+logging.info("Searching and saving datasets until we have 100 successfully saved...")
 
-logging.info("Saving test datasets...")
-for entry in test:
-    save_dataset(entry, OUTPUT_DIR_TEST)
+idx_pointer = 0
+while len(successful_datasets) < TARGET_COUNT and idx_pointer < len(all_ids):
+    dataset_id = all_ids[idx_pointer]
+    idx_pointer += 1
 
-logging.info("Data loading completed.")
+    dataset = has_csv(dataset_id)
+    if dataset:
+        # First save temporarily in train dir (we'll split later)
+        success = save_dataset(dataset, OUTPUT_DIR_TRAIN)
+        if success:
+            successful_datasets.append(dataset["id"])
+            logging.info(f"SUCCESS: {dataset['id']} saved ({len(successful_datasets)}/{TARGET_COUNT})")
+    else:
+        logging.info(f"No CSV found for {dataset_id}")
+
+if len(successful_datasets) < TARGET_COUNT:
+    logging.warning(f"Reached end of OPSI datasets, only {len(successful_datasets)} were saved.")
+else:
+    logging.info(f"Completed: 100 datasets saved.")
+
+# -------------------- Split Train/Test --------------------
+logging.info("Splitting into 80% train and 20% test...")
+random.shuffle(successful_datasets)
+split_index = int(TARGET_COUNT * 0.8)
+train_ids = successful_datasets[:split_index]
+test_ids = successful_datasets[split_index:]
+
+for dataset_id in test_ids:
+    # Move files to TEST folder
+    csv_src = os.path.join(OUTPUT_DIR_TRAIN, f"{dataset_id}.csv")
+    json_src = os.path.join(OUTPUT_DIR_TRAIN, f"{dataset_id}.json")
+    csv_dst = os.path.join(OUTPUT_DIR_TEST, f"{dataset_id}.csv")
+    json_dst = os.path.join(OUTPUT_DIR_TEST, f"{dataset_id}.json")
+
+    try:
+        os.rename(csv_src, csv_dst)
+        os.rename(json_src, json_dst)
+        logging.info(f"Moved {dataset_id} to test set.")
+    except Exception as e:
+        logging.error(f"Failed to move {dataset_id}: {e}")
+
+logging.info("Data loading and splitting completed.")

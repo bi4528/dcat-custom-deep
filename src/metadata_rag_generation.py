@@ -185,7 +185,7 @@ def main():
                 examples.append(ex_meta)
 
         prompt = create_prompt(examples, meta, df)
-        result = llm(prompt, max_new_tokens=512)[0]["generated_text"]
+        result = llm(prompt, max_new_tokens=128)[0]["generated_text"]
 
         metadata = extract_metadata(result)
 

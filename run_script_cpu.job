@@ -5,4 +5,4 @@
 
 source ~/venv/ckanenv/bin/activate
 
-srun python -u src/data_loading.py
+srun python -u src/evaluate_rag_outputs.py

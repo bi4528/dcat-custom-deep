@@ -6,6 +6,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=01:00:00
 
-source ~/venv/ckanenv/bin/activate
+source ~/ckanenv/bin/activate
 
-srun python -u 'src/metadata_rag_generation.py'
+srun python -u 'src/ontology_indexing.py'

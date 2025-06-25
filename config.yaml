@@ -12,6 +12,24 @@ paths:
   metadata_dir: "./data/models/metadata_generated"
   columns_dir: "./data/models/column_metadata"
   reports_dir: "./data/reports"
+  ontology_terms_json: "./data/ontology/ontology_terms.json"
+  faiss_index_ontology_path: "./data/models/ontology_index.faiss"
+  id_ontology_tracker_json: "./data/models/ontology_id_tracker.json"
+  # OAEI
+  mouse_ontology: "./data/datasets/anatomy-dataset/mouse.owl"
+  human_ontology: "./data/datasets/anatomy-dataset/human.owl"
+  mouse_human_alignment: "./data/datasets/anatomy-dataset/reference.rdf"
+  human_index: "./data/models/anatomy-dataset/human_index.faiss"
+  mouse_index: "./data/models/anatomy-dataset/mouse_index.faiss"
+  human_id_tracker: "./data/models/anatomy-dataset/human_id_tracker.faiss"
+  mouse_id_tracker: "./data/models/anatomy-dataset/mouse_id_tracker.faiss"
+  human_terms_json: "./data/ontology/human_terms_enriched.json"
+  mouse_terms_json: "./data/ontology/mouse_terms_enriched.json"
+  mouse_testset: "./data/datasets/anatomy-dataset/mouse_testset.json"
+
+namespaces:
+  mouse: "http://mouse.owl#"
+  human: "http://human.owl#"
 
 models:
   embedding_model: "intfloat/multilingual-e5-large"

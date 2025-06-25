@@ -176,4 +176,16 @@ error/*
 
 output/*
 
-data/*
+data/datasets-*/*
+data/datasets/opsi-train
+data/datasets/opsi-test
+data/models-*/*
+data/ontology/*
+data/reports-*/*
+data/error-log.txt
+
+PYTHON_VERSION.txt
+
+ENV_INFO.txt
+
+readme.txt

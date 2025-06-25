@@ -1,0 +1,420 @@
+{
+    "defibrilatorji-v-obcini-prevalje": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 1.0000001192092896,
+            "recall": 1.0000001192092896,
+            "f1": 1.0000001192092896
+        },
+        "organization": {
+            "precision": 0.5893941521644592,
+            "recall": 0.5610255599021912,
+            "f1": 0.5748600363731384
+        },
+        "tags": {
+            "precision": 0.7287057042121887,
+            "recall": 0.7723958492279053,
+            "f1": 0.7499150037765503
+        }
+    },
+    "otroska-grisca-v-obcini-menges": {
+        "title": {
+            "precision": 0.8166444897651672,
+            "recall": 0.8272969722747803,
+            "f1": 0.8219362497329712
+        },
+        "notes": {
+            "precision": 0.7332478761672974,
+            "recall": 0.7652925252914429,
+            "f1": 0.7489275932312012
+        },
+        "organization": {
+            "precision": 0.6132941842079163,
+            "recall": 0.542395293712616,
+            "f1": 0.5756700038909912
+        },
+        "tags": {
+            "precision": 0.5823877453804016,
+            "recall": 0.5911308526992798,
+            "f1": 0.586726725101471
+        }
+    },
+    "kolicina-zbranih-odpadkov-v-obcini-velike-lasce": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "organization": {
+            "precision": 0.5591127276420593,
+            "recall": 0.5004206895828247,
+            "f1": 0.5281411409378052
+        },
+        "tags": {
+            "precision": 0.6941152215003967,
+            "recall": 0.716411292552948,
+            "f1": 0.7050870656967163
+        }
+    },
+    "kulturna-in-umetniska-drustva-v-obcini-velika-polana": {
+        "title": {
+            "precision": 1.0000001192092896,
+            "recall": 1.0000001192092896,
+            "f1": 1.0000001192092896
+        },
+        "notes": {
+            "precision": 1.0000001192092896,
+            "recall": 1.0000001192092896,
+            "f1": 1.0000001192092896
+        },
+        "organization": {
+            "precision": 0.6866169571876526,
+            "recall": 0.605390191078186,
+            "f1": 0.6434502601623535
+        },
+        "tags": {
+            "precision": 0.8796015977859497,
+            "recall": 0.8461025357246399,
+            "f1": 0.8625268936157227
+        }
+    },
+    "vzgojno-izobrazevalne-ustanove-v-obcini-kranjska-gora": {
+        "title": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "notes": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "organization": {
+            "precision": 0.5949361324310303,
+            "recall": 0.5530042052268982,
+            "f1": 0.5732042789459229
+        },
+        "tags": {
+            "precision": 0.7422906160354614,
+            "recall": 0.780753493309021,
+            "f1": 0.7610363364219666
+        }
+    },
+    "avtobusna-postajalisca-v-mestni-obcini-kranj": {
+        "title": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "notes": {
+            "precision": 1.0000001192092896,
+            "recall": 1.0000001192092896,
+            "f1": 1.0000001192092896
+        },
+        "organization": {
+            "precision": 0.8214243054389954,
+            "recall": 0.8182748556137085,
+            "f1": 0.819846510887146
+        },
+        "tags": {
+            "precision": 0.8921129107475281,
+            "recall": 0.7696608901023865,
+            "f1": 0.8263753056526184
+        }
+    },
+    "obcina_trzin_turisticne_tocke": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 1.0000001192092896,
+            "recall": 1.0000001192092896,
+            "f1": 1.0000001192092896
+        },
+        "organization": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "tags": {
+            "precision": 0.616395890712738,
+            "recall": 0.720686674118042,
+            "f1": 0.6644739508628845
+        }
+    },
+    "ekoloski-otoki-v-obcini-dravograd": {
+        "title": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "notes": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "organization": {
+            "precision": 0.6339489221572876,
+            "recall": 0.5737254619598389,
+            "f1": 0.6023356318473816
+        },
+        "tags": {
+            "precision": 0.779536783695221,
+            "recall": 0.8073466420173645,
+            "f1": 0.7931979894638062
+        }
+    },
+    "obcinske-stavbe-v-obcini-prevalje": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 0.9999998807907104,
+            "recall": 0.9999998807907104,
+            "f1": 0.9999998807907104
+        },
+        "organization": {
+            "precision": 0.5893941521644592,
+            "recall": 0.5610255599021912,
+            "f1": 0.5748600363731384
+        },
+        "tags": {
+            "precision": 0.7817049026489258,
+            "recall": 0.7896028757095337,
+            "f1": 0.7856340408325195
+        }
+    },
+    "obcinske-stavbe-v-obcini-ribnica-na-pohorju": {
+        "title": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "notes": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "organization": {
+            "precision": 0.592369794845581,
+            "recall": 0.5697871446609497,
+            "f1": 0.5808590650558472
+        },
+        "tags": {
+            "precision": 0.7076416015625,
+            "recall": 0.7819526195526123,
+            "f1": 0.7429435849189758
+        }
+    },
+    "lokacije-aed-v-obcini-zirovnica": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "organization": {
+            "precision": 0.6421401500701904,
+            "recall": 0.5792752504348755,
+            "f1": 0.6090899109840393
+        },
+        "tags": {
+            "precision": 0.7399572134017944,
+            "recall": 0.7111936807632446,
+            "f1": 0.7252903580665588
+        }
+    },
+    "lokacije-zbiralnikov-odpadnega-jedilnega-olja-v-obcini-sevnica": {
+        "title": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "notes": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "organization": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "tags": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    "sportni-objekti-v-obcini-semic": {
+        "title": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "notes": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "organization": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        },
+        "tags": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    "vrtci-in-sole-v-obcini-kostel": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 0.9030466079711914,
+            "recall": 0.8555810451507568,
+            "f1": 0.878673255443573
+        },
+        "organization": {
+            "precision": 0.9235392212867737,
+            "recall": 0.955468475818634,
+            "f1": 0.939232587814331
+        },
+        "tags": {
+            "precision": 0.7105615139007568,
+            "recall": 0.6009786128997803,
+            "f1": 0.6511920690536499
+        }
+    },
+    "seznam-javno-dostopnih-wifi-tock-v-obcini-mirna": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "organization": {
+            "precision": 0.878195583820343,
+            "recall": 0.9462912082672119,
+            "f1": 0.9109726548194885
+        },
+        "tags": {
+            "precision": 0.7436479330062866,
+            "recall": 0.7327290773391724,
+            "f1": 0.7381481528282166
+        }
+    },
+    "javne-klopi-v-obcini-menges": {
+        "title": {
+            "precision": 0.9999998807907104,
+            "recall": 0.9999998807907104,
+            "f1": 0.9999998807907104
+        },
+        "notes": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "organization": {
+            "precision": 0.6132941842079163,
+            "recall": 0.542395293712616,
+            "f1": 0.5756700038909912
+        },
+        "tags": {
+            "precision": 0.7710272073745728,
+            "recall": 0.8920829892158508,
+            "f1": 0.8271493315696716
+        }
+    },
+    "kulturne-znamenitosti-v-obcini-vrhnika": {
+        "title": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "notes": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "organization": {
+            "precision": 0.6203317642211914,
+            "recall": 0.5624059438705444,
+            "f1": 0.5899503827095032
+        },
+        "tags": {
+            "precision": 0.8010591268539429,
+            "recall": 0.771301805973053,
+            "f1": 0.7858988642692566
+        }
+    },
+    "seznam-kulturnih-drustev-v-obcini-zagorje-ob-savi": {
+        "title": {
+            "precision": 0.9999999403953552,
+            "recall": 0.9999999403953552,
+            "f1": 0.9999999403953552
+        },
+        "notes": {
+            "precision": 0.9392106533050537,
+            "recall": 0.8170148134231567,
+            "f1": 0.8738616108894348
+        },
+        "organization": {
+            "precision": 0.5829387307167053,
+            "recall": 0.5509247779846191,
+            "f1": 0.5664798617362976
+        },
+        "tags": {
+            "precision": 0.6701979041099548,
+            "recall": 0.8010802268981934,
+            "f1": 0.7298175096511841
+        }
+    },
+    "vrtci-in-osnovne-sole-v-obcini-mislinja": {
+        "title": {
+            "precision": 1.0000001192092896,
+            "recall": 1.0000001192092896,
+            "f1": 1.0000001192092896
+        },
+        "notes": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "organization": {
+            "precision": 0.6224074959754944,
+            "recall": 0.5966781973838806,
+            "f1": 0.6092713475227356
+        },
+        "tags": {
+            "precision": 0.7858271598815918,
+            "recall": 0.7945525646209717,
+            "f1": 0.7901657819747925
+        }
+    }
+}

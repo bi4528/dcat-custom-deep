@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -p gpu
+#SBATCH --job-name=jupyter-notebook
+#SBATCH --output=jupyter-output/output-%J.log
+#SBATCH --error=jupyter-error/error-%J.log
+#SBATCH --time=02:00:00
+#SBATCH --gres=gpu:2
+
+# Activate your virtual environment
+source ~/ckanenv/bin/activate
+
+# Setup
+PORT=8888
+NODE=$(hostname -s)
+
+echo "Jupyter running on $NODE"
+echo "If accessing from local machine, use:"
+echo "ssh -N -f -L localhost:$PORT:$NODE:$PORT $USER@hpc-login3.arnes.si"
+echo "Then open: http://localhost:$PORT"
+
+# Run Jupyter Notebook bound to all interfaces
+jupyter-notebook --no-browser --port=$PORT --ip=0.0.0.0

@@ -1,0 +1,506 @@
+[
+  {
+    "source_uri": "urn:pn2024-column:DatumPN",
+    "source_label": "DatumPN",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b2",
+        "label": "datum škodnega dogodka",
+        "score": 0.9338330030441284,
+        "combined_score": 0.7364417228205451
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.850074291229248,
+        "combined_score": 0.639496448304918
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.8503797650337219,
+        "combined_score": 0.6381229783807483
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.8443394303321838,
+        "combined_score": 0.6354820456769731
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8405733704566956,
+        "combined_score": 0.5884013593196868
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b2",
+      "label": "datum škodnega dogodka",
+      "score": 0.9338330030441284,
+      "combined_score": 0.7364417228205451
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:Lokacija",
+    "source_label": "Lokacija",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+        "label": "kraj dogodka",
+        "score": 0.8983883261680603,
+        "combined_score": 0.7488718283176422
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8704531192779541,
+        "combined_score": 0.716460040637425
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.884973406791687,
+        "combined_score": 0.7051956704684667
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+        "label": "Y koordinata",
+        "score": 0.8729417324066162,
+        "combined_score": 0.7010592126846312
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+        "label": "vrsta škode",
+        "score": 0.8718761801719666,
+        "combined_score": 0.6418922734887976
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+      "label": "kraj dogodka",
+      "score": 0.8983883261680603,
+      "combined_score": 0.7488718283176422
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:OpisKraja",
+    "source_label": "OpisKraja",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+        "label": "kraj dogodka",
+        "score": 0.899787187576294,
+        "combined_score": 0.7441367455891199
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8662999868392944,
+        "combined_score": 0.709858266649575
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.8712872266769409,
+        "combined_score": 0.6719700241911
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8690766096115112,
+        "combined_score": 0.6715115214648999
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.871593713760376,
+        "combined_score": 0.6701155996322631
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+      "label": "kraj dogodka",
+      "score": 0.899787187576294,
+      "combined_score": 0.7441367455891199
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:VzrokNesrece",
+    "source_label": "VzrokNesrece",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.9004209041595459,
+        "combined_score": 0.7427946329116821
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8533512949943542,
+        "combined_score": 0.6910959064960479
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+        "label": "kraj dogodka",
+        "score": 0.8648710250854492,
+        "combined_score": 0.6804097175598144
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+        "label": "vrsta škode",
+        "score": 0.8589747548103333,
+        "combined_score": 0.6795431979324507
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.8601915240287781,
+        "combined_score": 0.6748613395474173
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+      "label": "vzrok nastanka škode",
+      "score": 0.9004209041595459,
+      "combined_score": 0.7427946329116821
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:GeoKoordinataX",
+    "source_label": "GeoKoordinataX",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b8",
+        "label": "X koordinata",
+        "score": 0.9279528856277466,
+        "combined_score": 0.8572593276317302
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+        "label": "Y koordinata",
+        "score": 0.9122974872589111,
+        "combined_score": 0.8463005487735453
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+        "label": "kraj dogodka",
+        "score": 0.8768165111541748,
+        "combined_score": 0.7060792501156147
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.8612264394760132,
+        "combined_score": 0.6910938017508562
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.8649113774299622,
+        "combined_score": 0.674009392772402
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b8",
+      "label": "X koordinata",
+      "score": 0.9279528856277466,
+      "combined_score": 0.8572593276317302
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:GeoKoordinataY",
+    "source_label": "GeoKoordinataY",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+        "label": "Y koordinata",
+        "score": 0.9213259220123291,
+        "combined_score": 0.852620453100938
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b8",
+        "label": "X koordinata",
+        "score": 0.9036529064178467,
+        "combined_score": 0.8402493421848003
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8581807613372803,
+        "combined_score": 0.7066088858772726
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+        "label": "kraj dogodka",
+        "score": 0.8730500936508179,
+        "combined_score": 0.7034427578632648
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8612949848175049,
+        "combined_score": 0.6529064893722534
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+      "label": "Y koordinata",
+      "score": 0.9213259220123291,
+      "combined_score": 0.852620453100938
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:Starost",
+    "source_label": "Starost",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.9360616207122803,
+        "combined_score": 0.7885764678319295
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+        "label": "vrsta škode",
+        "score": 0.873106062412262,
+        "combined_score": 0.7111742436885833
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.8738486766815186,
+        "combined_score": 0.7005829625659519
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.9022977352142334,
+        "combined_score": 0.6958941289356776
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8835359811782837,
+        "combined_score": 0.6890634221189161
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+      "label": "starost prijavitelja",
+      "score": 0.9360616207122803,
+      "combined_score": 0.7885764678319295
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:Spol",
+    "source_label": "Spol",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.9342684149742126,
+        "combined_score": 0.7825593190533774
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8785189986228943,
+        "combined_score": 0.6649632990360259
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.8759949207305908,
+        "combined_score": 0.6611964445114136
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+        "label": "vrsta škode",
+        "score": 0.8817970752716064,
+        "combined_score": 0.6572579526901245
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.8712142705917358,
+        "combined_score": 0.6348499894142151
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+      "label": "spol osebe",
+      "score": 0.9342684149742126,
+      "combined_score": 0.7825593190533774
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:PoskodbaUdelezenca",
+    "source_label": "PoskodbaUdelezenca",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+        "label": "vrsta škode",
+        "score": 0.8845041394233704,
+        "combined_score": 0.7226011734584281
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+        "label": "vzrok nastanka škode",
+        "score": 0.8795900344848633,
+        "combined_score": 0.7104498662446673
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8682650923728943,
+        "combined_score": 0.7025224067662891
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b2",
+        "label": "datum škodnega dogodka",
+        "score": 0.8730374574661255,
+        "combined_score": 0.7011262202262878
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+        "label": "kraj dogodka",
+        "score": 0.8671610355377197,
+        "combined_score": 0.6870127248764037
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+      "label": "vrsta škode",
+      "score": 0.8845041394233704,
+      "combined_score": 0.7226011734584281
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:VozniskiStazVLetih",
+    "source_label": "VozniskiStazVLetih",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.9438202977180481,
+        "combined_score": 0.8606742084026335
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8954790830612183,
+        "combined_score": 0.7057827265639054
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b10",
+        "label": "rezultat alkotesta",
+        "score": 0.8728694915771484,
+        "combined_score": 0.6943419774373373
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8753175139427185,
+        "combined_score": 0.6770079740456172
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b2",
+        "label": "datum škodnega dogodka",
+        "score": 0.8682898283004761,
+        "combined_score": 0.6678028798103331
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+      "label": "vozniski staž v letih",
+      "score": 0.9438202977180481,
+      "combined_score": 0.8606742084026335
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:VozniskiStazVMesecih",
+    "source_label": "VozniskiStazVMesecih",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.9425814151763916,
+        "combined_score": 0.835416746721035
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8735600709915161,
+        "combined_score": 0.6914920496940613
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8787182569503784,
+        "combined_score": 0.6901027798652648
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b10",
+        "label": "rezultat alkotesta",
+        "score": 0.8588048219680786,
+        "combined_score": 0.6801107437987076
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+        "label": "Y koordinata",
+        "score": 0.8637189865112305,
+        "combined_score": 0.6796032905578613
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+      "label": "vozniski staž v letih",
+      "score": 0.9425814151763916,
+      "combined_score": 0.835416746721035
+    }
+  },
+  {
+    "source_uri": "urn:pn2024-column:VrednostAlkotesta",
+    "source_label": "VrednostAlkotesta",
+    "top_k_matches": [
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b10",
+        "label": "rezultat alkotesta",
+        "score": 0.9390265941619873,
+        "combined_score": 0.8458900444848196
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+        "label": "starost prijavitelja",
+        "score": 0.8631395101547241,
+        "combined_score": 0.7177111706218204
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+        "label": "vozniski staž v letih",
+        "score": 0.8715635538101196,
+        "combined_score": 0.7048313297723469
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+        "label": "Y koordinata",
+        "score": 0.8537702560424805,
+        "combined_score": 0.7010874550918053
+      },
+      {
+        "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+        "label": "spol osebe",
+        "score": 0.8576369881629944,
+        "combined_score": 0.6892347806029849
+      }
+    ],
+    "top_match": {
+      "uri": "n16ce517f066c4ab4961e42cfc37c28b2b10",
+      "label": "rezultat alkotesta",
+      "score": 0.9390265941619873,
+      "combined_score": 0.8458900444848196
+    }
+  }
+]

@@ -189,3 +189,12 @@ PYTHON_VERSION.txt
 ENV_INFO.txt
 
 readme.txt
+
+azure_config.yaml
+notebook/azure.env
+notebook/azure_openai_example.ipynb
+notebook/generate_TTL.prompt
+data/datasets/opsi/mnzpprometne-nesrece-mesecno-od-leta-2019-dalje.csv
+data/datasets/opsi/mnzpprometne-nesrece-mesecno-od-leta-2019-dalje.json
+notebook/generate_column_descriptions.prompt
+data/models/opsi/metadata_generated/mnzpprometne-nesrece-mesecno-od-leta-2019-dalje.metadata.json

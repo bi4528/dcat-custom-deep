@@ -1,0 +1,231 @@
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/pn2024-100-table> a csvw:Table ;
+    csvw:tableSchema [ csvw:column <http://example.org/column/DatumPN>,
+                <http://example.org/column/Drzavljanstvo>,
+                <http://example.org/column/GeoKoordinataX>,
+                <http://example.org/column/GeoKoordinataY>,
+                <http://example.org/column/KlasifikacijaNesrece>,
+                <http://example.org/column/Lokacija>,
+                <http://example.org/column/OpisKraja>,
+                <http://example.org/column/PoskodbaUdelezenca>,
+                <http://example.org/column/Povzrocitelj>,
+                <http://example.org/column/SifraCesteNaselja>,
+                <http://example.org/column/SifraOdsekaUlice>,
+                <http://example.org/column/Spol>,
+                <http://example.org/column/StacionazaDogodka>,
+                <http://example.org/column/StanjePrometa>,
+                <http://example.org/column/StanjeVozisca>,
+                <http://example.org/column/Starost>,
+                <http://example.org/column/TekstCesteNaselja>,
+                <http://example.org/column/TekstOdsekaUlice>,
+                <http://example.org/column/TipNesrece>,
+                <http://example.org/column/UEStalnegaPrebivalisca>,
+                <http://example.org/column/UporabaVarnostnegaPasu>,
+                <http://example.org/column/UpravnaEnotaStoritve>,
+                <http://example.org/column/UraPN>,
+                <http://example.org/column/VNaselju>,
+                <http://example.org/column/VozniskiStazVLetih>,
+                <http://example.org/column/VozniskiStazVMesecih>,
+                <http://example.org/column/VrednostAlkotesta>,
+                <http://example.org/column/VrednostStrokovnegaPregleda>,
+                <http://example.org/column/VremenskeOkoliscine>,
+                <http://example.org/column/VrstaCesteNaselja>,
+                <http://example.org/column/VrstaUdelezenca>,
+                <http://example.org/column/VrstaVozisca>,
+                <http://example.org/column/VzrokNesrece>,
+                <http://example.org/column/ZaporednaStevilkaOsebeVPN>,
+                <http://example.org/column/ZaporednaStevilkaPN> ] .
+
+<http://example.org/column/DatumPN> a csvw:Column ;
+    rdfs:label "datum škode"@sl ;
+    skos:altLabel "datumPN"@sl ;
+    csvw:datatype xsd:date,
+        xsd:integer ;
+    csvw:name "DatumPN" ;
+    csvw:required true ;
+    csvw:title "Stolpec 'DatumPN' označuje datum prometne nesreče v obliki dan-mesec-leto brez ločil (npr. 1012024 za 1. januar 2024)."@sl .
+
+<http://example.org/column/Drzavljanstvo> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "Drzavljanstvo" ;
+    csvw:title "Stolpec 'Drzavljanstvo' označuje državo, katere državljanstvo ima posamezni udeleženec prometne nesreče."@sl .
+
+<http://example.org/column/GeoKoordinataX> a csvw:Column ;
+    rdfs:label "GeoX"@sl ;
+    csvw:datatype xsd:decimal,
+        xsd:integer ;
+    csvw:name "GeoKoordinataX" ;
+    csvw:title "Stolpec 'GeoKoordinataX' predstavlja X koordinato (geografsko lego) kraja prometne nesreče v državnem koordinatnem sistemu."@sl .
+
+<http://example.org/column/GeoKoordinataY> a csvw:Column ;
+    rdfs:label "GeoY"@sl ;
+    csvw:datatype xsd:decimal,
+        xsd:integer ;
+    csvw:name "GeoKoordinataY" ;
+    csvw:title "Stolpec 'GeoKoordinataY' predstavlja Y koordinato (verjetno severno geografsko lego) lokacije prometne nesreče v določenem koordinatnem sistemu."@sl .
+
+<http://example.org/column/KlasifikacijaNesrece> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "KlasifikacijaNesrece" ;
+    csvw:title "Stolpec 'KlasifikacijaNesrece' označuje vrsto posledic prometne nesreče glede na to, ali je prišlo le do materialne škode ali tudi do poškodb udeležencev."@sl .
+
+<http://example.org/column/Lokacija> a csvw:Column ;
+    rdfs:label "lokacija dogodka"@sl ;
+    csvw:datatype xsd:string ;
+    csvw:name "Lokacija" ;
+    csvw:title "Stolpec 'Lokacija' označuje, ali se je prometna nesreča zgodila v naselju ali izven naselja (na cesti)."@sl .
+
+<http://example.org/column/OpisKraja> a csvw:Column ;
+    rdfs:label "lokacija dogodka"@sl ;
+    csvw:datatype xsd:string ;
+    csvw:name "OpisKraja" ;
+    csvw:title "Stolpec 'OpisKraja' opisuje specifično mesto oziroma značilnost lokacije, kjer je prišlo do prometne nesreče (npr. križišče, cesta)."@sl .
+
+<http://example.org/column/PoskodbaUdelezenca> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "PoskodbaUdelezenca" ;
+    csvw:title "Stolpec 'PoskodbaUdelezenca' označuje stopnjo oziroma vrsto telesne poškodbe, ki jo je posamezen udeleženec utrpel v prometni nesreči."@sl .
+
+<http://example.org/column/Povzrocitelj> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "Povzrocitelj" ;
+    csvw:title "Stolpec 'Povzrocitelj' označuje, ali je posamezni udeleženec prometne nesreče njen povzročitelj ali le udeleženec."@sl .
+
+<http://example.org/column/SifraCesteNaselja> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "SifraCesteNaselja" ;
+    csvw:title "Stolpec 'SifraCesteNaselja' vsebuje šifro, ki enolično identificira cesto ali naselje, kjer se je zgodil dogodek."@sl .
+
+<http://example.org/column/SifraOdsekaUlice> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "SifraOdsekaUlice" ;
+    csvw:title "Stolpec 'SifraOdsekaUlice' vsebuje šifro posameznega odseka ulice ali ceste, kjer je prišlo do prometne nesreče."@sl .
+
+<http://example.org/column/Spol> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "Spol" ;
+    csvw:title "Stolpec 'Spol' označuje biološki spol udeleženca prometne nesreče."@sl .
+
+<http://example.org/column/StacionazaDogodka> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "StacionazaDogodka" ;
+    csvw:title "Stolpec 'StacionazaDogodka' označuje oddaljenost oziroma kilometrsko mesto dogodka na določenem odseku ceste ali ulice, izraženo v metrih."@sl .
+
+<http://example.org/column/StanjePrometa> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "StanjePrometa" ;
+    csvw:title "Stolpec 'StanjePrometa' opisuje gostoto in potek prometa na kraju prometne nesreče (npr. tekoč, redek)."@sl .
+
+<http://example.org/column/StanjeVozisca> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "StanjeVozisca" ;
+    csvw:title "Stolpec 'StanjeVozisca' opisuje trenutno fizično stanje površine vozišča (npr. suho, mokro, poledenelo) na kraju prometne nesreče."@sl .
+
+<http://example.org/column/Starost> a csvw:Column ;
+    rdfs:label "starost"@sl ;
+    csvw:datatype xsd:integer,
+        xsd:number ;
+    csvw:name "Starost" ;
+    csvw:title "Stolpec 'Starost' prikazuje starost udeleženca prometne nesreče v letih, pri čemer vrednost -1 pomeni, da podatek ni znan ali ni bil zabeležen."@sl .
+
+<http://example.org/column/TekstCesteNaselja> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "TekstCesteNaselja" ;
+    csvw:title "Stolpec 'TekstCesteNaselja' vsebuje besedilni naziv ceste ali naselja, kjer se je zgodil dogodek."@sl .
+
+<http://example.org/column/TekstOdsekaUlice> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "TekstOdsekaUlice" ;
+    csvw:title "Stolpec 'TekstOdsekaUlice' vsebuje besedilni naziv oziroma ime odseka ulice ali ceste, kjer se je zgodil dogodek."@sl .
+
+<http://example.org/column/TipNesrece> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "TipNesrece" ;
+    csvw:title "Stolpec 'TipNesrece' označuje vrsto prometne nesreče glede na način trčenja ali dogodka (npr. oplaženje, trčenje v objekt, prevrnitev vozila)."@sl .
+
+<http://example.org/column/UEStalnegaPrebivalisca> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "UEStalnegaPrebivalisca" ;
+    csvw:title "Stolpec 'UEStalnegaPrebivalisca' označuje upravno enoto stalnega prebivališča udeleženca prometne nesreče."@sl .
+
+<http://example.org/column/UporabaVarnostnegaPasu> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "UporabaVarnostnegaPasu" ;
+    csvw:title "Stolpec 'UporabaVarnostnegaPasu' označuje, ali je udeleženec prometne nesreče v času dogodka uporabljal varnostni pas."@sl .
+
+<http://example.org/column/UpravnaEnotaStoritve> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "UpravnaEnotaStoritve" ;
+    csvw:title "Stolpec 'UpravnaEnotaStoritve' označuje upravno enoto, na območju katere je bila obravnavana oziroma evidentirana prometna nesreča."@sl .
+
+<http://example.org/column/UraPN> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "UraPN" ;
+    csvw:title "Stolpec 'UraPN' označuje uro dneva, ko se je prometna nesreča zgodila."@sl .
+
+<http://example.org/column/VNaselju> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "VNaselju" ;
+    csvw:title "Stolpec 'VNaselju' označuje, ali se je prometna nesreča zgodila znotraj naselja (DA) ali zunaj naselja (NE)."@sl .
+
+<http://example.org/column/VozniskiStazVLetih> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "VozniskiStazVLetih" ;
+    csvw:title "Stolpec 'VozniskiStazVLetih' prikazuje število let vozniških izkušenj posameznega udeleženca prometne nesreče."@sl .
+
+<http://example.org/column/VozniskiStazVMesecih> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "VozniskiStazVMesecih" ;
+    csvw:title "Stolpec 'VozniskiStazVMesecih' prikazuje število mesecev, koliko časa ima udeleženec vozniški staž."@sl .
+
+<http://example.org/column/VrednostAlkotesta> a csvw:Column ;
+    csvw:datatype xsd:decimal,
+        xsd:string ;
+    csvw:name "VrednostAlkotesta" ;
+    csvw:title "Stolpec 'VrednostAlkotesta' prikazuje izmerjeno vrednost alkohola v izdihanem zraku (v g/L) za posameznega udeleženca prometne nesreče."@sl .
+
+<http://example.org/column/VrednostStrokovnegaPregleda> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "VrednostStrokovnegaPregleda" ;
+    csvw:title "Stolpec 'VrednostStrokovnegaPregleda' prikazuje izmerjeno vrednost alkohola ali drugih substanc v telesu udeleženca, ugotovljeno s strokovnim pregledom po prometni nesre"@sl .
+
+<http://example.org/column/VremenskeOkoliscine> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "VremenskeOkoliscine" ;
+    csvw:title "Stolpec 'VremenskeOkoliscine' opisuje vremenske razmere, v katerih je prišlo do prometne nesreče."@sl .
+
+<http://example.org/column/VrstaCesteNaselja> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "VrstaCesteNaselja" ;
+    csvw:title "Stolpec 'VrstaCesteNaselja' označuje tip ceste ali naselja, kjer se je zgodil dogodek (npr. naselje z uličnim sistemom, regionalna cesta)."@sl .
+
+<http://example.org/column/VrstaUdelezenca> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "VrstaUdelezenca" ;
+    csvw:title "Stolpec 'VrstaUdelezenca' označuje tip oziroma vlogo udeleženca v prometni nesreči, na primer voznik osebnega avtomobila, pešec ali kolesar."@sl .
+
+<http://example.org/column/VrstaVozisca> a csvw:Column ;
+    csvw:datatype xsd:string ;
+    csvw:name "VrstaVozisca" ;
+    csvw:title "Stolpec 'VrstaVozisca' označuje material oziroma tip površine cestišča, na katerem se je zgodil prometni dogodek."@sl .
+
+<http://example.org/column/VzrokNesrece> a csvw:Column ;
+    rdfs:label "vzrok škode"@sl ;
+    csvw:datatype xsd:string ;
+    csvw:name "VzrokNesrece" ;
+    csvw:title "Stolpec 'VzrokNesrece' označuje glavni vzrok ali razlog za nastanek prometne nesreče, kot ga je določila policija ali pristojni organ."@sl .
+
+<http://example.org/column/ZaporednaStevilkaOsebeVPN> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "ZaporednaStevilkaOsebeVPN" ;
+    csvw:title "Stolpec 'ZaporednaStevilkaOsebeVPN' označuje zaporedno številko posamezne osebe, ki je bila udeležena v posameznem prometnem dogodku."@sl .
+
+<http://example.org/column/ZaporednaStevilkaPN> a csvw:Column ;
+    csvw:datatype xsd:integer ;
+    csvw:name "ZaporednaStevilkaPN" ;
+    csvw:title "Stolpec 'ZaporednaStevilkaPN' predstavlja zaporedno številko posamezne prometne nesreče v podatkovni zbirki."@sl .
+

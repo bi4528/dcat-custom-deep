@@ -1,0 +1,12 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "column,description,sample_values",
+                "title": "Stolpec 'column,description,sample_values' vsebuje ime stolpca, njegov opis in primerne vrednosti za boljše razumevanje podatkovne strukture.",
+                "datatype": "string"
+            }
+        ]
+    }
+}

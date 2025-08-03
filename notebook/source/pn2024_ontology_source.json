@@ -1,0 +1,282 @@
+[
+  {
+    "uri": "urn:pn2024-column:ZaporednaStevilkaPN",
+    "label": "ZaporednaStevilkaPN",
+    "definition": "Stolpec 'ZaporednaStevilkaPN' predstavlja zaporedno številko posamezne prometne nesreče v podatkovni zbirki.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: ZaporednaStevilkaPN. Defined as: Stolpec 'ZaporednaStevilkaPN' predstavlja zaporedno številko posamezne prometne nesreče v podatkovni zbirki."
+  },
+  {
+    "uri": "urn:pn2024-column:KlasifikacijaNesrece",
+    "label": "KlasifikacijaNesrece",
+    "definition": "Stolpec 'KlasifikacijaNesrece' označuje vrsto posledic prometne nesreče glede na to, ali je prišlo le do materialne škode ali tudi do poškodb udeležencev.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: KlasifikacijaNesrece. Defined as: Stolpec 'KlasifikacijaNesrece' označuje vrsto posledic prometne nesreče glede na to, ali je prišlo le do materialne škode ali tudi do poškodb udeležencev."
+  },
+  {
+    "uri": "urn:pn2024-column:UpravnaEnotaStoritve",
+    "label": "UpravnaEnotaStoritve",
+    "definition": "Stolpec 'UpravnaEnotaStoritve' označuje upravno enoto, na območju katere je bila obravnavana oziroma evidentirana prometna nesreča.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: UpravnaEnotaStoritve. Defined as: Stolpec 'UpravnaEnotaStoritve' označuje upravno enoto, na območju katere je bila obravnavana oziroma evidentirana prometna nesreča."
+  },
+  {
+    "uri": "urn:pn2024-column:DatumPN",
+    "label": "DatumPN",
+    "definition": "Stolpec 'DatumPN' označuje datum prometne nesreče v obliki dan-mesec-leto brez ločil (npr. 1012024 za 1. januar 2024).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: DatumPN. Defined as: Stolpec 'DatumPN' označuje datum prometne nesreče v obliki dan-mesec-leto brez ločil (npr. 1012024 za 1. januar 2024)."
+  },
+  {
+    "uri": "urn:pn2024-column:UraPN",
+    "label": "UraPN",
+    "definition": "Stolpec 'UraPN' označuje uro dneva, ko se je prometna nesreča zgodila.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: UraPN. Defined as: Stolpec 'UraPN' označuje uro dneva, ko se je prometna nesreča zgodila."
+  },
+  {
+    "uri": "urn:pn2024-column:VNaselju",
+    "label": "VNaselju",
+    "definition": "Stolpec 'VNaselju' označuje, ali se je prometna nesreča zgodila znotraj naselja (DA) ali zunaj naselja (NE).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VNaselju. Defined as: Stolpec 'VNaselju' označuje, ali se je prometna nesreča zgodila znotraj naselja (DA) ali zunaj naselja (NE)."
+  },
+  {
+    "uri": "urn:pn2024-column:Lokacija",
+    "label": "Lokacija",
+    "definition": "Stolpec 'Lokacija' označuje, ali se je prometna nesreča zgodila v naselju ali izven naselja (na cesti).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Lokacija. Defined as: Stolpec 'Lokacija' označuje, ali se je prometna nesreča zgodila v naselju ali izven naselja (na cesti)."
+  },
+  {
+    "uri": "urn:pn2024-column:VrstaCesteNaselja",
+    "label": "VrstaCesteNaselja",
+    "definition": "Stolpec 'VrstaCesteNaselja' označuje tip ceste ali naselja, kjer se je zgodil dogodek (npr. naselje z uličnim sistemom, regionalna cesta).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VrstaCesteNaselja. Defined as: Stolpec 'VrstaCesteNaselja' označuje tip ceste ali naselja, kjer se je zgodil dogodek (npr. naselje z uličnim sistemom, regionalna cesta)."
+  },
+  {
+    "uri": "urn:pn2024-column:SifraCesteNaselja",
+    "label": "SifraCesteNaselja",
+    "definition": "Stolpec 'SifraCesteNaselja' vsebuje šifro, ki enolično identificira cesto ali naselje, kjer se je zgodil dogodek.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: SifraCesteNaselja. Defined as: Stolpec 'SifraCesteNaselja' vsebuje šifro, ki enolično identificira cesto ali naselje, kjer se je zgodil dogodek."
+  },
+  {
+    "uri": "urn:pn2024-column:TekstCesteNaselja",
+    "label": "TekstCesteNaselja",
+    "definition": "Stolpec 'TekstCesteNaselja' vsebuje besedilni naziv ceste ali naselja, kjer se je zgodil dogodek.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: TekstCesteNaselja. Defined as: Stolpec 'TekstCesteNaselja' vsebuje besedilni naziv ceste ali naselja, kjer se je zgodil dogodek."
+  },
+  {
+    "uri": "urn:pn2024-column:SifraOdsekaUlice",
+    "label": "SifraOdsekaUlice",
+    "definition": "Stolpec 'SifraOdsekaUlice' vsebuje šifro posameznega odseka ulice ali ceste, kjer je prišlo do prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: SifraOdsekaUlice. Defined as: Stolpec 'SifraOdsekaUlice' vsebuje šifro posameznega odseka ulice ali ceste, kjer je prišlo do prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:TekstOdsekaUlice",
+    "label": "TekstOdsekaUlice",
+    "definition": "Stolpec 'TekstOdsekaUlice' vsebuje besedilni naziv oziroma ime odseka ulice ali ceste, kjer se je zgodil dogodek.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: TekstOdsekaUlice. Defined as: Stolpec 'TekstOdsekaUlice' vsebuje besedilni naziv oziroma ime odseka ulice ali ceste, kjer se je zgodil dogodek."
+  },
+  {
+    "uri": "urn:pn2024-column:StacionazaDogodka",
+    "label": "StacionazaDogodka",
+    "definition": "Stolpec 'StacionazaDogodka' označuje oddaljenost oziroma kilometrsko mesto dogodka na določenem odseku ceste ali ulice, izraženo v metrih.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: StacionazaDogodka. Defined as: Stolpec 'StacionazaDogodka' označuje oddaljenost oziroma kilometrsko mesto dogodka na določenem odseku ceste ali ulice, izraženo v metrih."
+  },
+  {
+    "uri": "urn:pn2024-column:OpisKraja",
+    "label": "OpisKraja",
+    "definition": "Stolpec 'OpisKraja' opisuje specifično mesto oziroma značilnost lokacije, kjer je prišlo do prometne nesreče (npr. križišče, cesta).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: OpisKraja. Defined as: Stolpec 'OpisKraja' opisuje specifično mesto oziroma značilnost lokacije, kjer je prišlo do prometne nesreče (npr. križišče, cesta)."
+  },
+  {
+    "uri": "urn:pn2024-column:VzrokNesrece",
+    "label": "VzrokNesrece",
+    "definition": "Stolpec 'VzrokNesrece' označuje glavni vzrok ali razlog za nastanek prometne nesreče, kot ga je določila policija ali pristojni organ.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VzrokNesrece. Defined as: Stolpec 'VzrokNesrece' označuje glavni vzrok ali razlog za nastanek prometne nesreče, kot ga je določila policija ali pristojni organ."
+  },
+  {
+    "uri": "urn:pn2024-column:TipNesrece",
+    "label": "TipNesrece",
+    "definition": "Stolpec 'TipNesrece' označuje vrsto prometne nesreče glede na način trčenja ali dogodka (npr. oplaženje, trčenje v objekt, prevrnitev vozila).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: TipNesrece. Defined as: Stolpec 'TipNesrece' označuje vrsto prometne nesreče glede na način trčenja ali dogodka (npr. oplaženje, trčenje v objekt, prevrnitev vozila)."
+  },
+  {
+    "uri": "urn:pn2024-column:VremenskeOkoliscine",
+    "label": "VremenskeOkoliscine",
+    "definition": "Stolpec 'VremenskeOkoliscine' opisuje vremenske razmere, v katerih je prišlo do prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VremenskeOkoliscine. Defined as: Stolpec 'VremenskeOkoliscine' opisuje vremenske razmere, v katerih je prišlo do prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:StanjePrometa",
+    "label": "StanjePrometa",
+    "definition": "Stolpec 'StanjePrometa' opisuje gostoto in potek prometa na kraju prometne nesreče (npr. tekoč, redek).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: StanjePrometa. Defined as: Stolpec 'StanjePrometa' opisuje gostoto in potek prometa na kraju prometne nesreče (npr. tekoč, redek)."
+  },
+  {
+    "uri": "urn:pn2024-column:StanjeVozisca",
+    "label": "StanjeVozisca",
+    "definition": "Stolpec 'StanjeVozisca' opisuje trenutno fizično stanje površine vozišča (npr. suho, mokro, poledenelo) na kraju prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: StanjeVozisca. Defined as: Stolpec 'StanjeVozisca' opisuje trenutno fizično stanje površine vozišča (npr. suho, mokro, poledenelo) na kraju prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:VrstaVozisca",
+    "label": "VrstaVozisca",
+    "definition": "Stolpec 'VrstaVozisca' označuje material oziroma tip površine cestišča, na katerem se je zgodil prometni dogodek.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VrstaVozisca. Defined as: Stolpec 'VrstaVozisca' označuje material oziroma tip površine cestišča, na katerem se je zgodil prometni dogodek."
+  },
+  {
+    "uri": "urn:pn2024-column:GeoKoordinataX",
+    "label": "GeoKoordinataX",
+    "definition": "Stolpec 'GeoKoordinataX' predstavlja X koordinato (geografsko lego) kraja prometne nesreče v državnem koordinatnem sistemu.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: GeoKoordinataX. Defined as: Stolpec 'GeoKoordinataX' predstavlja X koordinato (geografsko lego) kraja prometne nesreče v državnem koordinatnem sistemu."
+  },
+  {
+    "uri": "urn:pn2024-column:GeoKoordinataY",
+    "label": "GeoKoordinataY",
+    "definition": "Stolpec 'GeoKoordinataY' predstavlja Y koordinato (verjetno severno geografsko lego) lokacije prometne nesreče v določenem koordinatnem sistemu.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: GeoKoordinataY. Defined as: Stolpec 'GeoKoordinataY' predstavlja Y koordinato (verjetno severno geografsko lego) lokacije prometne nesreče v določenem koordinatnem sistemu."
+  },
+  {
+    "uri": "urn:pn2024-column:ZaporednaStevilkaOsebeVPN",
+    "label": "ZaporednaStevilkaOsebeVPN",
+    "definition": "Stolpec 'ZaporednaStevilkaOsebeVPN' označuje zaporedno številko posamezne osebe, ki je bila udeležena v posameznem prometnem dogodku.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: ZaporednaStevilkaOsebeVPN. Defined as: Stolpec 'ZaporednaStevilkaOsebeVPN' označuje zaporedno številko posamezne osebe, ki je bila udeležena v posameznem prometnem dogodku."
+  },
+  {
+    "uri": "urn:pn2024-column:Povzrocitelj",
+    "label": "Povzrocitelj",
+    "definition": "Stolpec 'Povzrocitelj' označuje, ali je posamezni udeleženec prometne nesreče njen povzročitelj ali le udeleženec.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Povzrocitelj. Defined as: Stolpec 'Povzrocitelj' označuje, ali je posamezni udeleženec prometne nesreče njen povzročitelj ali le udeleženec."
+  },
+  {
+    "uri": "urn:pn2024-column:Starost",
+    "label": "Starost",
+    "definition": "Stolpec 'Starost' prikazuje starost udeleženca prometne nesreče v letih, pri čemer vrednost -1 pomeni, da podatek ni znan ali ni bil zabeležen.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Starost. Defined as: Stolpec 'Starost' prikazuje starost udeleženca prometne nesreče v letih, pri čemer vrednost -1 pomeni, da podatek ni znan ali ni bil zabeležen."
+  },
+  {
+    "uri": "urn:pn2024-column:Spol",
+    "label": "Spol",
+    "definition": "Stolpec 'Spol' označuje biološki spol udeleženca prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Spol. Defined as: Stolpec 'Spol' označuje biološki spol udeleženca prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:UEStalnegaPrebivalisca",
+    "label": "UEStalnegaPrebivalisca",
+    "definition": "Stolpec 'UEStalnegaPrebivalisca' označuje upravno enoto stalnega prebivališča udeleženca prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: UEStalnegaPrebivalisca. Defined as: Stolpec 'UEStalnegaPrebivalisca' označuje upravno enoto stalnega prebivališča udeleženca prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:Drzavljanstvo",
+    "label": "Drzavljanstvo",
+    "definition": "Stolpec 'Drzavljanstvo' označuje državo, katere državljanstvo ima posamezni udeleženec prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Drzavljanstvo. Defined as: Stolpec 'Drzavljanstvo' označuje državo, katere državljanstvo ima posamezni udeleženec prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:PoskodbaUdelezenca",
+    "label": "PoskodbaUdelezenca",
+    "definition": "Stolpec 'PoskodbaUdelezenca' označuje stopnjo oziroma vrsto telesne poškodbe, ki jo je posamezen udeleženec utrpel v prometni nesreči.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: PoskodbaUdelezenca. Defined as: Stolpec 'PoskodbaUdelezenca' označuje stopnjo oziroma vrsto telesne poškodbe, ki jo je posamezen udeleženec utrpel v prometni nesreči."
+  },
+  {
+    "uri": "urn:pn2024-column:VrstaUdelezenca",
+    "label": "VrstaUdelezenca",
+    "definition": "Stolpec 'VrstaUdelezenca' označuje tip oziroma vlogo udeleženca v prometni nesreči, na primer voznik osebnega avtomobila, pešec ali kolesar.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VrstaUdelezenca. Defined as: Stolpec 'VrstaUdelezenca' označuje tip oziroma vlogo udeleženca v prometni nesreči, na primer voznik osebnega avtomobila, pešec ali kolesar."
+  },
+  {
+    "uri": "urn:pn2024-column:UporabaVarnostnegaPasu",
+    "label": "UporabaVarnostnegaPasu",
+    "definition": "Stolpec 'UporabaVarnostnegaPasu' označuje, ali je udeleženec prometne nesreče v času dogodka uporabljal varnostni pas.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: UporabaVarnostnegaPasu. Defined as: Stolpec 'UporabaVarnostnegaPasu' označuje, ali je udeleženec prometne nesreče v času dogodka uporabljal varnostni pas."
+  },
+  {
+    "uri": "urn:pn2024-column:VozniskiStazVLetih",
+    "label": "VozniskiStazVLetih",
+    "definition": "Stolpec 'VozniskiStazVLetih' prikazuje število let vozniških izkušenj posameznega udeleženca prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VozniskiStazVLetih. Defined as: Stolpec 'VozniskiStazVLetih' prikazuje število let vozniških izkušenj posameznega udeleženca prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:VozniskiStazVMesecih",
+    "label": "VozniskiStazVMesecih",
+    "definition": "Stolpec 'VozniskiStazVMesecih' prikazuje število mesecev, koliko časa ima udeleženec vozniški staž.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VozniskiStazVMesecih. Defined as: Stolpec 'VozniskiStazVMesecih' prikazuje število mesecev, koliko časa ima udeleženec vozniški staž."
+  },
+  {
+    "uri": "urn:pn2024-column:VrednostAlkotesta",
+    "label": "VrednostAlkotesta",
+    "definition": "Stolpec 'VrednostAlkotesta' prikazuje izmerjeno vrednost alkohola v izdihanem zraku (v g/L) za posameznega udeleženca prometne nesreče.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VrednostAlkotesta. Defined as: Stolpec 'VrednostAlkotesta' prikazuje izmerjeno vrednost alkohola v izdihanem zraku (v g/L) za posameznega udeleženca prometne nesreče."
+  },
+  {
+    "uri": "urn:pn2024-column:VrednostStrokovnegaPregleda",
+    "label": "VrednostStrokovnegaPregleda",
+    "definition": "Stolpec 'VrednostStrokovnegaPregleda' prikazuje izmerjeno vrednost alkohola ali drugih substanc v telesu udeleženca, ugotovljeno s strokovnim pregledom po prometni nesre",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: VrednostStrokovnegaPregleda. Defined as: Stolpec 'VrednostStrokovnegaPregleda' prikazuje izmerjeno vrednost alkohola ali drugih substanc v telesu udeleženca, ugotovljeno s strokovnim pregledom po prometni nesre"
+  }
+]

@@ -1,0 +1,99 @@
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix duv: <http://www.w3.org/ns/duv#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix pz: <http://onto.mju.gov.si/podatkovni-zemljevid#> .
+@prefix locn: <http://w3.org/ns/locn#> .
+@prefix ex: <http://example.org/insurance#> .
+
+ex:PreglednicaZahtevkovZavarovanja a csvw:Table ;
+  csvw:tableSchema [
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "datum_skode" ;
+      csvw:title "datum škodnega dogodka"@sl ;
+      dct:description "Datum, ko je bila škoda prijavljena zavarovalnici."@sl ;
+      csvw:datatype xsd:date ;
+      csvw:required true ;
+      rdfs:label "datum škode"@sl ;
+      skos:altLabel "datumPN"@sl
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "vzrok_skode" ;
+      csvw:title "vzrok nastanka škode"@sl ;
+      dct:description "Opis ali klasifikacija primarnega vzroka škode."@sl ;
+      csvw:datatype xsd:string ;
+      rdfs:label "vzrok škode"@sl
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "kraj_dogodka" ;
+      csvw:title "kraj dogodka"@sl ;
+      dct:description "Ime kraja ali regije, kjer se je zgodil škodni primer."@sl ;
+      csvw:datatype xsd:string ;
+      rdfs:label "lokacija dogodka"@sl
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "vrsta_skode" ;
+      csvw:title "vrsta škode"@sl ;
+      dct:description "Materialna ali telesna škoda, lahko tudi kombinacija."@sl ;
+      csvw:datatype xsd:string
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "starost_stranke" ;
+      csvw:title "starost prijavitelja"@sl ;
+      dct:description "Starost osebe, ki je prijavila škodo, v letih."@sl ;
+      csvw:datatype xsd:integer ;
+      rdfs:label "starost"@sl
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "spol_stranke" ;
+      csvw:title "spol osebe"@sl ;
+      dct:description "Spol zavarovanca ali prijavitelja dogodka."@sl ;
+      csvw:datatype xsd:string
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "geo_x" ;
+      csvw:title "X koordinata"@sl ;
+      dct:description "Geografska širina dogodka v državnem koordinatnem sistemu."@sl ;
+      csvw:datatype xsd:decimal ;
+      rdfs:label "GeoX"@sl
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "geo_y" ;
+      csvw:title "Y koordinata"@sl ;
+      dct:description "Geografska dolžina dogodka v državnem koordinatnem sistemu."@sl ;
+      csvw:datatype xsd:decimal ;
+      rdfs:label "GeoY"@sl
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "alko_test" ;
+      csvw:title "rezultat alkotesta"@sl ;
+      dct:description "Izmerjena vrednost alkohola pri osebi, v g/L."@sl ;
+      csvw:datatype xsd:decimal
+    ] ;
+    csvw:column [
+      a csvw:Column ;
+      csvw:name "staz_voznik_leta" ;
+      csvw:title "vozniski staž v letih"@sl ;
+      csvw:datatype xsd:integer ;
+      dct:description "Vozniške izkušnje prijavitelja v letih."@sl
+    ]
+  ] .

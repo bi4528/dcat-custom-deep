@@ -3,14 +3,14 @@
 pipeline: both  # Options: metadata, columns, both
 
 paths:
-  dataset_for_test: "./data/datasets/opsi-test"
-  dataset_for_train: "./data/datasets/opsi-train"
-  faiss_index_metadata_path: "./data/models/faiss-index-general.index"
-  faiss_index_column_path: "./data/models/faiss-index-columns.index"
-  id_metadata_tracker_json: "./data/models/id_tracker.json"
-  id_column_tracker_json: "./data/models/id_tracker_columns.json"
-  metadata_dir: "./data/models/metadata_generated"
-  columns_dir: "./data/models/column_metadata"
+  # dataset_for_test: "./data/datasets/opsi-test"
+  # dataset_for_train: "./data/datasets/opsi-train"
+  # faiss_index_metadata_path: "./data/models/faiss-index-general.index"
+  # faiss_index_column_path: "./data/models/faiss-index-columns.index"
+  # id_metadata_tracker_json: "./data/models/id_tracker.json"
+  # id_column_tracker_json: "./data/models/id_tracker_columns.json"
+  # metadata_dir: "./data/models/metadata_generated"
+  # columns_dir: "./data/models/column_metadata"
   reports_dir: "./data/reports"
   ontology_terms_json: "./data/ontology/ontology_terms.json"
   faiss_index_ontology_path: "./data/models/ontology_index.faiss"
@@ -26,13 +26,30 @@ paths:
   human_terms_json: "./data/ontology/human_terms_enriched.json"
   mouse_terms_json: "./data/ontology/mouse_terms_enriched.json"
   mouse_testset: "./data/datasets/anatomy-dataset/mouse_testset.json"
+  #OPSI
+  dataset_opsi: "./data/datasets/opsi"
+  dataset_for_train: "./data/datasets/opsi"
+  dataset_for_test: "./data/datasets/opsi"
+  faiss_index_metadata_path: "./data/models/opsi/faiss-index-general.index"
+  #faiss_index_column_path: "./data/models/opsi/faiss-index-columns.index"
+  id_metadata_tracker_json: "./data/models/opsi/id_tracker.json"
+  #id_column_tracker_json: "./data/models/opsi/id_tracker_columns.json"
+  metadata_dir: "./data/models/opsi/metadata_generated"
+  columns_dir: "./data/models/opsi/column_metadata"
+  #OPSI 2nd
+  dataset_for_test: "./data/test"
+  opsi_column_examples_csv: "./data/opsi_column_examples.csv"
+  faiss_index_column_path: "./data/opsi_faiss.index"
+  id_column_tracker_json: "./data/opsi_column_ids.json"
+  columns_dir: ./result/generated/
 
 namespaces:
   mouse: "http://mouse.owl#"
   human: "http://human.owl#"
 
 models:
-  embedding_model: "intfloat/multilingual-e5-large"
+  # embedding_model: "intfloat/multilingual-e5-large"
+  embedding_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
   generation_model: "google/gemma-2b-it"
 
 remote:
@@ -45,7 +62,8 @@ logging:
   log_file: null  # Optionally set to a file path if you want to log to file
 
 k_neighbours: 3
-batch_size: 16
+# batch_size: 16
+batch_size: 4
 
 # download
 data_load:

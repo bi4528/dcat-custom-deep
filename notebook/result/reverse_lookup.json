@@ -1,0 +1,12 @@
+{
+  "n16ce517f066c4ab4961e42cfc37c28b2b2": "urn:pn2024-column:DatumPN",
+  "n16ce517f066c4ab4961e42cfc37c28b2b3": "urn:pn2024-column:VzrokNesrece",
+  "n16ce517f066c4ab4961e42cfc37c28b2b4": "urn:pn2024-column:OpisKraja",
+  "n16ce517f066c4ab4961e42cfc37c28b2b5": "urn:pn2024-column:PoskodbaUdelezenca",
+  "n16ce517f066c4ab4961e42cfc37c28b2b6": "urn:pn2024-column:Starost",
+  "n16ce517f066c4ab4961e42cfc37c28b2b7": "urn:pn2024-column:Spol",
+  "n16ce517f066c4ab4961e42cfc37c28b2b8": "urn:pn2024-column:GeoKoordinataX",
+  "n16ce517f066c4ab4961e42cfc37c28b2b9": "urn:pn2024-column:GeoKoordinataY",
+  "n16ce517f066c4ab4961e42cfc37c28b2b10": "urn:pn2024-column:VrednostAlkotesta",
+  "n16ce517f066c4ab4961e42cfc37c28b2b11": "urn:pn2024-column:VozniskiStazVLetih"
+}

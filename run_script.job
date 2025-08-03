@@ -8,4 +8,4 @@
 
 source ~/ckanenv/bin/activate
 
-srun python -u 'src/ontology_indexing.py'
+srun python -u 'notebook/run_csvw_matcher.py'

@@ -1,0 +1,182 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "ZaporednaStevilkaPN",
+                "title": "Stolpec 'ZaporednaStevilkaPN' predstavlja zaporedno številko posamezne prometne nesreče v podatkovni zbirki.",
+                "datatype": "integer"
+            },
+            {
+                "name": "KlasifikacijaNesrece",
+                "title": "Stolpec 'KlasifikacijaNesrece' označuje vrsto posledic prometne nesreče glede na to, ali je prišlo le do materialne škode ali tudi do poškodb udeležencev.",
+                "datatype": "string"
+            },
+            {
+                "name": "UpravnaEnotaStoritve",
+                "title": "Stolpec 'UpravnaEnotaStoritve' označuje upravno enoto, na območju katere je bila obravnavana oziroma evidentirana prometna nesreča.",
+                "datatype": "string"
+            },
+            {
+                "name": "DatumPN",
+                "title": "Stolpec 'DatumPN' označuje datum prometne nesreče v obliki dan-mesec-leto brez ločil (npr. 1012024 za 1. januar 2024).",
+                "datatype": "integer"
+            },
+            {
+                "name": "UraPN",
+                "title": "Stolpec 'UraPN' označuje uro dneva, ko se je prometna nesreča zgodila.",
+                "datatype": "integer"
+            },
+            {
+                "name": "VNaselju",
+                "title": "Stolpec 'VNaselju' označuje, ali se je prometna nesreča zgodila znotraj naselja (DA) ali zunaj naselja (NE).",
+                "datatype": "string"
+            },
+            {
+                "name": "Lokacija",
+                "title": "Stolpec 'Lokacija' označuje, ali se je prometna nesreča zgodila v naselju ali izven naselja (na cesti).",
+                "datatype": "string"
+            },
+            {
+                "name": "VrstaCesteNaselja",
+                "title": "Stolpec 'VrstaCesteNaselja' označuje tip ceste ali naselja, kjer se je zgodil dogodek (npr. naselje z uličnim sistemom, regionalna cesta).",
+                "datatype": "string"
+            },
+            {
+                "name": "SifraCesteNaselja",
+                "title": "Stolpec 'SifraCesteNaselja' vsebuje šifro, ki enolično identificira cesto ali naselje, kjer se je zgodil dogodek.",
+                "datatype": "integer"
+            },
+            {
+                "name": "TekstCesteNaselja",
+                "title": "Stolpec 'TekstCesteNaselja' vsebuje besedilni naziv ceste ali naselja, kjer se je zgodil dogodek.",
+                "datatype": "string"
+            },
+            {
+                "name": "SifraOdsekaUlice",
+                "title": "Stolpec 'SifraOdsekaUlice' vsebuje šifro posameznega odseka ulice ali ceste, kjer je prišlo do prometne nesreče.",
+                "datatype": "integer"
+            },
+            {
+                "name": "TekstOdsekaUlice",
+                "title": "Stolpec 'TekstOdsekaUlice' vsebuje besedilni naziv oziroma ime odseka ulice ali ceste, kjer se je zgodil dogodek.",
+                "datatype": "string"
+            },
+            {
+                "name": "StacionazaDogodka",
+                "title": "Stolpec 'StacionazaDogodka' označuje oddaljenost oziroma kilometrsko mesto dogodka na določenem odseku ceste ali ulice, izraženo v metrih.",
+                "datatype": "integer"
+            },
+            {
+                "name": "OpisKraja",
+                "title": "Stolpec 'OpisKraja' opisuje specifično mesto oziroma značilnost lokacije, kjer je prišlo do prometne nesreče (npr. križišče, cesta).",
+                "datatype": "string"
+            },
+            {
+                "name": "VzrokNesrece",
+                "title": "Stolpec 'VzrokNesrece' označuje glavni vzrok ali razlog za nastanek prometne nesreče, kot ga je določila policija ali pristojni organ.",
+                "datatype": "string"
+            },
+            {
+                "name": "TipNesrece",
+                "title": "Stolpec 'TipNesrece' označuje vrsto prometne nesreče glede na način trčenja ali dogodka (npr. oplaženje, trčenje v objekt, prevrnitev vozila).",
+                "datatype": "string"
+            },
+            {
+                "name": "VremenskeOkoliscine",
+                "title": "Stolpec 'VremenskeOkoliscine' opisuje vremenske razmere, v katerih je prišlo do prometne nesreče.",
+                "datatype": "string"
+            },
+            {
+                "name": "StanjePrometa",
+                "title": "Stolpec 'StanjePrometa' opisuje gostoto in potek prometa na kraju prometne nesreče (npr. tekoč, redek).",
+                "datatype": "string"
+            },
+            {
+                "name": "StanjeVozisca",
+                "title": "Stolpec 'StanjeVozisca' opisuje trenutno fizično stanje površine vozišča (npr. suho, mokro, poledenelo) na kraju prometne nesreče.",
+                "datatype": "string"
+            },
+            {
+                "name": "VrstaVozisca",
+                "title": "Stolpec 'VrstaVozisca' označuje material oziroma tip površine cestišča, na katerem se je zgodil prometni dogodek.",
+                "datatype": "string"
+            },
+            {
+                "name": "GeoKoordinataX",
+                "title": "Stolpec 'GeoKoordinataX' predstavlja X koordinato (geografsko lego) kraja prometne nesreče v državnem koordinatnem sistemu.",
+                "datatype": "integer"
+            },
+            {
+                "name": "GeoKoordinataY",
+                "title": "Stolpec 'GeoKoordinataY' predstavlja Y koordinato (verjetno severno geografsko lego) lokacije prometne nesreče v določenem koordinatnem sistemu.",
+                "datatype": "integer"
+            },
+            {
+                "name": "ZaporednaStevilkaOsebeVPN",
+                "title": "Stolpec 'ZaporednaStevilkaOsebeVPN' označuje zaporedno številko posamezne osebe, ki je bila udeležena v posameznem prometnem dogodku.",
+                "datatype": "integer"
+            },
+            {
+                "name": "Povzrocitelj",
+                "title": "Stolpec 'Povzrocitelj' označuje, ali je posamezni udeleženec prometne nesreče njen povzročitelj ali le udeleženec.",
+                "datatype": "string"
+            },
+            {
+                "name": "Starost",
+                "title": "Stolpec 'Starost' prikazuje starost udeleženca prometne nesreče v letih, pri čemer vrednost -1 pomeni, da podatek ni znan ali ni bil zabeležen.",
+                "datatype": "number"
+            },
+            {
+                "name": "Spol",
+                "title": "Stolpec 'Spol' označuje biološki spol udeleženca prometne nesreče.",
+                "datatype": "string"
+            },
+            {
+                "name": "UEStalnegaPrebivalisca",
+                "title": "Stolpec 'UEStalnegaPrebivalisca' označuje upravno enoto stalnega prebivališča udeleženca prometne nesreče.",
+                "datatype": "string"
+            },
+            {
+                "name": "Drzavljanstvo",
+                "title": "Stolpec 'Drzavljanstvo' označuje državo, katere državljanstvo ima posamezni udeleženec prometne nesreče.",
+                "datatype": "string"
+            },
+            {
+                "name": "PoskodbaUdelezenca",
+                "title": "Stolpec 'PoskodbaUdelezenca' označuje stopnjo oziroma vrsto telesne poškodbe, ki jo je posamezen udeleženec utrpel v prometni nesreči.",
+                "datatype": "string"
+            },
+            {
+                "name": "VrstaUdelezenca",
+                "title": "Stolpec 'VrstaUdelezenca' označuje tip oziroma vlogo udeleženca v prometni nesreči, na primer voznik osebnega avtomobila, pešec ali kolesar.",
+                "datatype": "string"
+            },
+            {
+                "name": "UporabaVarnostnegaPasu",
+                "title": "Stolpec 'UporabaVarnostnegaPasu' označuje, ali je udeleženec prometne nesreče v času dogodka uporabljal varnostni pas.",
+                "datatype": "string"
+            },
+            {
+                "name": "VozniskiStazVLetih",
+                "title": "Stolpec 'VozniskiStazVLetih' prikazuje število let vozniških izkušenj posameznega udeleženca prometne nesreče.",
+                "datatype": "integer"
+            },
+            {
+                "name": "VozniskiStazVMesecih",
+                "title": "Stolpec 'VozniskiStazVMesecih' prikazuje število mesecev, koliko časa ima udeleženec vozniški staž.",
+                "datatype": "integer"
+            },
+            {
+                "name": "VrednostAlkotesta",
+                "title": "Stolpec 'VrednostAlkotesta' prikazuje izmerjeno vrednost alkohola v izdihanem zraku (v g/L) za posameznega udeleženca prometne nesreče.",
+                "datatype": "string"
+            },
+            {
+                "name": "VrednostStrokovnegaPregleda",
+                "title": "Stolpec 'VrednostStrokovnegaPregleda' prikazuje izmerjeno vrednost alkohola ali drugih substanc v telesu udeleženca, ugotovljeno s strokovnim pregledom po prometni nesre",
+                "datatype": "integer"
+            }
+        ]
+    }
+}

@@ -1,0 +1,151 @@
+column,description,sample_values
+ZaporednaStevilkaPN,številka za štetje in ločevanje posamezne prometne nesreče,"1
+2
+3
+4
+5"
+KlasifikacijaNesrece,klasifikacija nesreče glede na posledice (Izračuna se avtomatično glede na najhujšo posledico pri udeležencih v prometni nesreči),"Z MATERIALNO ŠKODO
+Z LAŽJO TELESNO POŠKODBO
+S HUDO TELESNO POŠKODBO"
+UpravnaEnotaStoritve,"upravna enota, na območju katere se je zgodila prometna nesreča","LJUBLJANA
+TREBNJE
+KRANJ
+ČRNOMELJ
+MARIBOR"
+DatumPN,datum nesreče (format: dd.mm.llll),"1012024
+2012024
+3012024
+4012024
+5012024"
+UraPN,ura nesreče (format: hh.mm),"0
+1
+2
+4
+10"
+VNaselju,indikator ali se je nesreča zgodila v naselju (D) ali izven (N),"DA
+NE"
+Lokacija,lokacija nesreče,"NASELJE
+CESTA"
+VrstaCesteNaselja,vrsta ceste ali naselja na kateri je prišlo do nesreče,"NASELJE Z ULIČNIM SISTEMOM
+REGIONALNA CESTA
+AVTOCESTA
+NASELJE BREZ ULIČNEGA SISTEMA
+REGIONALNA CESTA II. REDA"
+SifraCesteNaselja,oznaka ceste ali šifra naselja kjer je prišlo do nesreče,"25001
+00215
+000A2
+00217
+64033"
+TekstCesteNaselja,"tekst ceste ali naselja, kjer je prišlo do nesreče","LJUBLJANA
+TREBNJE-MOKRONOG-BOŠTANJ
+KARAVANKE-LJ-NM-OBREŽJE
+LIVOLD - KANIŽARICA
+MARIBOR"
+SifraOdsekaUlice,"oznaka odseka ceste ali šifra ulice, kjer je prišlo do nesreče","25175
+28501
+1162
+6
+1209"
+TekstOdsekaUlice,"tekst odseka ali ulice, kjer je prišlo do nesreče","TRG OSVOBODILNE FRONTE
+BLEIWEISOVA CESTA
+TREBNJE-MOKRONOG
+PODTABOR-KRANJ Z
+BREZOVICA-KANIŽARICA"
+StacionazaDogodka,"točna stacionaža ali hišna številka, kjer je prišlo do nesreče","3
+30
+3000
+5250
+13099"
+OpisKraja,opis prizorišča nesreče,"KRIŽIŠČE
+CESTA
+PARKIRNI PROSTOR
+KROŽNO KRIŽIŠČE
+PREHOD ZA PEŠCE"
+VzrokNesrece,glavni vzrok nesreče,"OSTALO
+NEPRILAGOJENA HITROST
+NEPRAVILNA STRAN / SMER VOŽNJE
+PREMIKI Z VOZILOM
+NEUSTREZNA VARNOSTNA RAZDALJA"
+TipNesrece,tip nesreče,"OPLAŽENJE
+TRČENJE V OBJEKT
+PREVRNITEV VOZILA
+OSTALO
+TRČENJE V STOJEČE / PARKIRANO VOZILO"
+VremenskeOkoliscine,vremenske okoliščine v času nesreče,"DEŽEVNO
+JASNO
+NEZNANO
+OBLAČNO
+MEGLA"
+StanjePrometa,stanje prometa v času nesreče,"TEKOČ (NORMALEN)
+REDEK
+NEZNANO
+GOST"
+StanjeVozisca,stanje vozišča v času nesreče,"MOKRO
+SUHO
+OSTALO
+POLEDENELO - NEPOSIPANO
+BLATNO"
+VrstaVozisca,stanje površine vozišča v času nesreče,"ASFALT
+MAKADAM
+BETON"
+GeoKoordinataX,Geo Koordinata X (Gauß-Krüger-jev koordinatni sistem),"0
+101890
+87678
+126551
+46891"
+GeoKoordinataY,Geo Koordinata Y (Gauß-Krüger-jev koordinatni sistem),"0
+461391
+503020
+447263
+510241"
+ZaporednaStevilkaOsebeVPN,"številka za štetje in ločevanje oseb, udeleženih v prometnih nesrečah","1
+2
+3
+4
+5"
+Povzrocitelj,kot kaj nastopa oseba v prometni nesreči,"UDELEŽENEC
+POVZROČITELJ"
+Starost,starost osebe (LL),"29
+32
+-1
+38
+28"
+Spol,spol,"MOŠKI
+ŽENSKI"
+UEStalnegaPrebivalisca,upravna enota stalnega prebivališča,"LJUBLJANA
+CELJE
+ČRNOMELJ
+SLOVENSKA BISTRICA
+KRANJ"
+Drzavljanstvo,državljanstvo osebe,"SEVERNA MAKEDONIJA
+SLOVENIJA
+BOSNA IN HERCEGOVINA
+AVSTRIJA
+KOSOVO"
+PoskodbaUdelezenca,poškodba osebe,"BREZ POŠKODBE
+LAŽJA TELESNA POŠKODBA
+HUDA TELESNA POŠKODBA"
+VrstaUdelezenca,vrsta udeleženca v prometu,"VOZNIK OSEBNEGA AVTOMOBILA
+OSTALO
+VOZNIK MOTORNEGA KOLESA
+VOZNIK TOVORNEGA VOZILA
+POTNIK"
+UporabaVarnostnegaPasu,ali je oseba uporabljala varnostni pas ali čelado (polje se interpretira v odvisnosti od vrste udeleženca),"DA
+NEZNANO
+NE"
+VozniskiStazVLetih,"vozniški staž osebe za kategorijo, ki jo potrebuje glede na vrsto udeleženca v prometu (LL)","0
+13
+11
+8
+35"
+VozniskiStazVMesecih,"vozniški staž osebe za kategorijo, ki jo potrebuje glede na vrsto udeleženca v prometu (MM)","0
+1
+5
+2
+7"
+VrednostAlkotesta,"vrednost alkotesta za osebo, če je bil opravljen (n.nn v enoti mg alkohola/liter izdihanega zraka (mg/l))","0
+0,72
+0,42
+0,8
+1"
+VrednostStrokovnegaPregleda,"vrednost strokovnega pregleda za osebo, če je bil odrejen in so rezultati že znani (n.nn v enoti g alkohola/kg krvi (g/kg))",0

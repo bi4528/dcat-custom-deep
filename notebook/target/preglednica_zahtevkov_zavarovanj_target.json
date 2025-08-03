@@ -1,0 +1,84 @@
+[
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b2",
+    "label": "datum škodnega dogodka",
+    "definition": "Datum, ko je bila škoda prijavljena zavarovalnici.",
+    "synonyms": [
+      "datumPN"
+    ],
+    "superclasses": [],
+    "text_for_embedding": "Concept: datum škodnega dogodka. Also known as: datumPN. Defined as: Datum, ko je bila škoda prijavljena zavarovalnici."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b3",
+    "label": "vzrok nastanka škode",
+    "definition": "Opis ali klasifikacija primarnega vzroka škode.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: vzrok nastanka škode. Defined as: Opis ali klasifikacija primarnega vzroka škode."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b4",
+    "label": "kraj dogodka",
+    "definition": "Ime kraja ali regije, kjer se je zgodil škodni primer.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: kraj dogodka. Defined as: Ime kraja ali regije, kjer se je zgodil škodni primer."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b5",
+    "label": "vrsta škode",
+    "definition": "Materialna ali telesna škoda, lahko tudi kombinacija.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: vrsta škode. Defined as: Materialna ali telesna škoda, lahko tudi kombinacija."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b6",
+    "label": "starost prijavitelja",
+    "definition": "Starost osebe, ki je prijavila škodo, v letih.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: starost prijavitelja. Defined as: Starost osebe, ki je prijavila škodo, v letih."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b7",
+    "label": "spol osebe",
+    "definition": "Spol zavarovanca ali prijavitelja dogodka.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: spol osebe. Defined as: Spol zavarovanca ali prijavitelja dogodka."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b8",
+    "label": "X koordinata",
+    "definition": "Geografska širina dogodka v državnem koordinatnem sistemu.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: X koordinata. Defined as: Geografska širina dogodka v državnem koordinatnem sistemu."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b9",
+    "label": "Y koordinata",
+    "definition": "Geografska dolžina dogodka v državnem koordinatnem sistemu.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Y koordinata. Defined as: Geografska dolžina dogodka v državnem koordinatnem sistemu."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b10",
+    "label": "rezultat alkotesta",
+    "definition": "Izmerjena vrednost alkohola pri osebi, v g/L.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: rezultat alkotesta. Defined as: Izmerjena vrednost alkohola pri osebi, v g/L."
+  },
+  {
+    "uri": "n16ce517f066c4ab4961e42cfc37c28b2b11",
+    "label": "vozniski staž v letih",
+    "definition": "Vozniške izkušnje prijavitelja v letih.",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: vozniski staž v letih. Defined as: Vozniške izkušnje prijavitelja v letih."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Naziv",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Naziv"
+    ],
+    "note": "Naziv parkirišča; v obeh shemah podan kot Naziv."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Lokacijska koordinata (GMAPS - WGS84)"
+    ],
+    "note": "Obe shemi hranita koordinate v istem formatu."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Plačljivo",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Plačljivo"
+    ],
+    "note": "Plačljivost parkirišča (DA/NE)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Cena",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Cena"
+    ],
+    "note": "Cena parkiranja (npr. 0,60 EUR)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število parkirnih mest",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Število parkirnih mest"
+    ],
+    "note": "Kapaciteta parkirišča (število mest)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Električna polnilnica",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Električna polnilnica"
+    ],
+    "note": "Boolean atribut prisotnosti električne polnilnice."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest z električno polnilnico",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Število mest z električno polnilnico"
+    ],
+    "note": "Kapaciteta mest z električno polnilnico."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest za invalide",
+    "target_dataset": "Velenje",
+    "target_columns": [
+      "Število mest za invalide"
+    ],
+    "note": "Kapaciteta invalidskih mest."
+  }
+]

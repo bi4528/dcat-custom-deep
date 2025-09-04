@@ -1,0 +1,10 @@
+[
+  {
+    "uri": "auto:naziv_lokacijska_koordinata_gmaps_wgs84_pla_ljivo_cena_tevilo_parkirnih_mest_elektri_na_polnilnica_tevilo_mest_z_elektri_no_polnilnico",
+    "label": "Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico",
+    "definition": "Koordinata ali lokacijski atribut 'Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico' (geografska lega).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico. Type: xsd:decimal. Examples: 60 EUR;731;da;2, 60 EUR;216;ne;0, 40 EUR;564;ne;0. Defined as: Koordinata ali lokacijski atribut 'Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico' (geografska lega)."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "uri": "auto:zap_t_lokacija_naslov",
+    "label": "ZAP ŠT.;LOKACIJA;NASLOV",
+    "definition": "Številski atribut 'ZAP ŠT.;LOKACIJA;NASLOV' (količina ali kapaciteta).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: ZAP ŠT.;LOKACIJA;NASLOV. Type: xsd:string. Examples:  8312 Podbočje,  8270 Krško,  8270 Krško. Defined as: Številski atribut 'ZAP ŠT.;LOKACIJA;NASLOV' (količina ali kapaciteta)."
+  }
+]

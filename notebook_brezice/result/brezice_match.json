@@ -1,0 +1,296 @@
+[
+  {
+    "source_uri": "auto:naziv",
+    "source_label": "Naziv",
+    "top_k_matches": [
+      {
+        "uri": "auto:opis_lokacije",
+        "label": "opis lokacije",
+        "score": 0.9338306188583374,
+        "combined_score": 0.7203480998675028
+      },
+      {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "score": 0.9122923016548157,
+        "combined_score": 0.688604611158371
+      },
+      {
+        "uri": "auto:parkrini_re_im",
+        "label": "Parkrini režim",
+        "score": 0.8881825804710388,
+        "combined_score": 0.6848857010665692
+      },
+      {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "score": 0.8884356021881104,
+        "combined_score": 0.6764503760771318
+      },
+      {
+        "uri": "auto:lat",
+        "label": "LAT",
+        "score": 0.8894128799438477,
+        "combined_score": 0.6225890159606933
+      }
+    ],
+    "top_match": {
+      "uri": "auto:opis_lokacije",
+      "label": "opis lokacije",
+      "score": 0.9338306188583374,
+      "combined_score": 0.7203480998675028
+    }
+  },
+  {
+    "source_uri": "auto:lokacijska_koordinata_gmaps_wgs84",
+    "source_label": "Lokacijska koordinata",
+    "top_k_matches": [
+      {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "score": 0.8978296518325806,
+        "combined_score": 0.8084807562828062
+      },
+      {
+        "uri": "auto:gps_parkirisca",
+        "label": "gps parkirisca",
+        "score": 0.929334819316864,
+        "combined_score": 0.7533915163789476
+      },
+      {
+        "uri": "auto:opis_lokacije",
+        "label": "opis lokacije",
+        "score": 0.899781346321106,
+        "combined_score": 0.7357292953659506
+      },
+      {
+        "uri": "auto:lat",
+        "label": "LAT",
+        "score": 0.9652488231658936,
+        "combined_score": 0.7006741762161255
+      },
+      {
+        "uri": "auto:lon",
+        "label": "LON",
+        "score": 0.9567049741744995,
+        "combined_score": 0.6946934819221496
+      }
+    ],
+    "top_match": {
+      "uri": "auto:lokacija_parkirisca",
+      "label": "lokacija parkirisca",
+      "score": 0.8978296518325806,
+      "combined_score": 0.8084807562828062
+    }
+  },
+  {
+    "source_uri": "auto:pla_ljivo",
+    "source_label": "Plačljivo",
+    "top_k_matches": [
+      {
+        "uri": "auto:parkrini_re_im",
+        "label": "Parkrini režim",
+        "score": 0.8926984071731567,
+        "combined_score": 0.703149754586427
+      },
+      {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "score": 0.8749178647994995,
+        "combined_score": 0.6981567910739354
+      },
+      {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "score": 0.8875542283058167,
+        "combined_score": 0.6905187290448408
+      },
+      {
+        "uri": "auto:parkirni_prostori_za_invalide",
+        "label": "parkirni prostori za invalide",
+        "score": 0.8907697200775146,
+        "combined_score": 0.6709072251068918
+      },
+      {
+        "uri": "auto:gps_parkirisca",
+        "label": "gps parkirisca",
+        "score": 0.8750000596046448,
+        "combined_score": 0.6646739547667296
+      }
+    ],
+    "top_match": {
+      "uri": "auto:parkrini_re_im",
+      "label": "Parkrini režim",
+      "score": 0.8926984071731567,
+      "combined_score": 0.703149754586427
+    }
+  },
+  {
+    "source_uri": "auto:cena",
+    "source_label": "Cena",
+    "top_k_matches": [
+      {
+        "uri": "auto:opis_lokacije",
+        "label": "opis lokacije",
+        "score": 0.8982449173927307,
+        "combined_score": 0.6640655598219702
+      },
+      {
+        "uri": "auto:parkrini_re_im",
+        "label": "Parkrini režim",
+        "score": 0.889653205871582,
+        "combined_score": 0.6560905774434407
+      },
+      {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "score": 0.8856548070907593,
+        "combined_score": 0.64852979353496
+      },
+      {
+        "uri": "auto:lon",
+        "label": "LON",
+        "score": 0.8946058750152588,
+        "combined_score": 0.6262241125106811
+      },
+      {
+        "uri": "auto:lat",
+        "label": "LAT",
+        "score": 0.8914618492126465,
+        "combined_score": 0.6240232944488525
+      }
+    ],
+    "top_match": {
+      "uri": "auto:opis_lokacije",
+      "label": "opis lokacije",
+      "score": 0.8982449173927307,
+      "combined_score": 0.6640655598219702
+    }
+  },
+  {
+    "source_uri": "auto:tevilo_parkirnih_mest",
+    "source_label": "Število parkirnih mest",
+    "top_k_matches": [
+      {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "score": 0.949936032295227,
+        "combined_score": 0.834185991837428
+      },
+      {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "score": 0.9140979051589966,
+        "combined_score": 0.8008441433673952
+      },
+      {
+        "uri": "auto:gps_parkirisca",
+        "label": "gps parkirisca",
+        "score": 0.9158362150192261,
+        "combined_score": 0.7910853505134582
+      },
+      {
+        "uri": "auto:parkirni_prostori_za_invalide",
+        "label": "parkirni prostori za invalide",
+        "score": 0.9375938177108765,
+        "combined_score": 0.7857274371034958
+      },
+      {
+        "uri": "auto:parkrini_re_im",
+        "label": "Parkrini režim",
+        "score": 0.8977011442184448,
+        "combined_score": 0.7617241342862446
+      }
+    ],
+    "top_match": {
+      "uri": "auto:parkirni_prostori",
+      "label": "parkirni prostori",
+      "score": 0.949936032295227,
+      "combined_score": 0.834185991837428
+    }
+  },
+  {
+    "source_uri": "auto:tevilo_mest_z_elektri_no_polnilnico",
+    "source_label": "Število mest z električno polnilnico",
+    "top_k_matches": [
+      {
+        "uri": "auto:parkirni_prostori_za_invalide",
+        "label": "parkirni prostori za invalide",
+        "score": 0.9166861772537231,
+        "combined_score": 0.7432187856160677
+      },
+      {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "score": 0.9198685884475708,
+        "combined_score": 0.7231532949321674
+      },
+      {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "score": 0.8889220356941223,
+        "combined_score": 0.7204272431677037
+      },
+      {
+        "uri": "auto:gps_parkirisca",
+        "label": "gps parkirisca",
+        "score": 0.8911057710647583,
+        "combined_score": 0.6957740397453307
+      },
+      {
+        "uri": "auto:opis_lokacije",
+        "label": "opis lokacije",
+        "score": 0.879664421081543,
+        "combined_score": 0.6892344825121821
+      }
+    ],
+    "top_match": {
+      "uri": "auto:parkirni_prostori_za_invalide",
+      "label": "parkirni prostori za invalide",
+      "score": 0.9166861772537231,
+      "combined_score": 0.7432187856160677
+    }
+  },
+  {
+    "source_uri": "auto:tevilo_mest_za_invalide",
+    "source_label": "Število mest za invalide",
+    "top_k_matches": [
+      {
+        "uri": "auto:parkirni_prostori_za_invalide",
+        "label": "parkirni prostori za invalide",
+        "score": 0.9545000791549683,
+        "combined_score": 0.8492821308801758
+      },
+      {
+        "uri": "auto:opis_lokacije",
+        "label": "opis lokacije",
+        "score": 0.8889676332473755,
+        "combined_score": 0.7195746405704601
+      },
+      {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "score": 0.9211918115615845,
+        "combined_score": 0.7180049998004261
+      },
+      {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "score": 0.8880254030227661,
+        "combined_score": 0.7053387123484943
+      },
+      {
+        "uri": "auto:gps_parkirisca",
+        "label": "gps parkirisca",
+        "score": 0.8852227330207825,
+        "combined_score": 0.6986032815356004
+      }
+    ],
+    "top_match": {
+      "uri": "auto:parkirni_prostori_za_invalide",
+      "label": "parkirni prostori za invalide",
+      "score": 0.9545000791549683,
+      "combined_score": 0.8492821308801758
+    }
+  }
+]

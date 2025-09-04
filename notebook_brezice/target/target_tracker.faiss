@@ -1,0 +1,66 @@
+{
+    "631471631752": {
+        "uri": "auto:lokacija_parkirisca",
+        "label": "lokacija parkirisca",
+        "definition": "Tekstovni naziv ali lokacijski opis 'lokacija parkirisca'.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: lokacija parkirisca. Type: xsd:string. Examples: Cesta prvih borcev  18, 8250 Brežice - Cesta prvih borcev 48, 8250 Brežice, Cesta prvih borcev 18, 8250 Brežice - Cesta prvih borcev 16, 8250 Brežice, Cesta prvih borcev 18, 8250 Brežice - Cesta prvih borcev 1, 8250 Brežice. Defined as: Tekstovni naziv ali lokacijski opis 'lokacija parkirisca'."
+    },
+    "171856135113": {
+        "uri": "auto:opis_lokacije",
+        "label": "opis lokacije",
+        "definition": "Opisna informacija 'opis lokacije'.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: opis lokacije. Type: xsd:string. Examples: Cesta prvih borcev(v mestu od občine do sodišča), Cesta prvih borcev(pred občino do kavarne), Cesta prvih borcev(od občine do grada). Defined as: Opisna informacija 'opis lokacije'."
+    },
+    "688244702519": {
+        "uri": "auto:gps_parkirisca",
+        "label": "gps parkirisca",
+        "definition": "Atribut 'gps parkirisca' v podatkovnem naboru Brezice.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: gps parkirisca. Type: xsd:decimal. Examples: 45.903834,  15.592205, 45.903840, 15.592305, 45.902433, 15.592642. Defined as: Atribut 'gps parkirisca' v podatkovnem naboru Brezice."
+    },
+    "611336350266": {
+        "uri": "auto:lat",
+        "label": "LAT",
+        "definition": "Koordinata ali lokacijski atribut 'LAT' (geografska lega).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: LAT. Type: xsd:decimal. Examples: 45.903834, 45.90384, 45.902433. Defined as: Koordinata ali lokacijski atribut 'LAT' (geografska lega)."
+    },
+    "243981800888": {
+        "uri": "auto:lon",
+        "label": "LON",
+        "definition": "Koordinata ali lokacijski atribut 'LON' (geografska lega).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: LON. Type: xsd:decimal. Examples: 15.592205, 15.592305, 15.592642. Defined as: Koordinata ali lokacijski atribut 'LON' (geografska lega)."
+    },
+    "509950665139": {
+        "uri": "auto:parkirni_prostori",
+        "label": "parkirni prostori",
+        "definition": "Atribut 'parkirni prostori' v podatkovnem naboru Brezice.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: parkirni prostori. Type: xsd:integer. Examples: 91, 19, 56. Defined as: Atribut 'parkirni prostori' v podatkovnem naboru Brezice."
+    },
+    "153838706503": {
+        "uri": "auto:parkirni_prostori_za_invalide",
+        "label": "parkirni prostori za invalide",
+        "definition": "Atribut 'parkirni prostori za invalide' v podatkovnem naboru Brezice.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: parkirni prostori za invalide. Type: xsd:integer. Examples: 4, 2, 1. Defined as: Atribut 'parkirni prostori za invalide' v podatkovnem naboru Brezice."
+    },
+    "935034979906": {
+        "uri": "auto:parkrini_re_im",
+        "label": "Parkrini režim",
+        "definition": "Atribut 'Parkrini režim' v podatkovnem naboru Brezice.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Parkrini režim. Type: xsd:string. Examples: Parkirnina 7:00 - 15:00 PON -PET, Parkirnina 7:00 - 15:00 PON -PET, Parkirnina 7:00 - 15:00 PON -PET. Defined as: Atribut 'Parkrini režim' v podatkovnem naboru Brezice."
+    }
+}

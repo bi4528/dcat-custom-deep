@@ -1,0 +1,61 @@
+[
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Naziv",
+    "target_dataset": "Straža",
+    "target_columns": [
+      "naziv"
+    ],
+    "note": "Naziv parkirišča ↔ naziv."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+    "target_dataset": "Straža",
+    "target_columns": [
+      "lokacijska koordinata"
+    ],
+    "note": "Lokacijske koordinate parkirišč."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Plačljivo",
+    "target_dataset": "Straža",
+    "target_columns": [
+      "plačljivo"
+    ],
+    "note": "Plačljivost parkiranja."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Cena",
+    "target_dataset": "Straža",
+    "target_columns": [
+      "cena/h"
+    ],
+    "note": "Cena parkiranja (cena na uro)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število parkirnih mest",
+    "target_dataset": "Straža",
+    "target_columns": [
+      "št. Park. Mest"
+    ],
+    "note": "Kapaciteta parkirišča (število mest)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Električna polnilnica",
+    "target_dataset": "Straža",
+    "target_columns": [],
+    "note": "Ni atributa za električne polnilnice v Straži."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest za invalide",
+    "target_dataset": "Straža",
+    "target_columns": [],
+    "note": "Ni atributa za invalide v Straži."
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Naziv",
+    "target_dataset": "Brežice",
+    "target_columns": [
+      "lokacija_parkirisca"
+    ],
+    "note": "Naziv lokacije parkirišča ↔ lokacija_parkirisca (ime/naslov lokacije)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+    "target_dataset": "Brežice",
+    "target_columns": [
+      "gps_parkirisca"
+    ],
+    "note": "Obe shemi hranita WGS84; v Brežicah je tudi LAT/LON (alternativno razbijanje)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Plačljivo",
+    "target_dataset": "Brežice",
+    "target_columns": [
+      "Parkrini režim"
+    ],
+    "note": "Plačljivost/režim parkiranja; v Brežicah se status pogosto nahaja v polju režima."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Cena",
+    "target_dataset": "Brežice",
+    "target_columns": [],
+    "note": "V Brežicah ni neposrednega ekvivalenta za ceno (morda implicitno v opisu/režimu)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število parkirnih mest",
+    "target_dataset": "Brežice",
+    "target_columns": [
+      "parkirni prostori"
+    ],
+    "note": "Skupna kapaciteta parkirišča."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Električna polnilnica",
+    "target_dataset": "Brežice",
+    "target_columns": [],
+    "note": "V Brežicah ni eksplicitnega boolean polja za prisotnost polnilnice."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest z električno polnilnico",
+    "target_dataset": "Brežice",
+    "target_columns": [],
+    "note": "Ni neposrednega ekvivalenta v Brežicah."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest za invalide",
+    "target_dataset": "Brežice",
+    "target_columns": [
+      "parkirni prostori za invalide"
+    ],
+    "note": "Kapaciteta invalidskih mest."
+  }
+]

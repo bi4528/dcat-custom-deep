@@ -1,0 +1,52 @@
+[
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Naziv",
+    "target_dataset": "Sevnica",
+    "target_columns": [
+      "lokacija_parkirisca"
+    ],
+    "note": "Naziv lokacije parkirišča ↔ lokacija_parkirisca (ime/naslov lokacije)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+    "target_dataset": "Sevnica",
+    "target_columns": [
+      "gps_parkirisca"
+    ],
+    "note": "Koordinate parkirišča; v Sevnici so shranjene kot gps_parkirisca (poleg LAT/LON)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Plačljivo",
+    "target_dataset": "Sevnica",
+    "target_columns": [
+      "rezim_parkiranja"
+    ],
+    "note": "Plačljivost parkirišča ↔ režim parkiranja (npr. brez omejitev, elektro vozila)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Cena",
+    "target_dataset": "Sevnica",
+    "target_columns": [],
+    "note": "Cena parkiranja v Sevnici ni eksplicitno podana; implicitno v režimu."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število parkirnih mest",
+    "target_dataset": "Sevnica",
+    "target_columns": [
+      "st_parkirnih_mest"
+    ],
+    "note": "Kapaciteta parkirišča (število mest)."
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest za invalide",
+    "target_dataset": "Sevnica",
+    "target_columns": [],
+    "note": "Ni neposrednega ekvivalenta v Sevnici."
+  }
+]

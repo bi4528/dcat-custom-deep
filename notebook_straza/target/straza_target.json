@@ -1,0 +1,10 @@
+[
+  {
+    "uri": "auto:naziv_lokacijska_koordinata_pla_ljivo_cena_h_t_park_mest",
+    "label": "naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest",
+    "definition": "Koordinata ali lokacijski atribut 'naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest' (geografska lega).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest. Type: xsd:decimal. Examples:  71779;NE;-;35,  71580;NE;-;39,  71389;NE;-;16. Defined as: Koordinata ali lokacijski atribut 'naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest' (geografska lega)."
+  }
+]

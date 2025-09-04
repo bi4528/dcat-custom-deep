@@ -1,0 +1,9 @@
+source_column,gold,predictions,hit,rank_hit,hits_in_k
+Naziv,['lokacija_parkirisca'],"['opis lokacije', 'lokacija parkirisca', 'Parkrini režim', 'parkirni prostori', 'LAT']",False,,0
+Lokacijska koordinata (GMAPS - WGS84),['gps_parkirisca'],[],False,,0
+Plačljivo,['Parkrini režim'],"['Parkrini režim', 'lokacija parkirisca', 'parkirni prostori', 'parkirni prostori za invalide', 'gps parkirisca']",True,1.0,1
+Cena,[],"['opis lokacije', 'Parkrini režim', 'parkirni prostori', 'LON', 'LAT']",False,,0
+Število parkirnih mest,['parkirni prostori'],"['parkirni prostori', 'lokacija parkirisca', 'gps parkirisca', 'parkirni prostori za invalide', 'Parkrini režim']",True,1.0,1
+Električna polnilnica,[],[],False,,0
+Število mest z električno polnilnico,[],"['parkirni prostori za invalide', 'parkirni prostori', 'lokacija parkirisca', 'gps parkirisca', 'opis lokacije']",False,,0
+Število mest za invalide,['parkirni prostori za invalide'],"['parkirni prostori za invalide', 'opis lokacije', 'parkirni prostori', 'lokacija parkirisca', 'gps parkirisca']",True,1.0,1

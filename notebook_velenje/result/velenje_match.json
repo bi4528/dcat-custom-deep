@@ -1,0 +1,296 @@
+[
+  {
+    "source_uri": "trb:naziv",
+    "source_label": "Naziv",
+    "top_k_matches": [
+      {
+        "uri": "vel:naziv",
+        "label": "Naziv",
+        "score": 0.9534960985183716,
+        "combined_score": 0.9674472689628602
+      },
+      {
+        "uri": "vel:plačljivo",
+        "label": "Plačljivo",
+        "score": 0.8976336121559143,
+        "combined_score": 0.7569149570805686
+      },
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.9301397204399109,
+        "combined_score": 0.7177644709746043
+      },
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.9081279039382935,
+        "combined_score": 0.6801339772012498
+      },
+      {
+        "uri": "vel:lokacijska_koordinata_gmaps_wgs84",
+        "label": "Lokacijska koordinata (GMAPS - WGS84)",
+        "score": 0.9057924747467041,
+        "combined_score": 0.6626261608941214
+      }
+    ],
+    "top_match": {
+      "uri": "vel:naziv",
+      "label": "Naziv",
+      "score": 0.9534960985183716,
+      "combined_score": 0.9674472689628602
+    }
+  },
+  {
+    "source_uri": "trb:lokacijska_koordinata_gmaps_wgs84",
+    "source_label": "Lokacijska koordinata (GMAPS - WGS84)",
+    "top_k_matches": [
+      {
+        "uri": "vel:lokacijska_koordinata_gmaps_wgs84",
+        "label": "Lokacijska koordinata (GMAPS - WGS84)",
+        "score": 0.9914650917053223,
+        "combined_score": 0.9940255641937255
+      },
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.9010421633720398,
+        "combined_score": 0.6917464635129702
+      },
+      {
+        "uri": "vel:število_mest_z_električno_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "score": 0.8784257173538208,
+        "combined_score": 0.6806514268052087
+      },
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.9097375869750977,
+        "combined_score": 0.6660846035654951
+      },
+      {
+        "uri": "vel:naziv",
+        "label": "Naziv",
+        "score": 0.8970732688903809,
+        "combined_score": 0.6565227167946951
+      }
+    ],
+    "top_match": {
+      "uri": "vel:lokacijska_koordinata_gmaps_wgs84",
+      "label": "Lokacijska koordinata (GMAPS - WGS84)",
+      "score": 0.9914650917053223,
+      "combined_score": 0.9940255641937255
+    }
+  },
+  {
+    "source_uri": "trb:plačljivo",
+    "source_label": "Plačljivo",
+    "top_k_matches": [
+      {
+        "uri": "vel:plačljivo",
+        "label": "Plačljivo",
+        "score": 0.9965832233428955,
+        "combined_score": 0.9976082563400268
+      },
+      {
+        "uri": "vel:električna_polnilnica",
+        "label": "Električna polnilnica",
+        "score": 0.9313328862190247,
+        "combined_score": 0.7319330203533172
+      },
+      {
+        "uri": "vel:število_mest_z_električno_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "score": 0.890168309211731,
+        "combined_score": 0.6897844831148783
+      },
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.9190645217895508,
+        "combined_score": 0.6894990114065316
+      },
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.898293137550354,
+        "combined_score": 0.6868697124142801
+      }
+    ],
+    "top_match": {
+      "uri": "vel:plačljivo",
+      "label": "Plačljivo",
+      "score": 0.9965832233428955,
+      "combined_score": 0.9976082563400268
+    }
+  },
+  {
+    "source_uri": "trb:cena",
+    "source_label": "Cena",
+    "top_k_matches": [
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.9677717685699463,
+        "combined_score": 0.9774402379989624
+      },
+      {
+        "uri": "vel:električna_polnilnica",
+        "label": "Električna polnilnica",
+        "score": 0.9196116924285889,
+        "combined_score": 0.7157281847000121
+      },
+      {
+        "uri": "vel:plačljivo",
+        "label": "Plačljivo",
+        "score": 0.9392710328102112,
+        "combined_score": 0.7036435691209939
+      },
+      {
+        "uri": "vel:naziv",
+        "label": "Naziv",
+        "score": 0.9098877906799316,
+        "combined_score": 0.7035881201426187
+      },
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.9165427684783936,
+        "combined_score": 0.6877337840887217
+      }
+    ],
+    "top_match": {
+      "uri": "vel:cena",
+      "label": "Cena",
+      "score": 0.9677717685699463,
+      "combined_score": 0.9774402379989624
+    }
+  },
+  {
+    "source_uri": "trb:število_parkirnih_mest",
+    "source_label": "Število parkirnih mest",
+    "top_k_matches": [
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.972419023513794,
+        "combined_score": 0.9806933164596556
+      },
+      {
+        "uri": "vel:število_mest_z_električno_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "score": 0.9462559223175049,
+        "combined_score": 0.7865170766567362
+      },
+      {
+        "uri": "vel:lokacijska_koordinata_gmaps_wgs84",
+        "label": "Lokacijska koordinata (GMAPS - WGS84)",
+        "score": 0.901268720626831,
+        "combined_score": 0.6919050535913241
+      },
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.9115585088729858,
+        "combined_score": 0.6842448023649361
+      },
+      {
+        "uri": "vel:naziv",
+        "label": "Naziv",
+        "score": 0.9021388292312622,
+        "combined_score": 0.6759416249063279
+      }
+    ],
+    "top_match": {
+      "uri": "vel:število_parkirnih_mest",
+      "label": "Število parkirnih mest",
+      "score": 0.972419023513794,
+      "combined_score": 0.9806933164596556
+    }
+  },
+  {
+    "source_uri": "trb:električna_polnilnica",
+    "source_label": "Električna polnilnica",
+    "top_k_matches": [
+      {
+        "uri": "vel:električna_polnilnica",
+        "label": "Električna polnilnica",
+        "score": 0.9993642568588257,
+        "combined_score": 0.999554979801178
+      },
+      {
+        "uri": "vel:število_mest_z_električno_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "score": 0.9372990727424622,
+        "combined_score": 0.8455830351302498
+      },
+      {
+        "uri": "vel:plačljivo",
+        "label": "Plačljivo",
+        "score": 0.9267348051071167,
+        "combined_score": 0.7287143635749818
+      },
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.8945421576499939,
+        "combined_score": 0.7238539289596468
+      },
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.8877223134040833,
+        "combined_score": 0.6934056193828582
+      }
+    ],
+    "top_match": {
+      "uri": "vel:električna_polnilnica",
+      "label": "Električna polnilnica",
+      "score": 0.9993642568588257,
+      "combined_score": 0.999554979801178
+    }
+  },
+  {
+    "source_uri": "trb:število_mest_z_električno_polnilnico",
+    "source_label": "Število mest z električno polnilnico",
+    "top_k_matches": [
+      {
+        "uri": "vel:število_mest_z_električno_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "score": 0.9842719435691833,
+        "combined_score": 0.9889903604984283
+      },
+      {
+        "uri": "vel:električna_polnilnica",
+        "label": "Električna polnilnica",
+        "score": 0.9572474956512451,
+        "combined_score": 0.8595469311663979
+      },
+      {
+        "uri": "vel:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "score": 0.9435858726501465,
+        "combined_score": 0.7846480418895853
+      },
+      {
+        "uri": "vel:plačljivo",
+        "label": "Plačljivo",
+        "score": 0.9075304269790649,
+        "combined_score": 0.701937965552012
+      },
+      {
+        "uri": "vel:cena",
+        "label": "Cena",
+        "score": 0.8952825665473938,
+        "combined_score": 0.6566977965831756
+      }
+    ],
+    "top_match": {
+      "uri": "vel:število_mest_z_električno_polnilnico",
+      "label": "Število mest z električno polnilnico",
+      "score": 0.9842719435691833,
+      "combined_score": 0.9889903604984283
+    }
+  }
+]

@@ -1,0 +1,308 @@
+{
+  "params": {
+    "gold_json": "notebook_velenje/gold/trbovlje_to_velenje.json",
+    "preds_json": "notebook_velenje/result/velenje_match.json",
+    "top_k": 5,
+    "threshold": 0.7,
+    "score_fields": [
+      "combined_score",
+      "score"
+    ],
+    "timestamp": "2025-09-07T15:05:57.051205"
+  },
+  "open_world": {
+    "decision_metrics": {
+      "threshold": 0.7,
+      "TP": 7,
+      "FP": 0,
+      "FN": 0,
+      "TN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    },
+    "ranking_metrics_among_positives": {
+      "count_positives": 7,
+      "acc_at_1": 1.0,
+      "p_at_5": 0.19999999999999998,
+      "mrr": 1.0
+    },
+    "details": [
+      {
+        "source": "Naziv",
+        "gold": [
+          "Naziv"
+        ],
+        "chosen": "Naziv",
+        "outcome": "TP",
+        "candidates": [
+          "Naziv",
+          "Plačljivo",
+          "Cena",
+          "Število parkirnih mest",
+          "Lokacijska koordinata (GMAPS - WGS84)"
+        ],
+        "scores": [
+          0.9674472689628602,
+          0.7569149570805686,
+          0.7177644709746043,
+          0.6801339772012498,
+          0.6626261608941214
+        ]
+      },
+      {
+        "source": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "Lokacijska koordinata (GMAPS - WGS84)"
+        ],
+        "chosen": "Lokacijska koordinata (GMAPS - WGS84)",
+        "outcome": "TP",
+        "candidates": [
+          "Lokacijska koordinata (GMAPS - WGS84)",
+          "Število parkirnih mest",
+          "Število mest z električno polnilnico",
+          "Cena",
+          "Naziv"
+        ],
+        "scores": [
+          0.9940255641937255,
+          0.6917464635129702,
+          0.6806514268052087,
+          0.6660846035654951,
+          0.6565227167946951
+        ]
+      },
+      {
+        "source": "Plačljivo",
+        "gold": [
+          "Plačljivo"
+        ],
+        "chosen": "Plačljivo",
+        "outcome": "TP",
+        "candidates": [
+          "Plačljivo",
+          "Električna polnilnica",
+          "Število mest z električno polnilnico",
+          "Cena",
+          "Število parkirnih mest"
+        ],
+        "scores": [
+          0.9976082563400268,
+          0.7319330203533172,
+          0.6897844831148783,
+          0.6894990114065316,
+          0.6868697124142801
+        ]
+      },
+      {
+        "source": "Cena",
+        "gold": [
+          "Cena"
+        ],
+        "chosen": "Cena",
+        "outcome": "TP",
+        "candidates": [
+          "Cena",
+          "Električna polnilnica",
+          "Plačljivo",
+          "Naziv",
+          "Število parkirnih mest"
+        ],
+        "scores": [
+          0.9774402379989624,
+          0.7157281847000121,
+          0.7036435691209939,
+          0.7035881201426187,
+          0.6877337840887217
+        ]
+      },
+      {
+        "source": "Število parkirnih mest",
+        "gold": [
+          "Število parkirnih mest"
+        ],
+        "chosen": "Število parkirnih mest",
+        "outcome": "TP",
+        "candidates": [
+          "Število parkirnih mest",
+          "Število mest z električno polnilnico",
+          "Lokacijska koordinata (GMAPS - WGS84)",
+          "Cena",
+          "Naziv"
+        ],
+        "scores": [
+          0.9806933164596556,
+          0.7865170766567362,
+          0.6919050535913241,
+          0.6842448023649361,
+          0.6759416249063279
+        ]
+      },
+      {
+        "source": "Električna polnilnica",
+        "gold": [
+          "Električna polnilnica"
+        ],
+        "chosen": "Električna polnilnica",
+        "outcome": "TP",
+        "candidates": [
+          "Električna polnilnica",
+          "Število mest z električno polnilnico",
+          "Plačljivo",
+          "Število parkirnih mest",
+          "Cena"
+        ],
+        "scores": [
+          0.999554979801178,
+          0.8455830351302498,
+          0.7287143635749818,
+          0.7238539289596468,
+          0.6934056193828582
+        ]
+      },
+      {
+        "source": "Število mest z električno polnilnico",
+        "gold": [
+          "Število mest z električno polnilnico"
+        ],
+        "chosen": "Število mest z električno polnilnico",
+        "outcome": "TP",
+        "candidates": [
+          "Število mest z električno polnilnico",
+          "Električna polnilnica",
+          "Število parkirnih mest",
+          "Plačljivo",
+          "Cena"
+        ],
+        "scores": [
+          0.9889903604984283,
+          0.8595469311663979,
+          0.7846480418895853,
+          0.701937965552012,
+          0.6566977965831756
+        ]
+      }
+    ]
+  },
+  "closed_world": {
+    "count": 7,
+    "acc_at_1": 1.0,
+    "p_at_5": 1.0,
+    "mrr": 1.0,
+    "details": [
+      {
+        "source_column": "Naziv",
+        "gold": [
+          "Cena",
+          "Lokacijska koordinata (GMAPS - WGS84)",
+          "Naziv",
+          "Plačljivo",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Naziv"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "Cena",
+          "Lokacijska koordinata (GMAPS - WGS84)",
+          "Naziv",
+          "Število mest z električno polnilnico",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Lokacijska koordinata (GMAPS - WGS84)"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Plačljivo",
+        "gold": [
+          "Cena",
+          "Električna polnilnica",
+          "Plačljivo",
+          "Število mest z električno polnilnico",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Plačljivo"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Cena",
+        "gold": [
+          "Cena",
+          "Električna polnilnica",
+          "Naziv",
+          "Plačljivo",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Cena"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Število parkirnih mest",
+        "gold": [
+          "Cena",
+          "Lokacijska koordinata (GMAPS - WGS84)",
+          "Naziv",
+          "Število mest z električno polnilnico",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Število parkirnih mest"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Električna polnilnica",
+        "gold": [
+          "Cena",
+          "Električna polnilnica",
+          "Plačljivo",
+          "Število mest z električno polnilnico",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Električna polnilnica"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Število mest z električno polnilnico",
+        "gold": [
+          "Cena",
+          "Električna polnilnica",
+          "Plačljivo",
+          "Število mest z električno polnilnico",
+          "Število parkirnih mest"
+        ],
+        "predictions": [
+          "Število mest z električno polnilnico"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+    "918170558871": {
+        "uri": "trb:naziv",
+        "label": "Naziv",
+        "definition": "Stolpec 'Naziv' predstavlja opisni podatek o parkirišču v kontekstu stolpcev Lokacijska koordinata (GMAPS - WGS84), Plačljivo, Cena (npr. Pri OŠ Trbovlje; Ob občinski upravni zgradbi).",
+        "synonyms": [
+            "ime",
+            "oznaka lokacije"
+        ],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Naziv. Examples: Pri OŠ Trbovlje, Ob občinski upravni zgradbi, Ploščad na Trgu revolucije. Defined as: Stolpec '﻿Naziv' predstavlja opisni podatek o parkirišču v kontekstu stolpcev Lokacijska koordinata (GMAPS - WGS84), Plačljivo, Cena (npr. Pri OŠ Trbovlje; Ob občinski upravni zgradbi)."
+    },
+    "258025752282": {
+        "uri": "trb:lokacijska_koordinata_gmaps_wgs84",
+        "label": "Lokacijska koordinata (GMAPS - WGS84)",
+        "definition": "Stolpec 'Lokacijska koordinata (GMAPS - WGS84)' predstavlja geografski podatek o legi parkirišča (npr. 46.15632, 15.05573; 46.1566, 15.05375).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Lokacijska koordinata (GMAPS - WGS84). Examples: 46.15632, 15.05573, 46.1566, 15.05375, 46.14592, 15.04025. Defined as: Stolpec 'Lokacijska koordinata (GMAPS - WGS84)' predstavlja geografski podatek o legi parkirišča (npr. 46.15632, 15.05573; 46.1566, 15.05375)."
+    },
+    "908284387526": {
+        "uri": "trb:plačljivo",
+        "label": "Plačljivo",
+        "definition": "Stolpec 'Plačljivo' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. ne; da).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Plačljivo. Examples: ne, da. Defined as: Stolpec 'Plačljivo' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. ne; da)."
+    },
+    "857562674645": {
+        "uri": "trb:cena",
+        "label": "Cena",
+        "definition": "Stolpec 'Cena' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. 0; 0,5 EUR).",
+        "synonyms": [
+            "tarifa",
+            "cenik"
+        ],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Cena. Examples: 0, 0,5 EUR. Defined as: Stolpec 'Cena' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. 0; 0,5 EUR)."
+    },
+    "769238463712": {
+        "uri": "trb:število_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "definition": "Stolpec 'Število parkirnih mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 24; 12).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Število parkirnih mest. Examples: 24, 12, 16. Defined as: Stolpec 'Število parkirnih mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 24; 12)."
+    },
+    "249099606199": {
+        "uri": "trb:električna_polnilnica",
+        "label": "Električna polnilnica",
+        "definition": "Stolpec 'Električna polnilnica' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. ne; da).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Električna polnilnica. Examples: ne, da. Defined as: Stolpec 'Električna polnilnica' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. ne; da)."
+    },
+    "939565895143": {
+        "uri": "trb:število_mest_z_električno_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "definition": "Stolpec 'Število mest z električno polnilnico' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. 0; 2).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Število mest z električno polnilnico. Examples: 0, 2. Defined as: Stolpec 'Število mest z električno polnilnico' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. 0; 2)."
+    },
+    "443920257515": {
+        "uri": "trb:število_mest_za_invalide",
+        "label": "Število mest za invalide",
+        "definition": "Stolpec 'Število mest za invalide' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. 0; 1).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Število mest za invalide. Examples: 0, 1, 7. Defined as: Stolpec 'Število mest za invalide' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. 0; 1)."
+    }
+}

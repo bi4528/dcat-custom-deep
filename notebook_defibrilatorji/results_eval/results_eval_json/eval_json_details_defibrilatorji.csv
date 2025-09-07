@@ -1,0 +1,9 @@
+source,gold,chosen,outcome,candidates,scores
+Naziv,"['LOKACIJA', 'NASLOV']",NASLOV,TP,"['NASLOV', 'LOKACIJA', 'ZAP ŠT.']","[0.7033572001890702, 0.6343915224075317, 0.6128214359283447]"
+Lokacijska koordinata (GMAPS - WGS84),[],,TN,[],[]
+Plačljivo,[],,TN,[],[]
+Cena,[],,TN,[],[]
+Število parkirnih mest,[],,TN,"['ZAP ŠT.', 'LOKACIJA', 'NASLOV']","[0.6368028470154466, 0.608995246887207, 0.6072389066219329]"
+Električna polnilnica,[],,TN,[],[]
+Število mest z električno polnilnico,[],,TN,"['ZAP ŠT.', 'LOKACIJA', 'NASLOV']","[0.6374204449875409, 0.6119471669197082, 0.6112990379333496]"
+Število mest za invalide,[],,TN,"['ZAP ŠT.', 'LOKACIJA', 'NASLOV']","[0.6407095974491489, 0.6146572589874267, 0.6106946766376495]"

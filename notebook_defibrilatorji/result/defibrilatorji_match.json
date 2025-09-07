@@ -1,0 +1,152 @@
+[
+  {
+    "source_uri": "auto:naziv",
+    "source_label": "Naziv",
+    "top_k_matches": [
+      {
+        "uri": "defib:naslov",
+        "label": "NASLOV",
+        "score": 0.9268739223480225,
+        "combined_score": 0.7033572001890702
+      },
+      {
+        "uri": "defib:lokacija",
+        "label": "LOKACIJA",
+        "score": 0.906273603439331,
+        "combined_score": 0.6343915224075317
+      },
+      {
+        "uri": "defib:zap_št",
+        "label": "ZAP ŠT.",
+        "score": 0.8754591941833496,
+        "combined_score": 0.6128214359283447
+      }
+    ],
+    "top_match": {
+      "uri": "defib:naslov",
+      "label": "NASLOV",
+      "score": 0.9268739223480225,
+      "combined_score": 0.7033572001890702
+    }
+  },
+  {
+    "source_uri": "auto:lokacijska_koordinata_gmaps_wgs84",
+    "source_label": "Lokacijska koordinata",
+    "top_k_matches": [
+      {
+        "uri": "defib:lokacija",
+        "label": "LOKACIJA",
+        "score": 0.8967474102973938,
+        "combined_score": 0.6484128423805895
+      },
+      {
+        "uri": "defib:naslov",
+        "label": "NASLOV",
+        "score": 0.8623044490814209,
+        "combined_score": 0.6258353365792169
+      },
+      {
+        "uri": "defib:zap_št",
+        "label": "ZAP ŠT.",
+        "score": 0.8625125885009766,
+        "combined_score": 0.6251873833792551
+      }
+    ],
+    "top_match": {
+      "uri": "defib:lokacija",
+      "label": "LOKACIJA",
+      "score": 0.8967474102973938,
+      "combined_score": 0.6484128423805895
+    }
+  },
+  {
+    "source_uri": "auto:tevilo_parkirnih_mest",
+    "source_label": "Število parkirnih mest",
+    "top_k_matches": [
+      {
+        "uri": "defib:zap_št",
+        "label": "ZAP ŠT.",
+        "score": 0.880161702632904,
+        "combined_score": 0.6368028470154466
+      },
+      {
+        "uri": "defib:lokacija",
+        "label": "LOKACIJA",
+        "score": 0.8699932098388672,
+        "combined_score": 0.608995246887207
+      },
+      {
+        "uri": "defib:naslov",
+        "label": "NASLOV",
+        "score": 0.8674841523170471,
+        "combined_score": 0.6072389066219329
+      }
+    ],
+    "top_match": {
+      "uri": "defib:zap_št",
+      "label": "ZAP ŠT.",
+      "score": 0.880161702632904,
+      "combined_score": 0.6368028470154466
+    }
+  },
+  {
+    "source_uri": "auto:tevilo_mest_z_elektri_no_polnilnico",
+    "source_label": "Število mest z električno polnilnico",
+    "top_k_matches": [
+      {
+        "uri": "defib:zap_št",
+        "label": "ZAP ŠT.",
+        "score": 0.8906670808792114,
+        "combined_score": 0.6374204449875409
+      },
+      {
+        "uri": "defib:lokacija",
+        "label": "LOKACIJA",
+        "score": 0.8742102384567261,
+        "combined_score": 0.6119471669197082
+      },
+      {
+        "uri": "defib:naslov",
+        "label": "NASLOV",
+        "score": 0.8732843399047852,
+        "combined_score": 0.6112990379333496
+      }
+    ],
+    "top_match": {
+      "uri": "defib:zap_št",
+      "label": "ZAP ŠT.",
+      "score": 0.8906670808792114,
+      "combined_score": 0.6374204449875409
+    }
+  },
+  {
+    "source_uri": "auto:tevilo_mest_za_invalide",
+    "source_label": "Število mest za invalide",
+    "top_k_matches": [
+      {
+        "uri": "defib:zap_št",
+        "label": "ZAP ŠT.",
+        "score": 0.887649655342102,
+        "combined_score": 0.6407095974491489
+      },
+      {
+        "uri": "defib:lokacija",
+        "label": "LOKACIJA",
+        "score": 0.8780817985534668,
+        "combined_score": 0.6146572589874267
+      },
+      {
+        "uri": "defib:naslov",
+        "label": "NASLOV",
+        "score": 0.8724209666252136,
+        "combined_score": 0.6106946766376495
+      }
+    ],
+    "top_match": {
+      "uri": "defib:zap_št",
+      "label": "ZAP ŠT.",
+      "score": 0.887649655342102,
+      "combined_score": 0.6407095974491489
+    }
+  }
+]

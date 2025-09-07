@@ -61,14 +61,5 @@
       "Število mest z električno polnilnico"
     ],
     "note": "Kapaciteta mest z električno polnilnico."
-  },
-  {
-    "source_dataset": "Trbovlje",
-    "source_column": "Število mest za invalide",
-    "target_dataset": "Velenje",
-    "target_columns": [
-      "Število mest za invalide"
-    ],
-    "note": "Kapaciteta invalidskih mest."
   }
 ]

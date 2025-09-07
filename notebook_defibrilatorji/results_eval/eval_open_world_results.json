@@ -1,0 +1,204 @@
+{
+  "params": {
+    "gold_json": "notebook_defibrilatorji/gold/trbovlje_to_defibrilatorji.json",
+    "preds_json": "notebook_defibrilatorji/result/defibrilatorji_match.json",
+    "top_k": 5,
+    "threshold": 0.7,
+    "score_fields": [
+      "combined_score",
+      "score"
+    ],
+    "timestamp": "2025-09-07T10:58:01.887202"
+  },
+  "open_world": {
+    "decision_metrics": {
+      "threshold": 0.7,
+      "TP": 1,
+      "FP": 0,
+      "FN": 0,
+      "TN": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    },
+    "ranking_metrics_among_positives": {
+      "count_positives": 1,
+      "acc_at_1": 1.0,
+      "p_at_5": 0.6666666666666666,
+      "mrr": 1.0
+    },
+    "details": [
+      {
+        "source": "Naziv",
+        "gold": [
+          "LOKACIJA",
+          "NASLOV"
+        ],
+        "chosen": "NASLOV",
+        "outcome": "TP",
+        "candidates": [
+          "NASLOV",
+          "LOKACIJA",
+          "ZAP ŠT."
+        ],
+        "scores": [
+          0.7033572001890702,
+          0.6343915224075317,
+          0.6128214359283447
+        ]
+      },
+      {
+        "source": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Plačljivo",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Cena",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Število parkirnih mest",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [
+          "ZAP ŠT.",
+          "LOKACIJA",
+          "NASLOV"
+        ],
+        "scores": [
+          0.6368028470154466,
+          0.608995246887207,
+          0.6072389066219329
+        ]
+      },
+      {
+        "source": "Električna polnilnica",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Število mest z električno polnilnico",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [
+          "ZAP ŠT.",
+          "LOKACIJA",
+          "NASLOV"
+        ],
+        "scores": [
+          0.6374204449875409,
+          0.6119471669197082,
+          0.6112990379333496
+        ]
+      },
+      {
+        "source": "Število mest za invalide",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [
+          "ZAP ŠT.",
+          "LOKACIJA",
+          "NASLOV"
+        ],
+        "scores": [
+          0.6407095974491489,
+          0.6146572589874267,
+          0.6106946766376495
+        ]
+      }
+    ]
+  },
+  "closed_world": {
+    "count": 5,
+    "acc_at_1": 0.2,
+    "p_at_5": 0.2,
+    "mrr": 0.2,
+    "details": [
+      {
+        "source_column": "Naziv",
+        "gold": [
+          "LOKACIJA",
+          "NASLOV",
+          "ZAP ŠT."
+        ],
+        "predictions": [
+          "LOKACIJA",
+          "NASLOV"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 2
+      },
+      {
+        "source_column": "Lokacijska koordinata",
+        "gold": [
+          "LOKACIJA",
+          "NASLOV",
+          "ZAP ŠT."
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Število parkirnih mest",
+        "gold": [
+          "LOKACIJA",
+          "NASLOV",
+          "ZAP ŠT."
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Število mest z električno polnilnico",
+        "gold": [
+          "LOKACIJA",
+          "NASLOV",
+          "ZAP ŠT."
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Število mest za invalide",
+        "gold": [
+          "LOKACIJA",
+          "NASLOV",
+          "ZAP ŠT."
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      }
+    ]
+  }
+}

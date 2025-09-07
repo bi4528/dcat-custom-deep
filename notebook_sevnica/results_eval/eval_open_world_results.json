@@ -1,0 +1,276 @@
+{
+  "params": {
+    "gold_json": "notebook_sevnica/gold/trbovlje_to_sevnica.json",
+    "preds_json": "notebook_sevnica/result/sevnica_match.json",
+    "top_k": 5,
+    "threshold": 0.7,
+    "score_fields": [
+      "combined_score",
+      "score"
+    ],
+    "timestamp": "2025-09-07T13:41:00.002934"
+  },
+  "open_world": {
+    "decision_metrics": {
+      "threshold": 0.7,
+      "TP": 1,
+      "FP": 5,
+      "FN": 0,
+      "TN": 0,
+      "precision": 0.16666666666666666,
+      "recall": 1.0,
+      "f1": 0.2857142857142857,
+      "accuracy": 0.16666666666666666
+    },
+    "ranking_metrics_among_positives": {
+      "count_positives": 4,
+      "acc_at_1": 0.25,
+      "p_at_5": 0.15000000000000002,
+      "mrr": 0.4375
+    },
+    "details": [
+      {
+        "source": "Naziv",
+        "gold": [
+          "lokacija_parkirisca"
+        ],
+        "chosen": "lastnik",
+        "outcome": "FP",
+        "candidates": [
+          "lastnik",
+          "opis_lokacije",
+          "gps_parkirisca",
+          "lokacija_parkirisca",
+          "parcele"
+        ],
+        "scores": [
+          0.7429200887680053,
+          0.7187737981478373,
+          0.702597763663844,
+          0.6970911622047424,
+          0.6917900562286377
+        ]
+      },
+      {
+        "source": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "gps_parkirisca"
+        ],
+        "chosen": "lokacija_parkirisca",
+        "outcome": "FP",
+        "candidates": [
+          "lokacija_parkirisca",
+          "gps_parkirisca",
+          "opis_lokacije",
+          "LAT",
+          "LON"
+        ],
+        "scores": [
+          0.7649100865636553,
+          0.7420986813657423,
+          0.7082255096435546,
+          0.6776173341274261,
+          0.653192093372345
+        ]
+      },
+      {
+        "source": "Plačljivo",
+        "gold": [
+          "rezim_parkiranja"
+        ],
+        "chosen": "lastnik",
+        "outcome": "FP",
+        "candidates": [
+          "lastnik",
+          "parcele",
+          "gps_parkirisca",
+          "st_parkirnih_mest",
+          "LAT"
+        ],
+        "scores": [
+          0.7396677255630493,
+          0.7030855953693389,
+          0.6759898012099058,
+          0.6739828852506784,
+          0.6252401947975158
+        ]
+      },
+      {
+        "source": "Cena",
+        "gold": [],
+        "chosen": "rezim_parkiranja",
+        "outcome": "FP",
+        "candidates": [
+          "rezim_parkiranja",
+          "oznacevanje_casa_modra_cona",
+          "gps_parkirisca",
+          "st_parkirnih_mest",
+          "LON"
+        ],
+        "scores": [
+          0.7262162053585052,
+          0.690419985594288,
+          0.6649457116921742,
+          0.6628761248929159,
+          0.6331663608551025
+        ]
+      },
+      {
+        "source": "Število parkirnih mest",
+        "gold": [
+          "st_parkirnih_mest"
+        ],
+        "chosen": "st_parkirnih_mest",
+        "outcome": "TP",
+        "candidates": [
+          "st_parkirnih_mest",
+          "gps_parkirisca",
+          "z.s.",
+          "LAT",
+          "LON"
+        ],
+        "scores": [
+          0.8919463286033044,
+          0.7759173413117726,
+          0.6789309694216802,
+          0.6445052802562713,
+          0.6443986356258392
+        ]
+      },
+      {
+        "source": "Število mest za invalide",
+        "gold": [],
+        "chosen": "st_parkirnih_mest",
+        "outcome": "FP",
+        "candidates": [
+          "st_parkirnih_mest",
+          "rezim_parkiranja",
+          "z.s.",
+          "LAT",
+          "LON"
+        ],
+        "scores": [
+          0.755936291159653,
+          0.7384845423698425,
+          0.6636967761175973,
+          0.6334095239639281,
+          0.6323286414146423
+        ]
+      }
+    ]
+  },
+  "closed_world": {
+    "count": 7,
+    "acc_at_1": 0.42857142857142855,
+    "p_at_5": 0.42857142857142855,
+    "mrr": 0.42857142857142855,
+    "details": [
+      {
+        "source_column": "Naziv",
+        "gold": [
+          "gps_parkirisca",
+          "lastnik",
+          "lokacija_parkirisca",
+          "opis_lokacije",
+          "parcele"
+        ],
+        "predictions": [
+          "lokacija_parkirisca"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "LAT",
+          "LON",
+          "gps_parkirisca",
+          "lokacija_parkirisca",
+          "opis_lokacije"
+        ],
+        "predictions": [
+          "gps_parkirisca"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Plačljivo",
+        "gold": [
+          "LAT",
+          "gps_parkirisca",
+          "lastnik",
+          "parcele",
+          "st_parkirnih_mest"
+        ],
+        "predictions": [
+          "rezim_parkiranja"
+        ],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Cena",
+        "gold": [
+          "LON",
+          "gps_parkirisca",
+          "oznacevanje_casa_modra_cona",
+          "rezim_parkiranja",
+          "st_parkirnih_mest"
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Število parkirnih mest",
+        "gold": [
+          "LAT",
+          "LON",
+          "gps_parkirisca",
+          "st_parkirnih_mest",
+          "z.s."
+        ],
+        "predictions": [
+          "st_parkirnih_mest"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Število mest z električno polnilnico",
+        "gold": [
+          "opis_lokacije",
+          "opombe",
+          "rezim_parkiranja",
+          "st_parkirnih_mest",
+          "z.s."
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Število mest za invalide",
+        "gold": [
+          "LAT",
+          "LON",
+          "rezim_parkiranja",
+          "st_parkirnih_mest",
+          "z.s."
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      }
+    ]
+  }
+}

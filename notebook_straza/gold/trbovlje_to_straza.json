@@ -6,7 +6,7 @@
     "target_columns": [
       "naziv"
     ],
-    "note": "Naziv parkirišča ↔ naziv."
+    "note": "Naziv parkirišča - naziv."
   },
   {
     "source_dataset": "Trbovlje",

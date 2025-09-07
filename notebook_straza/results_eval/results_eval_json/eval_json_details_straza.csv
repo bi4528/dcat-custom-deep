@@ -1,0 +1,8 @@
+source,gold,chosen,outcome,candidates,scores
+Naziv,['naziv'],naziv,TP,"['naziv', 'plačljivo', 'cena/h', 'lokacijska koordinata', 'št. Park. Mest']","[0.9176725113391876, 0.7553631859166281, 0.6996665282682939, 0.6835151878687051, 0.669764114681043]"
+Lokacijska koordinata (GMAPS - WGS84),['lokacijska koordinata'],lokacijska koordinata,TP,"['lokacijska koordinata', 'št. Park. Mest', 'cena/h', 'naziv', 'plačljivo']","[0.8633071862418076, 0.676959463778664, 0.6611295619676278, 0.6537722783429282, 0.6346841607404792]"
+Plačljivo,['plačljivo'],plačljivo,TP,"['plačljivo', 'naziv', 'lokacijska koordinata', 'cena/h', 'št. Park. Mest']","[0.9602607289950051, 0.7585886018616812, 0.7002876031398773, 0.6815897846221923, 0.6805650477824003]"
+Cena,['cena/h'],cena/h,TP,"['cena/h', 'naziv', 'plačljivo', 'lokacijska koordinata', 'št. Park. Mest']","[0.8474521505832671, 0.773579337199529, 0.7018680361601022, 0.6829223256111145, 0.6717658360799154]"
+Število parkirnih mest,['št. Park. Mest'],št. Park. Mest,TP,"['št. Park. Mest', 'lokacijska koordinata', 'cena/h', 'naziv', 'plačljivo']","[0.8232184290885926, 0.7353307019832522, 0.7018852123192378, 0.684295329120424, 0.6800348597188149]"
+Električna polnilnica,[],,TN,[],[]
+Število mest za invalide,[],,TN,[],[]

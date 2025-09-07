@@ -1,10 +1,42 @@
 [
   {
-    "uri": "auto:naziv_lokacijska_koordinata_pla_ljivo_cena_h_t_park_mest",
-    "label": "naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest",
-    "definition": "Koordinata ali lokacijski atribut 'naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest' (geografska lega).",
+    "uri": "sen:naziv",
+    "label": "naziv",
+    "definition": "Stolpec 'naziv' predstavlja opisni podatek o parkirišču v kontekstu stolpcev lokacijska koordinata, plačljivo, cena/h (npr. Na žago; Ulica talcev).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest. Type: xsd:decimal. Examples:  71779;NE;-;35,  71580;NE;-;39,  71389;NE;-;16. Defined as: Koordinata ali lokacijski atribut 'naziv;lokacijska koordinata;plačljivo;cena/h;št. Park. Mest' (geografska lega)."
+    "text_for_embedding": "Concept: naziv. Examples: Na žago, Ulica talcev, Vavta vas. Defined as: Stolpec 'naziv' predstavlja opisni podatek o parkirišču v kontekstu stolpcev lokacijska koordinata, plačljivo, cena/h (npr. Na žago; Ulica talcev)."
+  },
+  {
+    "uri": "sen:lokacijska_koordinata",
+    "label": "lokacijska koordinata",
+    "definition": "Stolpec 'lokacijska koordinata' predstavlja opisni podatek o parkirišču v kontekstu stolpcev naziv, plačljivo, cena/h (npr. 506000, 71779; 505850, 71580).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: lokacijska koordinata. Examples: 506000, 71779, 505850, 71580, 505636, 71389. Defined as: Stolpec 'lokacijska koordinata' predstavlja opisni podatek o parkirišču v kontekstu stolpcev naziv, plačljivo, cena/h (npr. 506000, 71779; 505850, 71580)."
+  },
+  {
+    "uri": "sen:plačljivo",
+    "label": "plačljivo",
+    "definition": "Stolpec 'plačljivo' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. NE).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: plačljivo. Examples: NE. Defined as: Stolpec 'plačljivo' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. NE)."
+  },
+  {
+    "uri": "sen:cena_h",
+    "label": "cena/h",
+    "definition": "Stolpec 'cena/h' predstavlja opisni podatek o parkirišču v kontekstu stolpcev naziv, lokacijska koordinata, plačljivo (npr. -).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: cena/h. Examples: -. Defined as: Stolpec 'cena/h' predstavlja opisni podatek o parkirišču v kontekstu stolpcev naziv, lokacijska koordinata, plačljivo (npr. -)."
+  },
+  {
+    "uri": "sen:št_park_mest",
+    "label": "št. Park. Mest",
+    "definition": "Stolpec 'št. Park. Mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 35; 39).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: št. Park. Mest. Examples: 35, 39, 16. Defined as: Stolpec 'št. Park. Mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 35; 39)."
   }
 ]

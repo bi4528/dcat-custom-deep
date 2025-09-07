@@ -1,10 +1,26 @@
 [
   {
-    "uri": "auto:zap_t_lokacija_naslov",
-    "label": "ZAP ŠT.;LOKACIJA;NASLOV",
-    "definition": "Številski atribut 'ZAP ŠT.;LOKACIJA;NASLOV' (količina ali kapaciteta).",
+    "uri": "defib:zap_št",
+    "label": "ZAP ŠT.",
+    "definition": "Stolpec »ZAP ŠT.« predstavlja zaporedno številko defibrilatorja na Krškem.",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: ZAP ŠT.;LOKACIJA;NASLOV. Type: xsd:string. Examples:  8312 Podbočje,  8270 Krško,  8270 Krško. Defined as: Številski atribut 'ZAP ŠT.;LOKACIJA;NASLOV' (količina ali kapaciteta)."
+    "text_for_embedding": "Concept: ZAP ŠT.. Type: xsd:decimal. Examples: 1.0, 2.0, 3.0. Defined as: Stolpec »ZAP ŠT.« predstavlja zaporedno številko defibrilatorja na Krškem."
+  },
+  {
+    "uri": "defib:lokacija",
+    "label": "LOKACIJA",
+    "definition": "Atribut »LOKACIJA« (opisna lastnost defibrilatorja).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: LOKACIJA. Type: xsd:string. Examples: Brezje v Podboèju, Dom starejših obèanov Krško, Gasilski dom Gora. Defined as: Stolpec »LOKACIJA« predstavlja lokacijo defibrilatorja na Krškem."
+  },
+  {
+    "uri": "defib:naslov",
+    "label": "NASLOV",
+    "definition": "Atribut »NASLOV« (opisna lastnost defibrilatorja).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: NASLOV. Type: xsd:string. Examples: Kje: Brezje v Podboèju 6, 8312 Podboèje, Kje: Kovinarska 13, 8270 Krško, Kje: Gora 31, 8270 Krško. Defined as: Stolpec »NASLOV« predstavlja naslov lokacije defibrilatorja na Krškem."
   }
 ]

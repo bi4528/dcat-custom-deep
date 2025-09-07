@@ -1,0 +1,66 @@
+{
+    "450683101678": {
+        "uri": "auto:naziv",
+        "label": "Naziv",
+        "definition": "Tekstovni naziv ali lokacijski opis 'Naziv'.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Naziv. Type: xsd:string. Examples: Pri OŠ Trbovlje, Ob občinski upravni zgradbi, Ploščad na Trgu revolucije. Defined as: Tekstovni naziv ali lokacijski opis 'Naziv'."
+    },
+    "279111715823": {
+        "uri": "auto:lokacijska_koordinata_gmaps_wgs84",
+        "label": "Lokacijska koordinata",
+        "definition": "Koordinata ali lokacijski atribut 'Lokacijska koordinata' (geografska lega).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Lokacijska koordinata. Type: xsd:decimal. Examples: 46.15632, 15.05573, 46.1566, 15.05375, 46.14592, 15.04025. Defined as: Koordinata ali lokacijski atribut 'Lokacijska koordinata' (geografska lega)."
+    },
+    "415074781641": {
+        "uri": "auto:pla_ljivo",
+        "label": "Plačljivo",
+        "definition": "Atribut, ki označuje ali je storitev/parkiranje plačljivo (DA/NE) ali opis režima.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Plačljivo. Type: xsd:boolean. Examples: ne, ne, ne. Defined as: Atribut, ki označuje ali je storitev/parkiranje plačljivo (DA/NE) ali opis režima."
+    },
+    "9672530617": {
+        "uri": "auto:cena",
+        "label": "Cena",
+        "definition": "Denarna vrednost 'Cena' (cena ali tarifa).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Cena. Type: xsd:string. Examples: 0, 0, 0. Defined as: Denarna vrednost 'Cena' (cena ali tarifa)."
+    },
+    "751937783278": {
+        "uri": "auto:tevilo_parkirnih_mest",
+        "label": "Število parkirnih mest",
+        "definition": "Številski atribut 'Število parkirnih mest' (količina ali kapaciteta).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Število parkirnih mest. Type: xsd:integer. Examples: 24, 12, 16. Defined as: Številski atribut 'Število parkirnih mest' (količina ali kapaciteta)."
+    },
+    "832154301169": {
+        "uri": "auto:elektri_na_polnilnica",
+        "label": "Električna polnilnica",
+        "definition": "Atribut 'Električna polnilnica' v podatkovnem naboru Trbovlje.",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Električna polnilnica. Type: xsd:boolean. Examples: ne, da, ne. Defined as: Atribut 'Električna polnilnica' v podatkovnem naboru Trbovlje."
+    },
+    "640864906513": {
+        "uri": "auto:tevilo_mest_z_elektri_no_polnilnico",
+        "label": "Število mest z električno polnilnico",
+        "definition": "Številski atribut 'Število mest z električno polnilnico' (količina ali kapaciteta).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Število mest z električno polnilnico. Type: xsd:integer. Examples: 0, 2, 0. Defined as: Številski atribut 'Število mest z električno polnilnico' (količina ali kapaciteta)."
+    },
+    "66816525313": {
+        "uri": "auto:tevilo_mest_za_invalide",
+        "label": "Število mest za invalide",
+        "definition": "Številski atribut 'Število mest za invalide' (količina ali kapaciteta).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: Število mest za invalide. Type: xsd:integer. Examples: 0, 1, 0. Defined as: Številski atribut 'Število mest za invalide' (količina ali kapaciteta)."
+    }
+}

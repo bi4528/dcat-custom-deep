@@ -1,10 +1,58 @@
 [
   {
-    "uri": "auto:naziv_lokacijska_koordinata_gmaps_wgs84_pla_ljivo_cena_tevilo_parkirnih_mest_elektri_na_polnilnica_tevilo_mest_z_elektri_no_polnilnico",
-    "label": "Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico",
-    "definition": "Koordinata ali lokacijski atribut 'Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico' (geografska lega).",
+    "uri": "vel:naziv",
+    "label": "Naziv",
+    "definition": "Stolpec 'Naziv' predstavlja opisni podatek o parkirišču v kontekstu stolpcev Lokacijska koordinata (GMAPS - WGS84), Plačljivo, Cena (npr. Modra cona A - Center mesta; Modra cona B - Zdravstveni dom).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico. Type: xsd:decimal. Examples: 60 EUR;731;da;2, 60 EUR;216;ne;0, 40 EUR;564;ne;0. Defined as: Koordinata ali lokacijski atribut 'Naziv;Lokacijska koordinata (GMAPS   WGS84);Plačljivo;Cena;Število parkirnih mest;Električna polnilnica;Število mest z električno polnilnico' (geografska lega)."
+    "text_for_embedding": "Concept: Naziv. Examples: Modra cona A - Center mesta, Modra cona B - Zdravstveni dom, Modra cona C - Kardeljev trg. Defined as: Stolpec 'Naziv' predstavlja opisni podatek o parkirišču v kontekstu stolpcev Lokacijska koordinata (GMAPS - WGS84), Plačljivo, Cena (npr. Modra cona A - Center mesta; Modra cona B - Zdravstveni dom)."
+  },
+  {
+    "uri": "vel:lokacijska_koordinata_gmaps_wgs84",
+    "label": "Lokacijska koordinata (GMAPS - WGS84)",
+    "definition": "Stolpec 'Lokacijska koordinata (GMAPS - WGS84)' predstavlja geografski podatek o legi parkirišča (npr. 46.35879197587468, 15.115911193723221; 46.362428193149846, 15.114449386004313).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Lokacijska koordinata (GMAPS - WGS84). Examples: 46.35879197587468, 15.115911193723221, 46.362428193149846, 15.114449386004313, 46.36127317125301, 15.11994791440299. Defined as: Stolpec 'Lokacijska koordinata (GMAPS - WGS84)' predstavlja geografski podatek o legi parkirišča (npr. 46.35879197587468, 15.115911193723221; 46.362428193149846, 15.114449386004313)."
+  },
+  {
+    "uri": "vel:plačljivo",
+    "label": "Plačljivo",
+    "definition": "Stolpec 'Plačljivo' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. da).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Plačljivo. Examples: da. Defined as: Stolpec 'Plačljivo' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. da)."
+  },
+  {
+    "uri": "vel:cena",
+    "label": "Cena",
+    "definition": "Stolpec 'Cena' predstavlja opisni podatek o parkirišču v kontekstu stolpcev Naziv, Lokacijska koordinata (GMAPS - WGS84), Plačljivo (npr. 0,60 EUR; 0,40 EUR).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Cena. Examples: 0,60 EUR, 0,40 EUR, 0,30 EUR. Defined as: Stolpec 'Cena' predstavlja opisni podatek o parkirišču v kontekstu stolpcev Naziv, Lokacijska koordinata (GMAPS - WGS84), Plačljivo (npr. 0,60 EUR; 0,40 EUR)."
+  },
+  {
+    "uri": "vel:število_parkirnih_mest",
+    "label": "Število parkirnih mest",
+    "definition": "Stolpec 'Število parkirnih mest' predstavlja numerični podatek, povezan s parkirišči (npr. 731.0; 216.0).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Število parkirnih mest. Examples: 731.0, 216.0, 564.0. Defined as: Stolpec 'Število parkirnih mest' predstavlja numerični podatek, povezan s parkirišči (npr. 731.0; 216.0)."
+  },
+  {
+    "uri": "vel:električna_polnilnica",
+    "label": "Električna polnilnica",
+    "definition": "Stolpec 'Električna polnilnica' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. da; ne).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Električna polnilnica. Examples: da, ne. Defined as: Stolpec 'Električna polnilnica' predstavlja dvovrednostni (DA/NE) podatek o lastnosti parkirišča (npr. da; ne)."
+  },
+  {
+    "uri": "vel:število_mest_z_električno_polnilnico",
+    "label": "Število mest z električno polnilnico",
+    "definition": "Stolpec 'Število mest z električno polnilnico' predstavlja numerični podatek, povezan s parkirišči (npr. 2.0; 0.0).",
+    "synonyms": [],
+    "superclasses": [],
+    "text_for_embedding": "Concept: Število mest z električno polnilnico. Examples: 2.0, 0.0. Defined as: Stolpec 'Število mest z električno polnilnico' predstavlja numerični podatek, povezan s parkirišči (npr. 2.0; 0.0)."
   }
 ]

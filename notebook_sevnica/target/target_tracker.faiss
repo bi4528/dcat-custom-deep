@@ -1,0 +1,126 @@
+{
+    "555497473181": {
+        "uri": "sev:z_s",
+        "label": "z.s.",
+        "definition": "Stolpec 'z.s.' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 1; 2).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: z.s.. Examples: 1, 2, 3. Defined as: Stolpec 'z.s.' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 1; 2)."
+    },
+    "865469903585": {
+        "uri": "sev:lokacija_parkirisca",
+        "label": "lokacija_parkirisca",
+        "definition": "Stolpec 'lokacija_parkirisca' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., opis_lokacije, gps_parkirisca (npr. Glavni trg 19, 8290 Sevnica; Glavni trg 21, 8290 Sevnica).",
+        "synonyms": [
+            "naslov",
+            "opis lokacije",
+            "ime lokacije"
+        ],
+        "superclasses": [],
+        "text_for_embedding": "Concept: lokacija_parkirisca. Examples: Glavni trg 19, 8290 Sevnica, Glavni trg 21, 8290 Sevnica, Glavni trg 27, 8290 Sevnica. Defined as: Stolpec 'lokacija_parkirisca' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., opis_lokacije, gps_parkirisca (npr. Glavni trg 19, 8290 Sevnica; Glavni trg 21, 8290 Sevnica)."
+    },
+    "209077422443": {
+        "uri": "sev:opis_lokacije",
+        "label": "opis_lokacije",
+        "definition": "Stolpec 'opis_lokacije' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, gps_parkirisca (npr. Občina Sevnica - zgoraj ob Slomškovem domu; Občina Sevnica - elektro polnilnica).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: opis_lokacije. Examples: Občina Sevnica - zgoraj ob Slomškovem domu, Občina Sevnica - elektro polnilnica, Občina Sevnica - spodaj levo. Defined as: Stolpec 'opis_lokacije' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, gps_parkirisca (npr. Občina Sevnica - zgoraj ob Slomškovem domu; Občina Sevnica - elektro polnilnica)."
+    },
+    "304714677244": {
+        "uri": "sev:gps_parkirisca",
+        "label": "gps_parkirisca",
+        "definition": "Stolpec 'gps_parkirisca' predstavlja geografski podatek o legi parkirišča (npr. 46.00604,15.31502; 46.00609,15.31516).",
+        "synonyms": [
+            "koordinate",
+            "geolokacija",
+            "lat/lon"
+        ],
+        "superclasses": [],
+        "text_for_embedding": "Concept: gps_parkirisca. Examples: 46.00604,15.31502, 46.00609,15.31516, 46.00579,15.31485. Defined as: Stolpec 'gps_parkirisca' predstavlja geografski podatek o legi parkirišča (npr. 46.00604,15.31502; 46.00609,15.31516)."
+    },
+    "489538172931": {
+        "uri": "sev:lat",
+        "label": "LAT",
+        "definition": "Stolpec 'LAT' predstavlja numerični podatek, povezan s parkirišči (npr. 46.00604; 46.00609).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: LAT. Examples: 46.00604, 46.00609, 46.00579. Defined as: Stolpec 'LAT' predstavlja numerični podatek, povezan s parkirišči (npr. 46.00604; 46.00609)."
+    },
+    "458711169680": {
+        "uri": "sev:lon",
+        "label": "LON",
+        "definition": "Stolpec 'LON' predstavlja numerični podatek, povezan s parkirišči (npr. 15.31502; 15.31516).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: LON. Examples: 15.31502, 15.31516, 15.31485. Defined as: Stolpec 'LON' predstavlja numerični podatek, povezan s parkirišči (npr. 15.31502; 15.31516)."
+    },
+    "872433182484": {
+        "uri": "sev:rezim_parkiranja",
+        "label": "rezim_parkiranja",
+        "definition": "Stolpec 'rezim_parkiranja' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. brez omejitev; elektro vozila).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: rezim_parkiranja. Examples: brez omejitev, elektro vozila, modra cona. Defined as: Stolpec 'rezim_parkiranja' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. brez omejitev; elektro vozila)."
+    },
+    "392837146264": {
+        "uri": "sev:parcele",
+        "label": "parcele",
+        "definition": "Stolpec 'parcele' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 29/4, 29/8, 29/11, k.o. Sevnica; 29/11, k.o. Sevnica).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: parcele. Examples: 29/4, 29/8, 29/11, k.o. Sevnica, 29/11, k.o. Sevnica, 29/4, 29/12, k.o. Sevnica. Defined as: Stolpec 'parcele' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 29/4, 29/8, 29/11, k.o. Sevnica; 29/11, k.o. Sevnica)."
+    },
+    "190787124959": {
+        "uri": "sev:lastnik",
+        "label": "lastnik",
+        "definition": "Stolpec 'lastnik' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. Občina Sevnica; Naravno vodno javno dobro).",
+        "synonyms": [
+            "upravljavec",
+            "upravitelj",
+            "lastništvo"
+        ],
+        "superclasses": [],
+        "text_for_embedding": "Concept: lastnik. Examples: Občina Sevnica, Naravno vodno javno dobro, Javno dobro, Občina Sevnica. Defined as: Stolpec 'lastnik' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. Občina Sevnica; Naravno vodno javno dobro)."
+    },
+    "767439564392": {
+        "uri": "sev:st_parkirnih_mest",
+        "label": "st_parkirnih_mest",
+        "definition": "Stolpec 'st_parkirnih_mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 21; 1).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: st_parkirnih_mest. Examples: 21, 1, 12. Defined as: Stolpec 'st_parkirnih_mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 21; 1)."
+    },
+    "911767285832": {
+        "uri": "sev:predpis",
+        "label": "predpis",
+        "definition": "Stolpec 'predpis' predstavlja datumovni podatek, ki označuje časovno lastnost zapisa (npr. https://www.uradni-list.si/1/content?id=108319; https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: predpis. Examples: https://www.uradni-list.si/1/content?id=108319, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2021-01-0767/odredba-o-ureditvi-parkiranja-na-javnem-parkiriscu-pr-pri-zelezniski-postaji-v-sevnici. Defined as: Stolpec 'predpis' predstavlja datumovni podatek, ki označuje časovno lastnost zapisa (npr. https://www.uradni-list.si/1/content?id=108319; https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici)."
+    },
+    "664643594257": {
+        "uri": "sev:omejitev_modra_cona",
+        "label": "omejitev_modra_cona",
+        "definition": "Stolpec 'omejitev_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna; Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: omejitev_modra_cona. Examples: delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna, Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur, delavniki od 6. do 16. ure., 1. ura parkiranja brezplačna. Defined as: Stolpec 'omejitev_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna; Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur)."
+    },
+    "445631876811": {
+        "uri": "sev:oznacevanje_casa_modra_cona",
+        "label": "oznacevanje_casa_modra_cona",
+        "definition": "Stolpec 'oznacevanje_casa_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. označitev časa parkiranja s  listkom v vozilu; označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: oznacevanje_casa_modra_cona. Examples: označitev časa parkiranja s  listkom v vozilu, označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu. Defined as: Stolpec 'oznacevanje_casa_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. označitev časa parkiranja s  listkom v vozilu; označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu)."
+    },
+    "98829917346": {
+        "uri": "sev:opombe",
+        "label": "opombe",
+        "definition": "Stolpec 'opombe' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 2 elektro polnilnice za 4 vozila; Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.).",
+        "synonyms": [],
+        "superclasses": [],
+        "text_for_embedding": "Concept: opombe. Examples: 2 elektro polnilnice za 4 vozila, Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.. Defined as: Stolpec 'opombe' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 2 elektro polnilnice za 4 vozila; Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.)."
+    }
+}

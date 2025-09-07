@@ -1,0 +1,254 @@
+{
+  "params": {
+    "gold_json": "notebook_brezice/gold/trbovlje_to_brezice.json",
+    "preds_json": "notebook_brezice/result/brezice_match.json",
+    "top_k": 5,
+    "threshold": 0.7,
+    "score_fields": [
+      "combined_score",
+      "score"
+    ],
+    "timestamp": "2025-09-07T18:53:32.806592"
+  },
+  "open_world": {
+    "decision_metrics": {
+      "threshold": 0.7,
+      "TP": 2,
+      "FP": 3,
+      "FN": 1,
+      "TN": 2,
+      "precision": 0.4,
+      "recall": 0.6666666666666666,
+      "f1": 0.5,
+      "accuracy": 0.5
+    },
+    "ranking_metrics_among_positives": {
+      "count_positives": 5,
+      "acc_at_1": 0.4,
+      "p_at_5": 0.16,
+      "mrr": 0.55
+    },
+    "details": [
+      {
+        "source": "Naziv",
+        "gold": [
+          "lokacija_parkirisca"
+        ],
+        "chosen": "opis_lokacije",
+        "outcome": "FP",
+        "candidates": [
+          "opis_lokacije",
+          "LON",
+          "gps_parkirisca",
+          "lokacija_parkirisca",
+          "LAT"
+        ],
+        "scores": [
+          0.7149663845698038,
+          0.7045562982559204,
+          0.7004921997848309,
+          0.6825292468070983,
+          0.6303169131278992
+        ]
+      },
+      {
+        "source": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "gps_parkirisca"
+        ],
+        "chosen": "lokacija_parkirisca",
+        "outcome": "FP",
+        "candidates": [
+          "lokacija_parkirisca",
+          "gps_parkirisca",
+          "opis_lokacije",
+          "LAT",
+          "LON"
+        ],
+        "scores": [
+          0.7516873623643603,
+          0.7418441695325514,
+          0.7117719025611876,
+          0.6774922895431519,
+          0.6539527082443237
+        ]
+      },
+      {
+        "source": "Plačljivo",
+        "gold": [
+          "Parkrini režim"
+        ],
+        "chosen": null,
+        "outcome": "FN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Cena",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Število parkirnih mest",
+        "gold": [
+          "parkirni prostori"
+        ],
+        "chosen": "parkirni prostori",
+        "outcome": "TP",
+        "candidates": [
+          "parkirni prostori",
+          "parkirni prostori za invalide",
+          "gps_parkirisca",
+          "LON",
+          "LAT"
+        ],
+        "scores": [
+          0.8423683386582593,
+          0.793498350942836,
+          0.7738965173562367,
+          0.6428158640861511,
+          0.6415554881095886
+        ]
+      },
+      {
+        "source": "Električna polnilnica",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Število mest z električno polnilnico",
+        "gold": [],
+        "chosen": "parkirni prostori za invalide",
+        "outcome": "FP",
+        "candidates": [
+          "parkirni prostori za invalide",
+          "parkirni prostori",
+          "opis_lokacije",
+          "LON",
+          "LAT"
+        ],
+        "scores": [
+          0.7477336586438692,
+          0.7223293441646503,
+          0.6855115586397599,
+          0.6275383114814758,
+          0.6226852297782898
+        ]
+      },
+      {
+        "source": "Število mest za invalide",
+        "gold": [
+          "parkirni prostori za invalide"
+        ],
+        "chosen": "parkirni prostori za invalide",
+        "outcome": "TP",
+        "candidates": [
+          "parkirni prostori za invalide",
+          "opis_lokacije",
+          "parkirni prostori",
+          "LON",
+          "LAT"
+        ],
+        "scores": [
+          0.8586200865934479,
+          0.7293987138851269,
+          0.719949261589748,
+          0.6304484665393829,
+          0.6288960695266723
+        ]
+      }
+    ]
+  },
+  "closed_world": {
+    "count": 5,
+    "acc_at_1": 0.8,
+    "p_at_5": 0.8,
+    "mrr": 0.8,
+    "details": [
+      {
+        "source_column": "Naziv",
+        "gold": [
+          "LAT",
+          "LON",
+          "gps_parkirisca",
+          "lokacija_parkirisca",
+          "opis_lokacije"
+        ],
+        "predictions": [
+          "lokacija_parkirisca"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "LAT",
+          "LON",
+          "gps_parkirisca",
+          "lokacija_parkirisca",
+          "opis_lokacije"
+        ],
+        "predictions": [
+          "gps_parkirisca"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Število parkirnih mest",
+        "gold": [
+          "LAT",
+          "LON",
+          "gps_parkirisca",
+          "parkirni prostori",
+          "parkirni prostori za invalide"
+        ],
+        "predictions": [
+          "parkirni prostori"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Število mest z električno polnilnico",
+        "gold": [
+          "LAT",
+          "LON",
+          "opis_lokacije",
+          "parkirni prostori",
+          "parkirni prostori za invalide"
+        ],
+        "predictions": [],
+        "hit": false,
+        "rank_hit": null,
+        "hits_in_k": 0
+      },
+      {
+        "source_column": "Število mest za invalide",
+        "gold": [
+          "LAT",
+          "LON",
+          "opis_lokacije",
+          "parkirni prostori",
+          "parkirni prostori za invalide"
+        ],
+        "predictions": [
+          "parkirni prostori za invalide"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      }
+    ]
+  }
+}

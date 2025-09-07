@@ -1,0 +1,248 @@
+{
+  "params": {
+    "gold_json": "notebook_straza/gold/trbovlje_to_straza.json",
+    "preds_json": "notebook_straza/result/straza_match.json",
+    "top_k": 5,
+    "threshold": 0.7,
+    "score_fields": [
+      "combined_score",
+      "score"
+    ],
+    "timestamp": "2025-09-07T14:30:27.791805"
+  },
+  "open_world": {
+    "decision_metrics": {
+      "threshold": 0.7,
+      "TP": 5,
+      "FP": 0,
+      "FN": 0,
+      "TN": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    },
+    "ranking_metrics_among_positives": {
+      "count_positives": 5,
+      "acc_at_1": 1.0,
+      "p_at_5": 0.2,
+      "mrr": 1.0
+    },
+    "details": [
+      {
+        "source": "Naziv",
+        "gold": [
+          "naziv"
+        ],
+        "chosen": "naziv",
+        "outcome": "TP",
+        "candidates": [
+          "naziv",
+          "plačljivo",
+          "cena/h",
+          "lokacijska koordinata",
+          "št. Park. Mest"
+        ],
+        "scores": [
+          0.9176725113391876,
+          0.7553631859166281,
+          0.6996665282682939,
+          0.6835151878687051,
+          0.669764114681043
+        ]
+      },
+      {
+        "source": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "lokacijska koordinata"
+        ],
+        "chosen": "lokacijska koordinata",
+        "outcome": "TP",
+        "candidates": [
+          "lokacijska koordinata",
+          "št. Park. Mest",
+          "cena/h",
+          "naziv",
+          "plačljivo"
+        ],
+        "scores": [
+          0.8633071862418076,
+          0.676959463778664,
+          0.6611295619676278,
+          0.6537722783429282,
+          0.6346841607404792
+        ]
+      },
+      {
+        "source": "Plačljivo",
+        "gold": [
+          "plačljivo"
+        ],
+        "chosen": "plačljivo",
+        "outcome": "TP",
+        "candidates": [
+          "plačljivo",
+          "naziv",
+          "lokacijska koordinata",
+          "cena/h",
+          "št. Park. Mest"
+        ],
+        "scores": [
+          0.9602607289950051,
+          0.7585886018616812,
+          0.7002876031398773,
+          0.6815897846221923,
+          0.6805650477824003
+        ]
+      },
+      {
+        "source": "Cena",
+        "gold": [
+          "cena/h"
+        ],
+        "chosen": "cena/h",
+        "outcome": "TP",
+        "candidates": [
+          "cena/h",
+          "naziv",
+          "plačljivo",
+          "lokacijska koordinata",
+          "št. Park. Mest"
+        ],
+        "scores": [
+          0.8474521505832671,
+          0.773579337199529,
+          0.7018680361601022,
+          0.6829223256111145,
+          0.6717658360799154
+        ]
+      },
+      {
+        "source": "Število parkirnih mest",
+        "gold": [
+          "št. Park. Mest"
+        ],
+        "chosen": "št. Park. Mest",
+        "outcome": "TP",
+        "candidates": [
+          "št. Park. Mest",
+          "lokacijska koordinata",
+          "cena/h",
+          "naziv",
+          "plačljivo"
+        ],
+        "scores": [
+          0.8232184290885926,
+          0.7353307019832522,
+          0.7018852123192378,
+          0.684295329120424,
+          0.6800348597188149
+        ]
+      },
+      {
+        "source": "Električna polnilnica",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      },
+      {
+        "source": "Število mest za invalide",
+        "gold": [],
+        "chosen": null,
+        "outcome": "TN",
+        "candidates": [],
+        "scores": []
+      }
+    ]
+  },
+  "closed_world": {
+    "count": 5,
+    "acc_at_1": 1.0,
+    "p_at_5": 1.0,
+    "mrr": 1.0,
+    "details": [
+      {
+        "source_column": "Naziv",
+        "gold": [
+          "cena/h",
+          "lokacijska koordinata",
+          "naziv",
+          "plačljivo",
+          "št. Park. Mest"
+        ],
+        "predictions": [
+          "naziv"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
+        "gold": [
+          "cena/h",
+          "lokacijska koordinata",
+          "naziv",
+          "plačljivo",
+          "št. Park. Mest"
+        ],
+        "predictions": [
+          "lokacijska koordinata"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Plačljivo",
+        "gold": [
+          "cena/h",
+          "lokacijska koordinata",
+          "naziv",
+          "plačljivo",
+          "št. Park. Mest"
+        ],
+        "predictions": [
+          "plačljivo"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Cena",
+        "gold": [
+          "cena/h",
+          "lokacijska koordinata",
+          "naziv",
+          "plačljivo",
+          "št. Park. Mest"
+        ],
+        "predictions": [
+          "cena/h"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      },
+      {
+        "source_column": "Število parkirnih mest",
+        "gold": [
+          "cena/h",
+          "lokacijska koordinata",
+          "naziv",
+          "plačljivo",
+          "št. Park. Mest"
+        ],
+        "predictions": [
+          "št. Park. Mest"
+        ],
+        "hit": true,
+        "rank_hit": 1,
+        "hits_in_k": 1
+      }
+    ]
+  }
+}

@@ -7,48 +7,55 @@
       "LOKACIJA",
       "NASLOV"
     ],
-    "note": "Naziv parkirišča bi se lahko približno ujemal z lokacijo/naslovom defibrilatorja (slabo ujemanje, negativna kontrola)."
+    "note": ""
   },
   {
     "source_dataset": "Trbovlje",
     "source_column": "Lokacijska koordinata (GMAPS - WGS84)",
     "target_dataset": "Defibrilatorji",
     "target_columns": [],
-    "note": "Format koordinat v defibrilatorjih je drugačen; težko ujemanje."
+    "note": ""
   },
   {
     "source_dataset": "Trbovlje",
     "source_column": "Plačljivo",
     "target_dataset": "Defibrilatorji",
     "target_columns": [],
-    "note": "Ni smiselnega atributa za plačljivost pri defibrilatorjih."
+    "note": ""
   },
   {
     "source_dataset": "Trbovlje",
     "source_column": "Cena",
     "target_dataset": "Defibrilatorji",
     "target_columns": [],
-    "note": "Ni smiselnega atributa za ceno pri defibrilatorjih."
+    "note": ""
   },
   {
     "source_dataset": "Trbovlje",
     "source_column": "Število parkirnih mest",
     "target_dataset": "Defibrilatorji",
     "target_columns": [],
-    "note": "Ni smiselnega atributa; defibrilatorji niso parkirišča."
+    "note": ""
   },
   {
     "source_dataset": "Trbovlje",
     "source_column": "Električna polnilnica",
     "target_dataset": "Defibrilatorji",
     "target_columns": [],
-    "note": "Ni smiselnega atributa."
+    "note": ""
+  },
+  {
+    "source_dataset": "Trbovlje",
+    "source_column": "Število mest z električno polnilnico",
+    "target_dataset": "Defibrilatorji",
+    "target_columns": [],
+    "note": ""
   },
   {
     "source_dataset": "Trbovlje",
     "source_column": "Število mest za invalide",
     "target_dataset": "Defibrilatorji",
     "target_columns": [],
-    "note": "Ni smiselnega atributa."
+    "note": ""
   }
 ]

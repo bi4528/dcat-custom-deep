@@ -1,114 +1,126 @@
 [
   {
-    "uri": "auto:z_s",
+    "uri": "sev:z_s",
     "label": "z.s.",
-    "definition": "Atribut 'z.s.' v podatkovnem naboru Sevnica.",
+    "definition": "Stolpec 'z.s.' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 1; 2).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: z.s.. Type: xsd:integer. Examples: 1, 2, 3. Defined as: Atribut 'z.s.' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: z.s.. Examples: 1, 2, 3. Defined as: Stolpec 'z.s.' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 1; 2)."
   },
   {
-    "uri": "auto:lokacija_parkirisca",
-    "label": "lokacija parkirisca",
-    "definition": "Tekstovni naziv ali lokacijski opis 'lokacija parkirisca'.",
+    "uri": "sev:lokacija_parkirisca",
+    "label": "lokacija_parkirisca",
+    "definition": "Stolpec 'lokacija_parkirisca' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., opis_lokacije, gps_parkirisca (npr. Glavni trg 19, 8290 Sevnica; Glavni trg 21, 8290 Sevnica).",
+    "synonyms": [
+      "naslov",
+      "opis lokacije",
+      "ime lokacije"
+    ],
+    "superclasses": [],
+    "text_for_embedding": "Concept: lokacija_parkirisca. Examples: Glavni trg 19, 8290 Sevnica, Glavni trg 21, 8290 Sevnica, Glavni trg 27, 8290 Sevnica. Defined as: Stolpec 'lokacija_parkirisca' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., opis_lokacije, gps_parkirisca (npr. Glavni trg 19, 8290 Sevnica; Glavni trg 21, 8290 Sevnica)."
+  },
+  {
+    "uri": "sev:opis_lokacije",
+    "label": "opis_lokacije",
+    "definition": "Stolpec 'opis_lokacije' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, gps_parkirisca (npr. Občina Sevnica - zgoraj ob Slomškovem domu; Občina Sevnica - elektro polnilnica).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: lokacija parkirisca. Type: xsd:string. Examples: Glavni trg 19, 8290 Sevnica, Glavni trg 19, 8290 Sevnica, Glavni trg 21, 8290 Sevnica. Defined as: Tekstovni naziv ali lokacijski opis 'lokacija parkirisca'."
+    "text_for_embedding": "Concept: opis_lokacije. Examples: Občina Sevnica - zgoraj ob Slomškovem domu, Občina Sevnica - elektro polnilnica, Občina Sevnica - spodaj levo. Defined as: Stolpec 'opis_lokacije' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, gps_parkirisca (npr. Občina Sevnica - zgoraj ob Slomškovem domu; Občina Sevnica - elektro polnilnica)."
   },
   {
-    "uri": "auto:opis_lokacije",
-    "label": "opis lokacije",
-    "definition": "Opisna informacija 'opis lokacije'.",
-    "synonyms": [],
+    "uri": "sev:gps_parkirisca",
+    "label": "gps_parkirisca",
+    "definition": "Stolpec 'gps_parkirisca' predstavlja geografski podatek o legi parkirišča (npr. 46.00604,15.31502; 46.00609,15.31516).",
+    "synonyms": [
+      "koordinate",
+      "geolokacija",
+      "lat/lon"
+    ],
     "superclasses": [],
-    "text_for_embedding": "Concept: opis lokacije. Type: xsd:string. Examples: Občina Sevnica - zgoraj ob Slomškovem domu, Občina Sevnica - elektro polnilnica, Občina Sevnica - spodaj levo. Defined as: Opisna informacija 'opis lokacije'."
+    "text_for_embedding": "Concept: gps_parkirisca. Examples: 46.00604,15.31502, 46.00609,15.31516, 46.00579,15.31485. Defined as: Stolpec 'gps_parkirisca' predstavlja geografski podatek o legi parkirišča (npr. 46.00604,15.31502; 46.00609,15.31516)."
   },
   {
-    "uri": "auto:gps_parkirisca",
-    "label": "gps parkirisca",
-    "definition": "Atribut 'gps parkirisca' v podatkovnem naboru Sevnica.",
-    "synonyms": [],
-    "superclasses": [],
-    "text_for_embedding": "Concept: gps parkirisca. Type: xsd:decimal. Examples: 46.00604,15.31502, 46.00609,15.31516, 46.00579,15.31485. Defined as: Atribut 'gps parkirisca' v podatkovnem naboru Sevnica."
-  },
-  {
-    "uri": "auto:lat",
+    "uri": "sev:lat",
     "label": "LAT",
-    "definition": "Koordinata ali lokacijski atribut 'LAT' (geografska lega).",
+    "definition": "Stolpec 'LAT' predstavlja numerični podatek, povezan s parkirišči (npr. 46.00604; 46.00609).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: LAT. Type: xsd:decimal. Examples: 46.00604, 46.00609, 46.00579. Defined as: Koordinata ali lokacijski atribut 'LAT' (geografska lega)."
+    "text_for_embedding": "Concept: LAT. Examples: 46.00604, 46.00609, 46.00579. Defined as: Stolpec 'LAT' predstavlja numerični podatek, povezan s parkirišči (npr. 46.00604; 46.00609)."
   },
   {
-    "uri": "auto:lon",
+    "uri": "sev:lon",
     "label": "LON",
-    "definition": "Koordinata ali lokacijski atribut 'LON' (geografska lega).",
+    "definition": "Stolpec 'LON' predstavlja numerični podatek, povezan s parkirišči (npr. 15.31502; 15.31516).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: LON. Type: xsd:decimal. Examples: 15.31502, 15.31516, 15.31485. Defined as: Koordinata ali lokacijski atribut 'LON' (geografska lega)."
+    "text_for_embedding": "Concept: LON. Examples: 15.31502, 15.31516, 15.31485. Defined as: Stolpec 'LON' predstavlja numerični podatek, povezan s parkirišči (npr. 15.31502; 15.31516)."
   },
   {
-    "uri": "auto:rezim_parkiranja",
-    "label": "rezim parkiranja",
-    "definition": "Atribut 'rezim parkiranja' v podatkovnem naboru Sevnica.",
+    "uri": "sev:rezim_parkiranja",
+    "label": "rezim_parkiranja",
+    "definition": "Stolpec 'rezim_parkiranja' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. brez omejitev; elektro vozila).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: rezim parkiranja. Type: xsd:string. Examples: brez omejitev, elektro vozila, brez omejitev. Defined as: Atribut 'rezim parkiranja' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: rezim_parkiranja. Examples: brez omejitev, elektro vozila, modra cona. Defined as: Stolpec 'rezim_parkiranja' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. brez omejitev; elektro vozila)."
   },
   {
-    "uri": "auto:parcele",
+    "uri": "sev:parcele",
     "label": "parcele",
-    "definition": "Atribut 'parcele' v podatkovnem naboru Sevnica.",
+    "definition": "Stolpec 'parcele' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 29/4, 29/8, 29/11, k.o. Sevnica; 29/11, k.o. Sevnica).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: parcele. Type: xsd:string. Examples: 29/4, 29/8, 29/11, k.o. Sevnica, 29/11, k.o. Sevnica, 29/4, 29/12, k.o. Sevnica. Defined as: Atribut 'parcele' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: parcele. Examples: 29/4, 29/8, 29/11, k.o. Sevnica, 29/11, k.o. Sevnica, 29/4, 29/12, k.o. Sevnica. Defined as: Stolpec 'parcele' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 29/4, 29/8, 29/11, k.o. Sevnica; 29/11, k.o. Sevnica)."
   },
   {
-    "uri": "auto:lastnik",
+    "uri": "sev:lastnik",
     "label": "lastnik",
-    "definition": "Atribut 'lastnik' v podatkovnem naboru Sevnica.",
-    "synonyms": [],
+    "definition": "Stolpec 'lastnik' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. Občina Sevnica; Naravno vodno javno dobro).",
+    "synonyms": [
+      "upravljavec",
+      "upravitelj",
+      "lastništvo"
+    ],
     "superclasses": [],
-    "text_for_embedding": "Concept: lastnik. Type: xsd:string. Examples: Občina Sevnica, Občina Sevnica, Občina Sevnica. Defined as: Atribut 'lastnik' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: lastnik. Examples: Občina Sevnica, Naravno vodno javno dobro, Javno dobro, Občina Sevnica. Defined as: Stolpec 'lastnik' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. Občina Sevnica; Naravno vodno javno dobro)."
   },
   {
-    "uri": "auto:st_parkirnih_mest",
-    "label": "st parkirnih mest",
-    "definition": "Atribut 'st parkirnih mest' v podatkovnem naboru Sevnica.",
+    "uri": "sev:st_parkirnih_mest",
+    "label": "st_parkirnih_mest",
+    "definition": "Stolpec 'st_parkirnih_mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 21; 1).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: st parkirnih mest. Type: xsd:integer. Examples: 21, 1, 12. Defined as: Atribut 'st parkirnih mest' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: st_parkirnih_mest. Examples: 21, 1, 12. Defined as: Stolpec 'st_parkirnih_mest' predstavlja številski podatek o količini ali kapaciteti parkirišča (npr. 21; 1)."
   },
   {
-    "uri": "auto:predpis",
+    "uri": "sev:predpis",
     "label": "predpis",
-    "definition": "Atribut 'predpis' v podatkovnem naboru Sevnica.",
+    "definition": "Stolpec 'predpis' predstavlja datumovni podatek, ki označuje časovno lastnost zapisa (npr. https://www.uradni-list.si/1/content?id=108319; https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: predpis. Type: xsd:string. Examples: https://www.uradni-list.si/1/content?id=108319, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2021-01-0767/odredba-o-ureditvi-parkiranja-na-javnem-parkiriscu-pr-pri-zelezniski-postaji-v-sevnici. Defined as: Atribut 'predpis' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: predpis. Examples: https://www.uradni-list.si/1/content?id=108319, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2021-01-0767/odredba-o-ureditvi-parkiranja-na-javnem-parkiriscu-pr-pri-zelezniski-postaji-v-sevnici. Defined as: Stolpec 'predpis' predstavlja datumovni podatek, ki označuje časovno lastnost zapisa (npr. https://www.uradni-list.si/1/content?id=108319; https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2017-01-0907/odredba-o-dolocitvi-obmocja-kratkotrajnega-parkiranja-na-javnem-parkiriscu-na-glavnem-trgu-v-sevnici)."
   },
   {
-    "uri": "auto:omejitev_modra_cona",
-    "label": "omejitev modra cona",
-    "definition": "Atribut 'omejitev modra cona' v podatkovnem naboru Sevnica.",
+    "uri": "sev:omejitev_modra_cona",
+    "label": "omejitev_modra_cona",
+    "definition": "Stolpec 'omejitev_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna; Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: omejitev modra cona. Type: xsd:string. Examples: delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna, delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna, Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur. Defined as: Atribut 'omejitev modra cona' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: omejitev_modra_cona. Examples: delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna, Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur, delavniki od 6. do 16. ure., 1. ura parkiranja brezplačna. Defined as: Stolpec 'omejitev_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. delavniki od 7. do 17. ure., 1. ura parkiranja brezplačna; Parkiranje dovoljeno samo za uporabnike javnega potniškega prometa do 12 ur)."
   },
   {
-    "uri": "auto:oznacevanje_casa_modra_cona",
-    "label": "oznacevanje casa modra cona",
-    "definition": "Atribut 'oznacevanje casa modra cona' v podatkovnem naboru Sevnica.",
+    "uri": "sev:oznacevanje_casa_modra_cona",
+    "label": "oznacevanje_casa_modra_cona",
+    "definition": "Stolpec 'oznacevanje_casa_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. označitev časa parkiranja s  listkom v vozilu; označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: oznacevanje casa modra cona. Type: xsd:string. Examples: označitev časa parkiranja s  listkom v vozilu, označitev časa parkiranja s  listkom v vozilu, označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu. Defined as: Atribut 'oznacevanje casa modra cona' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: oznacevanje_casa_modra_cona. Examples: označitev časa parkiranja s  listkom v vozilu, označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu. Defined as: Stolpec 'oznacevanje_casa_modra_cona' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. označitev časa parkiranja s  listkom v vozilu; označitev časa parkiranja s  parkirnim listkom iz parkomata v vozilu)."
   },
   {
-    "uri": "auto:opombe",
+    "uri": "sev:opombe",
     "label": "opombe",
-    "definition": "Atribut 'opombe' v podatkovnem naboru Sevnica.",
+    "definition": "Stolpec 'opombe' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 2 elektro polnilnice za 4 vozila; Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.).",
     "synonyms": [],
     "superclasses": [],
-    "text_for_embedding": "Concept: opombe. Type: xsd:string. Examples: 2 elektro polnilnice za 4 vozila, 2 elektro polnilnice za 4 vozila, Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.. Defined as: Atribut 'opombe' v podatkovnem naboru Sevnica."
+    "text_for_embedding": "Concept: opombe. Examples: 2 elektro polnilnice za 4 vozila, Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.. Defined as: Stolpec 'opombe' predstavlja opisni podatek o parkirišču v kontekstu stolpcev z.s., lokacija_parkirisca, opis_lokacije (npr. 2 elektro polnilnice za 4 vozila; Čas uporabe max. 1 ura, samo za stranke Lidl za čas nakupovanja. Elektro polnilnica za 2 vozili.)."
   }
 ]

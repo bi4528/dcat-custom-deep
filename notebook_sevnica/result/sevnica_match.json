@@ -1,0 +1,296 @@
+[
+  {
+    "source_uri": "trb:naziv",
+    "source_label": "Naziv",
+    "top_k_matches": [
+      {
+        "uri": "sev:lastnik",
+        "label": "lastnik",
+        "score": 0.9184572696685791,
+        "combined_score": 0.7429200887680053
+      },
+      {
+        "uri": "sev:opis_lokacije",
+        "label": "opis_lokacije",
+        "score": 0.9315816164016724,
+        "combined_score": 0.7187737981478373
+      },
+      {
+        "uri": "sev:gps_parkirisca",
+        "label": "gps_parkirisca",
+        "score": 0.9134855270385742,
+        "combined_score": 0.702597763663844
+      },
+      {
+        "uri": "sev:lokacija_parkirisca",
+        "label": "lokacija_parkirisca",
+        "score": 0.9244159460067749,
+        "combined_score": 0.6970911622047424
+      },
+      {
+        "uri": "sev:parcele",
+        "label": "parcele",
+        "score": 0.9168429374694824,
+        "combined_score": 0.6917900562286377
+      }
+    ],
+    "top_match": {
+      "uri": "sev:lastnik",
+      "label": "lastnik",
+      "score": 0.9184572696685791,
+      "combined_score": 0.7429200887680053
+    }
+  },
+  {
+    "source_uri": "trb:lokacijska_koordinata_gmaps_wgs84",
+    "source_label": "Lokacijska koordinata (GMAPS - WGS84)",
+    "top_k_matches": [
+      {
+        "uri": "sev:lokacija_parkirisca",
+        "label": "lokacija_parkirisca",
+        "score": 0.9243613481521606,
+        "combined_score": 0.7649100865636553
+      },
+      {
+        "uri": "sev:gps_parkirisca",
+        "label": "gps_parkirisca",
+        "score": 0.9593006372451782,
+        "combined_score": 0.7420986813657423
+      },
+      {
+        "uri": "sev:opis_lokacije",
+        "label": "opis_lokacije",
+        "score": 0.9088935852050781,
+        "combined_score": 0.7082255096435546
+      },
+      {
+        "uri": "sev:lat",
+        "label": "LAT",
+        "score": 0.9251676201820374,
+        "combined_score": 0.6776173341274261
+      },
+      {
+        "uri": "sev:lon",
+        "label": "LON",
+        "score": 0.9117029905319214,
+        "combined_score": 0.653192093372345
+      }
+    ],
+    "top_match": {
+      "uri": "sev:lokacija_parkirisca",
+      "label": "lokacija_parkirisca",
+      "score": 0.9243613481521606,
+      "combined_score": 0.7649100865636553
+    }
+  },
+  {
+    "source_uri": "trb:plačljivo",
+    "source_label": "Plačljivo",
+    "top_k_matches": [
+      {
+        "uri": "sev:lastnik",
+        "label": "lastnik",
+        "score": 0.895953893661499,
+        "combined_score": 0.7396677255630493
+      },
+      {
+        "uri": "sev:parcele",
+        "label": "parcele",
+        "score": 0.8972651362419128,
+        "combined_score": 0.7030855953693389
+      },
+      {
+        "uri": "sev:gps_parkirisca",
+        "label": "gps_parkirisca",
+        "score": 0.891165554523468,
+        "combined_score": 0.6759898012099058
+      },
+      {
+        "uri": "sev:st_parkirnih_mest",
+        "label": "st_parkirnih_mest",
+        "score": 0.896898627281189,
+        "combined_score": 0.6739828852506784
+      },
+      {
+        "uri": "sev:lat",
+        "label": "LAT",
+        "score": 0.8932002782821655,
+        "combined_score": 0.6252401947975158
+      }
+    ],
+    "top_match": {
+      "uri": "sev:lastnik",
+      "label": "lastnik",
+      "score": 0.895953893661499,
+      "combined_score": 0.7396677255630493
+    }
+  },
+  {
+    "source_uri": "trb:cena",
+    "source_label": "Cena",
+    "top_k_matches": [
+      {
+        "uri": "sev:rezim_parkiranja",
+        "label": "rezim_parkiranja",
+        "score": 0.9088802933692932,
+        "combined_score": 0.7262162053585052
+      },
+      {
+        "uri": "sev:oznacevanje_casa_modra_cona",
+        "label": "oznacevanje_casa_modra_cona",
+        "score": 0.9033649563789368,
+        "combined_score": 0.690419985594288
+      },
+      {
+        "uri": "sev:gps_parkirisca",
+        "label": "gps_parkirisca",
+        "score": 0.9023033976554871,
+        "combined_score": 0.6649457116921742
+      },
+      {
+        "uri": "sev:st_parkirnih_mest",
+        "label": "st_parkirnih_mest",
+        "score": 0.9061495661735535,
+        "combined_score": 0.6628761248929159
+      },
+      {
+        "uri": "sev:lon",
+        "label": "LON",
+        "score": 0.9045233726501465,
+        "combined_score": 0.6331663608551025
+      }
+    ],
+    "top_match": {
+      "uri": "sev:rezim_parkiranja",
+      "label": "rezim_parkiranja",
+      "score": 0.9088802933692932,
+      "combined_score": 0.7262162053585052
+    }
+  },
+  {
+    "source_uri": "trb:število_parkirnih_mest",
+    "source_label": "Število parkirnih mest",
+    "top_k_matches": [
+      {
+        "uri": "sev:st_parkirnih_mest",
+        "label": "st_parkirnih_mest",
+        "score": 0.9665167331695557,
+        "combined_score": 0.8919463286033044
+      },
+      {
+        "uri": "sev:gps_parkirisca",
+        "label": "gps_parkirisca",
+        "score": 0.9179771542549133,
+        "combined_score": 0.7759173413117726
+      },
+      {
+        "uri": "sev:z_s",
+        "label": "z.s.",
+        "score": 0.9369343519210815,
+        "combined_score": 0.6789309694216802
+      },
+      {
+        "uri": "sev:lat",
+        "label": "LAT",
+        "score": 0.9207218289375305,
+        "combined_score": 0.6445052802562713
+      },
+      {
+        "uri": "sev:lon",
+        "label": "LON",
+        "score": 0.9205694794654846,
+        "combined_score": 0.6443986356258392
+      }
+    ],
+    "top_match": {
+      "uri": "sev:st_parkirnih_mest",
+      "label": "st_parkirnih_mest",
+      "score": 0.9665167331695557,
+      "combined_score": 0.8919463286033044
+    }
+  },
+  {
+    "source_uri": "trb:število_mest_z_električno_polnilnico",
+    "source_label": "Število mest z električno polnilnico",
+    "top_k_matches": [
+      {
+        "uri": "sev:st_parkirnih_mest",
+        "label": "st_parkirnih_mest",
+        "score": 0.9291526079177856,
+        "combined_score": 0.7183313538443367
+      },
+      {
+        "uri": "sev:rezim_parkiranja",
+        "label": "rezim_parkiranja",
+        "score": 0.9115955829620361,
+        "combined_score": 0.7073476773041945
+      },
+      {
+        "uri": "sev:opis_lokacije",
+        "label": "opis_lokacije",
+        "score": 0.9047128558158875,
+        "combined_score": 0.6945234888670395
+      },
+      {
+        "uri": "sev:opombe",
+        "label": "opombe",
+        "score": 0.9188110828399658,
+        "combined_score": 0.6860249008451189
+      },
+      {
+        "uri": "sev:z_s",
+        "label": "z.s.",
+        "score": 0.9099280834197998,
+        "combined_score": 0.6519496583938599
+      }
+    ],
+    "top_match": {
+      "uri": "sev:st_parkirnih_mest",
+      "label": "st_parkirnih_mest",
+      "score": 0.9291526079177856,
+      "combined_score": 0.7183313538443367
+    }
+  },
+  {
+    "source_uri": "trb:število_mest_za_invalide",
+    "source_label": "Število mest za invalide",
+    "top_k_matches": [
+      {
+        "uri": "sev:st_parkirnih_mest",
+        "label": "st_parkirnih_mest",
+        "score": 0.9335675239562988,
+        "combined_score": 0.755936291159653
+      },
+      {
+        "uri": "sev:rezim_parkiranja",
+        "label": "rezim_parkiranja",
+        "score": 0.9049779176712036,
+        "combined_score": 0.7384845423698425
+      },
+      {
+        "uri": "sev:z_s",
+        "label": "z.s.",
+        "score": 0.9175260066986084,
+        "combined_score": 0.6636967761175973
+      },
+      {
+        "uri": "sev:lat",
+        "label": "LAT",
+        "score": 0.9048707485198975,
+        "combined_score": 0.6334095239639281
+      },
+      {
+        "uri": "sev:lon",
+        "label": "LON",
+        "score": 0.9033266305923462,
+        "combined_score": 0.6323286414146423
+      }
+    ],
+    "top_match": {
+      "uri": "sev:st_parkirnih_mest",
+      "label": "st_parkirnih_mest",
+      "score": 0.9335675239562988,
+      "combined_score": 0.755936291159653
+    }
+  }
+]

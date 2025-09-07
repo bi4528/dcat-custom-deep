@@ -1,0 +1,7 @@
+source,gold,chosen,outcome,candidates,scores
+Naziv,['lokacija_parkirisca'],lastnik,FP,"['lastnik', 'opis_lokacije', 'gps_parkirisca', 'lokacija_parkirisca', 'parcele']","[0.7429200887680053, 0.7187737981478373, 0.702597763663844, 0.6970911622047424, 0.6917900562286377]"
+Lokacijska koordinata (GMAPS - WGS84),['gps_parkirisca'],lokacija_parkirisca,FP,"['lokacija_parkirisca', 'gps_parkirisca', 'opis_lokacije', 'LAT', 'LON']","[0.7649100865636553, 0.7420986813657423, 0.7082255096435546, 0.6776173341274261, 0.653192093372345]"
+Plačljivo,['rezim_parkiranja'],lastnik,FP,"['lastnik', 'parcele', 'gps_parkirisca', 'st_parkirnih_mest', 'LAT']","[0.7396677255630493, 0.7030855953693389, 0.6759898012099058, 0.6739828852506784, 0.6252401947975158]"
+Cena,[],rezim_parkiranja,FP,"['rezim_parkiranja', 'oznacevanje_casa_modra_cona', 'gps_parkirisca', 'st_parkirnih_mest', 'LON']","[0.7262162053585052, 0.690419985594288, 0.6649457116921742, 0.6628761248929159, 0.6331663608551025]"
+Število parkirnih mest,['st_parkirnih_mest'],st_parkirnih_mest,TP,"['st_parkirnih_mest', 'gps_parkirisca', 'z.s.', 'LAT', 'LON']","[0.8919463286033044, 0.7759173413117726, 0.6789309694216802, 0.6445052802562713, 0.6443986356258392]"
+Število mest za invalide,[],st_parkirnih_mest,FP,"['st_parkirnih_mest', 'rezim_parkiranja', 'z.s.', 'LAT', 'LON']","[0.755936291159653, 0.7384845423698425, 0.6636967761175973, 0.6334095239639281, 0.6323286414146423]"

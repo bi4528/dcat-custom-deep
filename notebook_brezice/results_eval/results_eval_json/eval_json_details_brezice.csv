@@ -1,0 +1,9 @@
+source,gold,chosen,outcome,candidates,scores
+Naziv,['lokacija_parkirisca'],opis_lokacije,FP,"['opis_lokacije', 'LON', 'gps_parkirisca', 'lokacija_parkirisca', 'LAT']","[0.7149663845698038, 0.7045562982559204, 0.7004921997848309, 0.6825292468070983, 0.6303169131278992]"
+Lokacijska koordinata (GMAPS - WGS84),['gps_parkirisca'],lokacija_parkirisca,FP,"['lokacija_parkirisca', 'gps_parkirisca', 'opis_lokacije', 'LAT', 'LON']","[0.7516873623643603, 0.7418441695325514, 0.7117719025611876, 0.6774922895431519, 0.6539527082443237]"
+Plačljivo,['Parkrini režim'],,FN,[],[]
+Cena,[],,TN,[],[]
+Število parkirnih mest,['parkirni prostori'],parkirni prostori,TP,"['parkirni prostori', 'parkirni prostori za invalide', 'gps_parkirisca', 'LON', 'LAT']","[0.8423683386582593, 0.793498350942836, 0.7738965173562367, 0.6428158640861511, 0.6415554881095886]"
+Električna polnilnica,[],,TN,[],[]
+Število mest z električno polnilnico,[],parkirni prostori za invalide,FP,"['parkirni prostori za invalide', 'parkirni prostori', 'opis_lokacije', 'LON', 'LAT']","[0.7477336586438692, 0.7223293441646503, 0.6855115586397599, 0.6275383114814758, 0.6226852297782898]"
+Število mest za invalide,['parkirni prostori za invalide'],parkirni prostori za invalide,TP,"['parkirni prostori za invalide', 'opis_lokacije', 'parkirni prostori', 'LON', 'LAT']","[0.8586200865934479, 0.7293987138851269, 0.719949261589748, 0.6304484665393829, 0.6288960695266723]"

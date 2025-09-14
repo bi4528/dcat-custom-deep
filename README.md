@@ -24,5 +24,5 @@ Ta repozitorij vsebuje kodo in Jupyter zvezke, uporabljene v okviru magistrske n
 
 - Python 3.10+
 - [requirements.txt](requirements.txt) (nameščanje z `pip install -r requirements.txt`)
-- Za grajenje baze FAISS pri ujemnju je priporočena uporaba **GPU pospeševanja** (CUDA) zaradi časovne zahtevnosti
+- Za grajenje baze FAISS pri ujemnju je priporočena uporaba **pospeševlanika GPU** (CUDA) zaradi časovne zahtevnosti
 
